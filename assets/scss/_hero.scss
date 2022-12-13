@@ -5,6 +5,7 @@
 .hero_wrapper{
   background: $primary;
   padding: 25px 0px;
+  z-index: -1;
  }
 .banner_title{
     h3{
@@ -32,14 +33,13 @@
         line-height: 27px;
         font-weight: 400;
         color: $textcolor;
-        margin-bottom: 10px;
         i{
           margin-right: 10px;
         }
       }
     }
     a{
-      margin-top: 20px;
+      margin: 20px 0px;
       display: inline-block;
       margin-right: 20px;
       padding: 10px 20px;
@@ -47,8 +47,16 @@
       border-radius: 6px;
       @include transition(0.4s);
       background-color: $base;
+      @media (max-width:500px) {
+        margin-top: 20px;
+        margin-bottom: 10px;
+       }
       &:last-child{
         background-color: #DC3545;
+        @media (max-width:500px) {
+         margin-top: 10px;
+         margin-bottom: 20px;
+        }
       }
       &:hover{
         &:last-child{

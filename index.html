@@ -82,11 +82,11 @@
 
                     <div class="header-right d-flex align-items-center">
                         <div class="header-search">
-                            <a class="search-toggle" data-selector=".header-search">
-                                <span class="fas fa-search"></span>
+                            <a class="search-toggle d-none d-md-block" data-selector=".header-search">
+                                <i class="fas fa-search"></i>
                             </a>
 
-                            <form class="search-box" action="#" method="get">
+                            <form class="search-box show" action="#" method="get">
                                 <div class="form-group d-flex align-items-center">
                                     <input type="search" name="s" value="" class="search-input" id="search" placeholder="Search">
                                     <button type="submit" class="search-submit"><i class="icon-search"></i></button>
@@ -94,8 +94,8 @@
                             </form>
                         </div>
 
-                        <div class="header-btn-cta">
-                            <a class="theme-btn" href="https://givetaxfree.org/create-a-campaign"><i class="fas fa-edit"></i> Create New Campaign</a>
+                        <div class="header-btn-cta d-none d-sm-block">
+                            <a class="theme-btn" href="https://givetaxfree.org/create-a-campaign"><i class="fas fa-edit"></i>Create New Campaign</a>
                         </div>
 
                         <div class="mobile-nav-bar d-block ml-3 ml-sm-5 d-xl-none">
@@ -103,13 +103,13 @@
                                 <div id="hamburger">
                                     <i class="fas fa-bars"></i>
                                 </div>
-                                <!-- mobile menu - responsive menu  -->
+                               
                                 <div class="mobile-nav">
                                     <button type="button" class="close-nav">
-                                        <i class="fal fa-times-circle"></i>
+                                        <i class="far fa-times-circle"></i>
                                     </button>
                                     <nav class="sidebar-nav">
-                                        <ul>
+                                        <ul class="metismenu" id="mobile-menu">
                                             <li><a href="#">Home</a></li>
                                             <li><a href="#">Director</a> </li>
                                             <li><a href="#">Our Mission</a></li>
