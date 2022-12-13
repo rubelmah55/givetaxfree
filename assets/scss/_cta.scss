@@ -1,3 +1,29 @@
 /* ----------------------------------
 	Call To Action Section Styles
  ------------------------------------ */
+
+ .cta_wrapper{
+	padding: 50px 0px;
+	@include overlay(#4054B2, 0.9);
+	.cta_content{
+		h2{
+			font-size: 32px;
+			font-weight: bold;
+			color: $white;
+			margin-bottom: 10px;
+		}
+		p{
+			color: $white;
+			font-size: 16px;
+		}
+	}
+	a{
+        font-size: 17px;
+        padding: 10px 15px;
+        border: 2px solid $white;
+		border-radius: 4px;
+		&:hover{
+			border: 2px solid $green;
+		}
+	}
+ }

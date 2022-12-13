@@ -194,7 +194,7 @@ h6 {
   margin: 0px;
   margin-bottom: 15px;
   font-weight: 700;
-  color: #001659;
+  color: #232323;
   text-transform: capitalize;
 }
 
@@ -205,25 +205,6 @@ h1 {
 @media (max-width: 991px) {
   h1 {
     font-size: 42px;
-  }
-}
-h1.fs-lg {
-  font-size: 90px;
-  text-transform: uppercase;
-}
-@media (max-width: 1200px) {
-  h1.fs-lg {
-    font-size: 70px;
-  }
-}
-@media (max-width: 991px) {
-  h1.fs-lg {
-    font-size: 50px;
-  }
-}
-@media (max-width: 500px) {
-  h1.fs-lg {
-    font-size: 46px;
   }
 }
 
@@ -275,6 +256,10 @@ p {
 
 .font-cambria h1, .font-cambria h2, .font-cambria h3, .font-cambria h4, .font-cambria h5, .font-cambria h6, .font-cambria a {
   font-family: "Cambria", sans-serif;
+}
+
+.section-padding {
+  padding: 50px 0px;
 }
 
 /* ----------------------------------
@@ -1460,6 +1445,62 @@ header ul, header li, footer ul, footer li {
 /* ------------------------------------------------------------------
    Template Default Button, Input Styles - Value Change with Your's Need
  -------------------------------------------------------------------- */
+.btnd, .theme-btn {
+  line-height: 1;
+  font-weight: 700;
+  display: inline-block;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.btn {
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+}
+
+.theme-btn {
+  color: #FFF;
+  padding: 15px 30px;
+  background-color: #231b82;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 991px) {
+  .theme-btn {
+    padding: 16px 30px 14px;
+  }
+}
+@media (max-width: 767px) {
+  .theme-btn {
+    padding: 14px 28px 12px;
+  }
+}
+@media (max-width: 580px) {
+  .theme-btn {
+    padding: 18px 35px 15px;
+  }
+}
+@media (max-width: 480px) {
+  .theme-btn {
+    padding: 16px 30px 14px;
+    font-size: 15px;
+  }
+}
+.theme-btn i {
+  margin-right: 10px;
+}
+.theme-btn:hover {
+  background: #3FAD48;
+  color: #FFF;
+}
+
 /* ----------------------------------
     Template Section Styles
  ------------------------------------*/
@@ -1467,60 +1508,17 @@ header {
   width: 100%;
   z-index: 9999;
 }
-header .header-top {
+header .main-header-wraper {
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+  position: fixed;
+  margin: 0 auto;
   padding: 10px 0px;
-  background-color: #2E2A5C;
-}
-@media (max-width: 500px) {
-  header .header-top {
-    display: none;
-  }
-}
-header .header-top .header_top_widget {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-header .header-top .header_top_widget .header_top_left a {
-  color: #DDDDDD;
-}
-header .header-top .header_top_widget .header_top_left a i {
-  margin-right: 5px;
-}
-header .header-top .header_top_widget .header_top_right ul > li {
-  float: left;
-  margin: 0px 5px;
-}
-header .header-top .header_top_widget .header_top_right ul > li a {
-  color: #DDDDDD;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-}
-header .header-top .header_top_widget .header_top_right ul > li a:hover {
-  text-decoration: underline;
-}
-header .main-header-wraper {
-  padding: 25px 0px;
   background-color: #FFF;
-}
-@media (max-width: 120px) {
-  header .main-header-wraper {
-    padding: 20px 0px;
-  }
-}
-@media (max-width: 900px) {
-  header .main-header-wraper {
-    padding: 15px 0px;
-  }
-}
-@media (max-width: 500px) {
-  header .main-header-wraper {
-    padding: 10px 0px;
-    overflow: hidden;
-  }
 }
 header .main-menu ul {
   line-height: 1;
@@ -1581,8 +1579,7 @@ header .header-right .header-search span {
   color: #2E2A5C;
 }
 header .header-right .theme-btn {
-  display: inline-block;
-  padding: 10px 15px;
+  padding: 15px 20px;
   background: #3FAD48;
   color: #FFF;
   border-radius: 3px;
@@ -1591,6 +1588,9 @@ header .header-right .theme-btn {
 }
 header .header-right .theme-btn:hover {
   background-color: #4FA2FF;
+}
+header.sticky .main-header-wraper {
+  padding: 5px 0px;
 }
 
 .mobile-nav {
@@ -1758,58 +1758,8 @@ header .header-right .theme-btn:hover {
   text-align: center;
 }
 
-/* ---------------------------------
-    Offset Canvas Menu Style 
-------------------------------------*/
-.offset-menu {
-  position: fixed;
-  height: 100vh;
-  top: 0;
-  z-index: 9999999;
-  opacity: 0;
-  visibility: hidden;
-  right: -30%;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  -webkit-box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.15);
-          box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.15);
-}
-.offset-menu.show {
-  opacity: 1;
-  visibility: visible;
-  right: 0;
-}
-.offset-menu .offset-menu-wrapper {
-  width: 360px;
-  padding: 80px 30px;
-}
-.offset-menu .offset-menu-section {
-  margin-top: 40px;
-}
-.offset-menu .offset-menu-section a {
-  margin-bottom: 10px;
-}
-.offset-menu .offset-menu-section ul li {
-  margin-bottom: 5px;
-}
-.offset-menu .offset-menu-section ul li span {
-  margin-right: 10px;
-}
-.offset-menu #offset-menu-close-btn {
-  position: fixed;
-  right: 30px;
-  font-size: 28px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  color: #fff;
-  cursor: pointer;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  z-index: 9;
-  top: 20px;
-}
-.offset-menu .offset-menu-footer {
-  margin-top: 35px;
+.header-gutter {
+  min-height: 100px;
 }
 
 .header-search {
@@ -1987,7 +1937,7 @@ header .header-right .theme-btn:hover {
 .hero_wrapper {
   background: #2E2A5C;
   padding: 25px 0px;
-  z-index: -1;
+  z-index: 1;
 }
 
 .banner_title h3 {
@@ -2069,9 +2019,103 @@ header .header-right .theme-btn:hover {
 /* ----------------------------------
 	Call To Action Section Styles
  ------------------------------------ */
+.cta_wrapper {
+  padding: 50px 0px;
+  z-index: 1;
+  position: relative;
+}
+.cta_wrapper:before {
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  background: rgba(64, 84, 178, 0.9);
+  -webkit-transition: all all 0.3s ease ease-in-out;
+  transition: all all 0.3s ease ease-in-out;
+}
+.cta_wrapper .cta_content h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #FFF;
+  margin-bottom: 10px;
+}
+.cta_wrapper .cta_content p {
+  color: #FFF;
+  font-size: 16px;
+}
+.cta_wrapper a {
+  font-size: 17px;
+  padding: 10px 15px;
+  border: 2px solid #FFF;
+  border-radius: 4px;
+}
+.cta_wrapper a:hover {
+  border: 2px solid #3FAD48;
+}
+
 /* ----------------------------------
 	Content Section Styles
  ------------------------------------ */
+.content_wrapper {
+  background: #FFF;
+  overflow: hidden;
+}
+
+.content_top h2 {
+  font-weight: bold;
+  line-height: 1.3;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.content_top h6 {
+  font-size: 16px;
+}
+.content_top table {
+  margin-bottom: 20px;
+}
+.content_top table thead {
+  background-color: #DDDDDD;
+}
+.content_top table tr th, .content_top table tr td {
+  border: 1px solid rgb(188, 188, 188);
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+  color: #333333;
+}
+.content_top .td_title {
+  padding: 20px 0px;
+  background-color: #1085A9;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.content_top p {
+  font-size: 16px;
+  color: #333333;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 20px;
+}
+
+.content_bottom h3 {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.3;
+  color: #232323;
+  text-transform: uppercase;
+  margin: 20px 0px;
+}
+.content_bottom p {
+  font-size: 16px;
+  color: #333333;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 10px;
+}
+
 /* ----------------------------------
 	Team Section Styles
  ------------------------------------ */
@@ -2093,13 +2137,12 @@ header .header-right .theme-btn:hover {
 /* ----------------------------------
 	Footer Section Styles
  ------------------------------------ */
-.footer_wrapper {
+.footer_top {
   overflow: hidden;
   padding: 30px 0px;
-  background-color: #2E2A5C;
+  background-color: #2C3333;
 }
-
-.footer_widget h3 {
+.footer_top .footer_widget h3 {
   position: relative;
   color: #3FAD48;
   text-transform: capitalize;
@@ -2109,11 +2152,11 @@ header .header-right .theme-btn:hover {
   margin-bottom: 15px;
 }
 @media (max-width: 990px) {
-  .footer_widget h3 {
+  .footer_top .footer_widget h3 {
     margin-top: 30px;
   }
 }
-.footer_widget h3::after {
+.footer_top .footer_widget h3::after {
   content: " ";
   border-bottom: 4px solid rgb(221, 221, 221);
   width: 25%;
@@ -2121,35 +2164,50 @@ header .header-right .theme-btn:hover {
   bottom: 0;
   left: 0;
 }
-.footer_widget .footer_link_element ul > li {
+.footer_top .footer_widget .footer_link_element ul > li {
   list-style: none;
   display: block;
   margin: 5px 0;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-.footer_widget .footer_link_element ul > li a {
+.footer_top .footer_widget .footer_link_element ul > li a {
   font-weight: 500;
   color: #FFF;
 }
-.footer_widget .footer_link_element ul > li a i {
+.footer_top .footer_widget .footer_link_element ul > li a i {
   margin-right: 5px;
 }
-.footer_widget .footer_link_element ul > li:hover {
+.footer_top .footer_widget .footer_link_element ul > li:hover {
   margin-left: 10px;
 }
-.footer_widget .footer_link_element ul > li:hover a {
+.footer_top .footer_widget .footer_link_element ul > li:hover a {
   color: #DDDDDD;
 }
-.footer_widget .footer_element ul > li {
+.footer_top .footer_widget .footer_element ul > li {
   list-style: none;
   display: block;
   margin: 5px 0;
   font-weight: 500;
   color: #FFF;
 }
-.footer_widget .footer_element ul > li i {
+.footer_top .footer_widget .footer_element ul > li i {
   margin-right: 5px;
+}
+
+.footer-bottom {
+  background-color: #343A40;
+  padding: 10px 0px;
+}
+.footer-bottom span {
+  color: #DDDDDD;
+}
+.footer-bottom span a {
+  color: #DDDDDD;
+  text-decoration: none;
+}
+.footer-bottom span a:hover {
+  text-decoration: underline;
 }
 
 /*---------------------

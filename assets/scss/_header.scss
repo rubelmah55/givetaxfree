@@ -1,53 +1,56 @@
 header {
     width: 100%;
     z-index: 9999; 
-    .header-top{
-        padding: 10px 0px;
-        background-color: $primary;
-        @media (max-width:500px) {
-            display: none;
-        }
-        .header_top_widget{
-            display: flex;
-            justify-content: space-between;
-            .header_top_left{
-                a{
-                    color: $textcolor;
-                    i{
-                        margin-right: 5px;
-                    }
-                }
-            }
-            .header_top_right{
-                ul{
-                    >li{
-                        float: left;
-                        margin: 0px 5px;
-                        a{
-                            color: $textcolor;
-                            @include transition(0.4s);
-                            &:hover{
-                                text-decoration: underline;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }  
+    // .header-top{
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 50px;
+    //     z-index: 1030;
+    //     position: fixed !important;
+    //     padding: 10px 0px;
+    //     background-color: $primary;
+    //     @media (max-width:500px) {
+    //         display: none;
+    //     }
+    //     .header_top_widget{
+    //         display: flex;
+    //         justify-content: space-between;
+    //         .header_top_left{
+    //             a{
+    //                 color: $textcolor;
+    //                 i{
+    //                     margin-right: 5px;
+    //                 }
+    //             }
+    //         }
+    //         .header_top_right{
+    //             ul{
+    //                 >li{
+    //                     float: left;
+    //                     margin: 0px 5px;
+    //                     a{
+    //                         color: $textcolor;
+    //                         @include transition(0.4s);
+    //                         &:hover{
+    //                             text-decoration: underline;
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }  
     .main-header-wraper{
-        padding: 25px 0px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 1030;
+        position: fixed;
+        margin: 0 auto;
+        padding: 10px 0px;
+        @include transition(0.4s);
         background-color: $white;
-        @media (max-width:120px) {
-            padding: 20px 0px;
-        }
-        @media (max-width:900px) {
-            padding: 15px 0px;
-        }
-        @media (max-width:500px) {
-            padding: 10px 0px;
-            overflow: hidden;
-        }
     }
     .main-menu {                         
         ul {
@@ -120,8 +123,7 @@ header {
             }
         }
         .theme-btn{
-            display: inline-block;
-            padding: 10px 15px;
+            padding: 15px 20px;
             background: $green;
             color: $white;
             border-radius: 3px;
@@ -129,6 +131,11 @@ header {
             &:hover{
                 background-color: $blue;
             }
+        }
+    }
+    &.sticky{
+        .main-header-wraper{
+            padding: 5px 0px;
         }
     }
 }
@@ -289,73 +296,9 @@ header {
         }
     }
 }
-
-/* ---------------------------------
-    Offset Canvas Menu Style 
-------------------------------------*/
-
-.offset-menu {
-	position: fixed;
-	height: 100vh;
-	top: 0;
-    z-index: 9999999;
-    opacity: 0;
-    visibility: hidden;
-    right: -30%;
-    transition: all .5s ease-in-out;
-    // background-color: $second-color;
-    box-shadow: 0 13px 35px -12px rgba(35,35,35,.15);
-
-    &.show {
-        opacity: 1;
-        visibility: visible;
-        right: 0;
-    }
-
-    .offset-menu-wrapper {
-        width: 360px;
-        padding: 80px 30px;
-    }
-
-    .offset-menu-section {
-        margin-top: 40px;
-    
-        a {
-            margin-bottom: 10px;
-        }
-    
-        ul {
-            li {
-                span {
-                    margin-right: 10px;
-                }
-                margin-bottom: 5px;
-            }
-        }
-    }
-    
-    #offset-menu-close-btn {
-        position: fixed;
-        right: 30px;
-        font-size: 28px;
-        transform: rotate(45deg);
-        color: #fff;
-        cursor: pointer;
-        transition: all .2s ease-in-out;
-        z-index: 9;
-        top: 20px;
-
-        &:hover {
-            // color: $theme-color;
-        }
-    }
-
-    .offset-menu-footer {
-        margin-top: 35px;
-    }
-
+.header-gutter {
+    min-height: 100px;
 }
-
 
 .header-search {
     position: relative;
