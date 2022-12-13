@@ -6,15 +6,19 @@ $gray:#f4f7fd;
 $red: #FF8888;
 $base: #1085A9;
 $black:#000;
-$blue: #01A0E1;
+$blue:#4FA2FF;
 $pink: #FF681B;
 $info: #FAA21A;
 $green: #3FAD48;
-$primary: #8DC63F;
-$secondary: #F47102;
 
 // Theme Color - Defualt Colors
-$textcolor: #53545A;
+
+$primary: #2E2A5C;
+$secondary: #F47102;
+$secondary-2: #FFFF00;
+$textcolor:#DDDDDD;
+
+
 $box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.04);
 
 @mixin border-radius($r) {

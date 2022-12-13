@@ -919,7 +919,7 @@
 }
 
 #scrollUp {
-    background-color: $theme-color;
+    // background-color: $theme-color;
     border-radius: 50%;
     bottom: 20px;
     color: #ffffff;
@@ -934,7 +934,7 @@
     @include transition(.4s);
 
     &:hover {
-        background-color: $second-color;
+        // background-color: $second-color;
     }
 }
 
@@ -1078,7 +1078,7 @@ header, footer {
 
         &:hover {
             color: #fff !important;
-            background-color: $second-color;
+            // background-color: $second-color;
         }
     }
 }

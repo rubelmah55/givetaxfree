@@ -1,21 +1,12 @@
 /* --------------------------------------------
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
- @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap');
 
- @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
+// font-family: 'Nunito', sans-serif;
 
- @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-// Font Family Variable with Value
-// font-family: 'Exo 2', sans-serif;
-// font-family: 'Roboto', sans-serif;
-// font-family: 'Oswald', sans-serif;
-// font-family: 'Cambria', sans-serif;
-
-$heading-font: 'Exo 2', sans-serif;
-$body-font: 'Roboto', sans-serif;
-$text-font:'Poppins', sans-serif;
+$heading-font: 'Nunito', sans-serif;
+$body-font: 'Nunito', sans-serif;
 
 //font-family: "Font Awesome 5 Pro";
 $fa: "Font Awesome 5 Pro";
@@ -40,7 +31,7 @@ h6 {
     margin-bottom: 15px;
     font-weight: 700;    
     color: #001659;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 h1 {
@@ -102,7 +93,8 @@ a {
     font-size: 16px;
     line-height: 28px;
     @include transition(.3s);
-    color: $heading-color;
+    font-family: $body-font;
+    color: $textcolor;
 }
 
 p {
