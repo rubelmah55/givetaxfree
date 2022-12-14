@@ -1,3 +1,33 @@
 /* ----------------------------------
 	Features Section Styles
  ------------------------------------ */
+.featured_wrapper{
+
+}
+
+.section-title{
+	position: relative;
+	padding-bottom: 5px;
+	margin-bottom: 30px;
+	h5{
+		font-size: 18px;
+		color: $blue;
+	}
+	h2{
+		font-size: 32px;
+		font-weight: bold;
+	}
+	&::after{
+		text-align: center;
+		z-index: 1;
+		content: '';
+		clear: both;
+		height: 3px;
+		width: 150px;
+		max-width: 100%;
+		position: absolute;
+		bottom: 0%;
+		left: 37%;
+		background-color: $blue;
+	}
+}

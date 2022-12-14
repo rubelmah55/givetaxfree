@@ -263,6 +263,79 @@ p {
 }
 
 /* ----------------------------------
+	Card Section Styles
+ ------------------------------------ */
+.single_feaured_item {
+  margin-top: 30px;
+  position: relative;
+}
+.single_feaured_item .popular-causes__img {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  border-radius: 3px;
+  z-index: -1;
+}
+.single_feaured_item .popular-causes__content {
+  z-index: 3;
+  margin-top: -30px;
+  padding: 30px;
+  width: 100%;
+  border-radius: 30px;
+  background-color: #2E2A5C;
+}
+@media (max-width: 700px) {
+  .single_feaured_item .popular-causes__content {
+    padding: 20px;
+  }
+}
+.single_feaured_item .popular-causes__content .popular-causes__title span {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 800;
+}
+.single_feaured_item .popular-causes__content .popular-causes__title h3 {
+  font-size: 30px;
+  line-height: 45px;
+  color: #FFF;
+}
+.single_feaured_item .popular-causes__content .popular-causes__progress .bar {
+  position: relative;
+  width: 100%;
+  height: 7px;
+  background: #eae5e3;
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+.single_feaured_item .popular-causes__content .popular-causes__progress .bar-inner {
+  position: relative;
+  display: block;
+  width: 0px;
+  height: 7px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  background: #FF681B;
+}
+.single_feaured_item .popular-causes__content .popular-causes__progress .count-text {
+  position: absolute;
+  right: 0px;
+  bottom: 12px;
+  color: #FFF;
+  line-height: 26px;
+  font-size: 16px;
+  text-align: center;
+  opacity: 1;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.single_feaured_item .popular-causes__content .popular-causes__progress .popular-causes__goals p {
+  color: #FFF;
+}
+.single_feaured_item .popular-causes__content p {
+  color: #FFF;
+}
+
+/* ----------------------------------
     Template Helps Classes - Styles
  ------------------------------------ */
 .text-white h1,
@@ -1533,7 +1606,7 @@ header .main-menu ul > li > a {
   font-size: 16px;
   text-transform: capitalize;
   line-height: 1;
-  padding: 25px 20px;
+  padding: 20px 15px;
   overflow: hidden;
   color: #2E2A5C;
 }
@@ -2007,6 +2080,33 @@ header.sticky .main-header-wraper {
 /* ----------------------------------
 	Features Section Styles
  ------------------------------------ */
+.section-title {
+  position: relative;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+}
+.section-title h5 {
+  font-size: 18px;
+  color: #4FA2FF;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+.section-title::after {
+  text-align: center;
+  z-index: 1;
+  content: "";
+  clear: both;
+  height: 3px;
+  width: 150px;
+  max-width: 100%;
+  position: absolute;
+  bottom: 0%;
+  left: 37%;
+  background-color: #4FA2FF;
+}
+
 /* ----------------------------------
   Service Section Styles
  ------------------------------------ */
