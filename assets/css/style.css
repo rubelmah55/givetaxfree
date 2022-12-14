@@ -1598,11 +1598,6 @@ header .logo img {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-@media (max-width: 768px) {
-  header .logo img {
-    max-width: 200px;
-  }
-}
 header .main-menu ul {
   line-height: 1;
 }
@@ -1897,6 +1892,11 @@ header.sticky .main-header-wraper .logo img {
 
 .header-gutter {
   min-height: 100px;
+}
+@media (max-width: 615px) {
+  .header-gutter {
+    min-height: 90px;
+  }
 }
 
 .header-search {
