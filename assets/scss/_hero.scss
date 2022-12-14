@@ -39,7 +39,7 @@
       }
     }
     a{
-      margin: 20px 10px;
+      margin: 20px 0px;
       display: inline-block;
       padding: 10px 17px;
       color: $white;
@@ -52,9 +52,11 @@
        }
       &:last-child{
         background-color: #DC3545;
+        margin-left: 20px;
         @media (max-width:500px) {
          margin-top: 10px;
          margin-bottom: 20px;
+         margin-left:0px;
         }
       }
       &:hover{
