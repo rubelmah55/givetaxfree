@@ -6,7 +6,7 @@
 .footer_top{
 	overflow: hidden;
 	padding: 30px 0px;
-	background-color:  #1b1752;
+	background-color: $primary;
 	.footer_widget{
 		h3{
 			position: relative;
@@ -68,7 +68,7 @@
 	}
 }
 .footer-bottom{
-	background-color: #343A40;
+	background-color:  #1b1752;
 	padding: 10px 0px;
 	span{
 		color: $textcolor;
