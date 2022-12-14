@@ -52,6 +52,17 @@ header {
         @include transition(0.4s);
         background-color: $white;
     }
+    .logo{
+        img{
+            max-width: 250px !important;
+            @include transition(0.4s);
+        }
+        @media (max-width:768px) {
+            img{
+                max-width: 200px;
+               }
+        }
+    }
     .main-menu {                         
         ul {
             line-height: 1;                   
@@ -123,9 +134,6 @@ header {
                 font-size: 16px;
                 cursor: pointer;
                 margin-right: 20px;
-                @media (max-width:768px) {
-                    display: none;
-                }
             }
             ul {
                 position: absolute;
@@ -137,7 +145,7 @@ header {
                 box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.15);
                 visibility: hidden;
                 opacity: 0;
-                transform: translateY(35px);
+                transform: translateY(20px);
                 transition: all .5s ease-in-out;
                 padding: 10px;
                 
@@ -173,9 +181,20 @@ header {
                 background-color: $blue;
             }
         }
+        .header-btn-cta{
+            @media (max-width:768px) {
+                display: none;
+            }
+        }
     }
     &.sticky{
         .main-header-wraper{
+            .logo{
+               img{
+                max-width: 200px;
+               }
+            }
+            
             padding: 5px 0px;
         }
     }
@@ -209,7 +228,12 @@ header {
       left: 20px;
       top: 10px;
     }
-
+    .header-btn-cta{
+        display: none;
+        @media (max-width:768px) {
+            display: block !important;
+        }
+    }
     /* Vertical Menu Style */
     .sidebar-nav {
         margin-top: 30px;

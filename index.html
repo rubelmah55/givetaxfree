@@ -14,13 +14,15 @@
     <link rel="shortcut icon" href="assets/img/favicon.png">
     <!-- ===========  All Stylesheet ================= -->
     <!--  Icon css plugins -->
-    <link rel="stylesheet" href="assets/css/icons.css">
+    <link rel="stylesheet" href="./assets/css/icons.css">
     <!-- metis menu css file -->
-    <link rel="stylesheet" href="assets/css/metismenu.css">
+    <link rel="stylesheet" href="./assets/css/metismenu.css">
     <!--  Bootstrap css plugins -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- aos css file -->
+    <link rel="stylesheet" href="./assets/css/aos.min.css">
     <!--  main style css file -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     
 </head>
 
@@ -30,6 +32,7 @@
         <div class="main-header-wraper">
             <div class="container">
                 <div class="d-flex align-items-center justify-content-between">
+
                     <div class="header-logo">
                         <div class="logo">
                             <a href="index.html">
@@ -66,7 +69,7 @@
                         </ul>
                        </div>
                         <div class="header-search">
-                            <a class="search-toggle d-none d-md-block" data-selector=".header-search">
+                            <a class="search-toggle " data-selector=".header-search">
                                 <i class="fas fa-search"></i>
                             </a>
 
@@ -78,7 +81,7 @@
                             </form>
                         </div>
 
-                        <div class="header-btn-cta d-none d-sm-block">
+                        <div class="header-btn-cta">
                             <a class="theme-btn" href="https://givetaxfree.org/create-a-campaign"><i class="fas fa-edit"></i>Create New Campaign</a>
                         </div>
 
@@ -118,6 +121,7 @@
                         </div>
 
                     </div>
+
                 </div>
             </div>
         </div>
@@ -130,7 +134,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <div class="banner_title">
+                    <div class="banner_title" data-aos="fade-right" data-aos-delay="200">
                         <h3>The Only Tax Deductible Crowd Funding Site</h3>
                         <h5>Let’s change the World together!</h5>
                         <h2>Fundraising with a Purpose</h2>
@@ -145,7 +149,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="video-frame">
+                    <div class="video-frame" data-aos="fade-left" data-aos-delay="200">
                         <video id="video-autoplay" class="video-box" poster="https://givetaxfree.org/wp-content/themes/givetaxfree/video/video.jpg" controls="" width="100%" height="auto" __idm_id__="1892353">
                         <source src="https://givetaxfree.org/wp-content/themes/givetaxfree/video/video.mp4">
                             Your browser does not support the video tag.
@@ -236,13 +240,13 @@
 
                 <div class="col-lg-4">
                     <div class="content-right">
-                        <div class="inner-content inner_top">
+                        <div class="inner-content inner_top" data-aos="fade-up">
                             <h4>CrowdFunding With Us</h4>
 
                             <p>We are the only non-profit Crowdfunding site designated by the IRS to provide tax write offs to people that make donations. When you help someone in need, your taxes are lower.</p>
                         </div>
 
-                        <div class="inner-content inner_middle">
+                        <div class="inner-content inner_middle" data-aos="fade-up" data-aos-delay="200">
                             <h4>Our Mission</h4>
                             <p>To encourage the Christian value of helping others in need.</p>
                             <ul>
@@ -253,7 +257,7 @@
                             <a href="https://givetaxfree.org/mission-of-give-tax-free" class="theme-btn">Read More</a>
                         </div> 
 
-                        <div class="inner-content">
+                        <div class="inner-content" data-aos="fade-up" data-aos-delay="300">
                             <h4>Important Points</h4>
 
                             <p>While we are at it, let’s go over a few other important points:</p>
@@ -294,6 +298,7 @@
     </div>
     <!-- cta section end -->
 
+    <!-- featured section Start -->
     <section class="featured_wrapper section-padding">
         <div class="container">
             <div class="row">
@@ -305,7 +310,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6">
-                    <div class="single_feaured_item">
+                    <div class="single_feaured_item" data-aos="fade-up">
                         <div class="popular-causes__img bg-center bg-cover" style="background-image: url(./assets/img/pople_03.png);"></div>
                         <div class="popular-causes__content">
                             <div class="popular-causes__title">
@@ -329,7 +334,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="single_feaured_item">
+                    <div class="single_feaured_item" data-aos="fade-up" data-aos-delay="100">
                         <div class="popular-causes__img bg-center bg-cover" style="background-image: url(./assets/img/pople_03.png);"></div>
                         <div class="popular-causes__content">
                             <div class="popular-causes__title">
@@ -353,7 +358,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="single_feaured_item">
+                    <div class="single_feaured_item" data-aos="fade-up" data-aos-delay="150">
                         <div class="popular-causes__img bg-center bg-cover" style="background-image: url(./assets/img/pople_03.png);"></div>
                         <div class="popular-causes__content">
                             <div class="popular-causes__title">
@@ -379,9 +384,8 @@
             </div>
         </div>
     </section>
+    <!-- featured section end -->
 
-    
-    
     <!-- Footer start -->
     <footer class="footer_wrapper">
        <div class="footer_top">
@@ -453,10 +457,11 @@
 
     <!--  ALl JS Plugins
     ====================================== -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/metismenu.js"></script>
-    <script src="assets/js/active.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/aos.min.js"></script>
+    <script src="./assets/js/metismenu.js"></script>
+    <script src="./assets/js/active.js"></script>
 </body>
 
 </html>

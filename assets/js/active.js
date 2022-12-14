@@ -36,6 +36,8 @@
 
         $("#mobile-menu").metisMenu();
 
+        AOS.init();
+
         /*** Search bar */
         $('.header-search').on('click', '.search-toggle', function(e) {
             e.preventDefault();

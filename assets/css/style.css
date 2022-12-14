@@ -1593,6 +1593,16 @@ header .main-header-wraper {
   transition: all 0.4s ease-in-out;
   background-color: #FFF;
 }
+header .logo img {
+  max-width: 250px !important;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+@media (max-width: 768px) {
+  header .logo img {
+    max-width: 200px;
+  }
+}
 header .main-menu ul {
   line-height: 1;
 }
@@ -1654,11 +1664,6 @@ header .header-right .user_widget .login_btn {
   cursor: pointer;
   margin-right: 20px;
 }
-@media (max-width: 768px) {
-  header .header-right .user_widget .login_btn {
-    display: none;
-  }
-}
 header .header-right .user_widget ul {
   position: absolute;
   top: 100%;
@@ -1670,8 +1675,8 @@ header .header-right .user_widget ul {
           box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.15);
   visibility: hidden;
   opacity: 0;
-  -webkit-transform: translateY(35px);
-          transform: translateY(35px);
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   padding: 10px;
@@ -1705,8 +1710,16 @@ header .header-right .theme-btn {
 header .header-right .theme-btn:hover {
   background-color: #4FA2FF;
 }
+@media (max-width: 768px) {
+  header .header-right .header-btn-cta {
+    display: none;
+  }
+}
 header.sticky .main-header-wraper {
   padding: 5px 0px;
+}
+header.sticky .main-header-wraper .logo img {
+  max-width: 200px;
 }
 
 .mobile-nav {
@@ -1738,6 +1751,14 @@ header.sticky .main-header-wraper {
   position: absolute;
   left: 20px;
   top: 10px;
+}
+.mobile-nav .header-btn-cta {
+  display: none;
+}
+@media (max-width: 768px) {
+  .mobile-nav .header-btn-cta {
+    display: block !important;
+  }
 }
 .mobile-nav .sidebar-nav {
   margin-top: 30px;
@@ -2285,7 +2306,7 @@ header.sticky .main-header-wraper {
   padding: 20px;
   border-radius: 2px;
   margin: 10px 0px 30px 0px;
-  background-color: #4FA2FF;
+  background-color: #70BFEA;
 }
 .content-right .inner-content h4 {
   text-transform: uppercase;
