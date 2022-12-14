@@ -116,6 +116,47 @@ header {
     }
 
     .header-right{
+        .user_widget{
+            position: relative;
+            .login_btn{
+                color: #333333;
+                font-size: 16px;
+                cursor: pointer;
+                margin-right: 20px;
+                @media (max-width:768px) {
+                    display: none;
+                }
+            }
+            ul {
+                position: absolute;
+                top: 100%;
+                width: 120px;
+                background-color: $white;
+                left: 0;
+                z-index: 999;
+                box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.15);
+                visibility: hidden;
+                opacity: 0;
+                transform: translateY(35px);
+                transition: all .5s ease-in-out;
+                padding: 10px;
+                
+                li {
+                    display: block;
+                    a { 
+                        display: block;                              
+                        color: $primary;   
+                        padding:5px 0px;
+                    }
+                }
+            }
+            &:hover{
+                ul{
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
         .header-search{
             margin-right: 30px;
             span{

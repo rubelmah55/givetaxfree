@@ -31,12 +31,24 @@
 				font-family: $body-font;
 				color: #333333;
 			}
+			
+			.td_1{
+				background-color: #FCF8E3;
+			}
+			.td_2{
+				background-color: #DFF0D8;
+				color: $green;
+			}
+			.td_3{
+				background-color: #F2DEDE;
+				color: #A94442;
+			}
 		}
 		margin-bottom: 20px;
 	}
 	.td_title{
 		padding: 20px 0px;
-		background-color: $base;
+		background-color: $primary;
 		color: $white;
 		font-weight: bold;
         font-size: 20px;
@@ -56,12 +68,73 @@
         line-height: 1.3;
         color: #232323;
         text-transform: uppercase;
-        margin: 20px 0px;
+        margin: 30px 0px;
 	}
 	p{
 		font-size: 16px;
 		color: #333333;
 		font-family: $body-font;
-		margin-bottom: 10px;
+		margin-bottom: 15px;
 	}
+}
+
+.content-right{
+	.inner-content{
+		padding: 20px;
+		border-radius: 2px;
+		margin: 10px 0px 30px 0px;
+		background-color: $blue;
+		h4{
+			text-transform: uppercase;
+			font-weight: bold;
+			margin-bottom: 15px;
+		}
+		p{
+			font-size: 16px;
+			color: #333333;
+		}
+		ul{
+			>li{
+				list-style:circle;
+				margin: 10px;
+				color: #333333;
+			}
+		}
+		a{
+			color: #333333;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+		&.inner_middle{
+			background-color: $primary;
+			h4{
+				color: $white;
+			}
+			p{
+				color: $white;
+			}
+			ul{
+				>li{
+					color: $white;
+				}
+			}
+			a{
+				margin-top: 5px;
+				color: $white;
+				font-size: 16px;
+				font-weight: bold;
+				text-transform: capitalize;
+				background: transparent;
+				border-radius: 4px;
+				border: 1px solid $white;
+				text-decoration: none;
+				&:hover{
+					border: 1px solid $green;
+					background-color: $green;
+				}
+			}
+		}
+	}
+
 }
