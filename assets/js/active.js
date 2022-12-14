@@ -45,11 +45,11 @@
           }});
 
         /*** Search bar */
-        // $('.header-search').on('click', '.search-toggle', function(e) {
-        //     e.preventDefault();
-        //     var selector = $(this).data('selector');
-        //     $(selector).toggleClass('show').find('.search-input').focus();
-        // });
+        $('.header-search').on('click', '.search-toggle', function(e) {
+            e.preventDefault();
+            var selector = $(this).data('selector');
+            $(selector).toggleClass('show').find('.search-input').focus();
+        });
         
     }); // end document ready function
 
