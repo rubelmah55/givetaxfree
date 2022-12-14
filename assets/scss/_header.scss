@@ -54,7 +54,6 @@ header {
     }
     .logo{
         img{
-            max-width: 250px !important;
             @include transition(0.4s);
         }
     }

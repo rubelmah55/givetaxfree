@@ -12,6 +12,8 @@
             if ($("body").scrollTop() > 10 || $("html").scrollTop() > 10) {
                 if (Width > 767) {
                     $("header").addClass("sticky");
+                } else if(Width < 767) {
+                    $("header").addClass("hide");
                 }
             } else {
                 $("header").removeClass("sticky");
@@ -36,14 +38,18 @@
 
         $("#mobile-menu").metisMenu();
 
-        AOS.init();
+        AOS.init({
+            disable: function () {
+            var maxWidth = 768;
+            return window.innerWidth < maxWidth;
+          }});
 
         /*** Search bar */
-        $('.header-search').on('click', '.search-toggle', function(e) {
-            e.preventDefault();
-            var selector = $(this).data('selector');
-            $(selector).toggleClass('show').find('.search-input').focus();
-        });
+        // $('.header-search').on('click', '.search-toggle', function(e) {
+        //     e.preventDefault();
+        //     var selector = $(this).data('selector');
+        //     $(selector).toggleClass('show').find('.search-input').focus();
+        // });
         
     }); // end document ready function
 
