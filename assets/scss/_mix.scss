@@ -75,5 +75,72 @@
         p{
             color: $white;
         }
+        .theme-btn{
+            margin: 20px 0px 0px 0px ;
+            text-transform: capitalize;
+            border-radius: 6px;
+            border: 2px solid $green;
+            background-color: $green;
+            &:hover{
+                color: $white;
+                border: 2px solid $white;
+                background: transparent;
+            }
+        }
     }
 }
+
+/* ----------------------------------
+	browse-campaign Styles
+ ------------------------------------ */
+.browse-campaign{
+    .browse_widget{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width:550px) {
+            display: block !important;
+        }
+    }
+    background-color: $primary;
+    h4{
+        margin-bottom: 0;
+        font-weight: bold;
+        font-size: 30px;
+        color: $white;
+    }
+    a{
+        color: $white;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 0px 10px;
+        @include transition(0.4s);
+        &:hover{
+            color: $primary-2;
+            text-decoration: underline;
+        }
+    }
+    span{
+        color: #eeeeee;
+        font-weight: 600;
+        font-size: 16px;
+        padding: 0px 10px;
+        position: relative;
+        &::after{
+            content: '';
+            clear: both;
+            display: block;
+            width: 1px;
+            height: 100%;
+            background-color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotate(20deg);
+        }
+    }
+}
+
+/* ----------------------------------
+	mission_wrapper Styles
+ ------------------------------------ */

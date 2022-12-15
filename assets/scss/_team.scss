@@ -1,3 +1,56 @@
 /* ----------------------------------
 	Team Section Styles
  ------------------------------------ */
+
+
+.campaign_wrapper{
+
+}
+.single_item_campaign{
+	border-radius: 4px;
+	background-color: $white;
+	box-shadow: $box-shadow;
+	.single_img{
+		overflow: hidden;
+		height: 200px;
+		width: 100%;
+		img{
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px;
+			transform: scale(1.0) ;
+			@include transition(0.4s);
+		}
+
+	}
+	&:hover{
+		img{
+			transform: scale(1.2) ;
+		}
+	}
+	.campaign_content{
+		padding: 10px;
+		.author-info{
+			margin: 10px 0px;
+			h5{
+				margin-bottom: 8px;
+				color: $primary-2;
+			}
+		}
+		p{
+			line-height: 25px;
+			margin-bottom: 15px;
+		}
+		a{
+			color: $base;
+			i{
+				@include transition(0.4s);
+			}
+			&:hover{
+				text-decoration: underline;
+				i{
+				padding-left: 10px;
+				}
+			}
+		}
+	}
+}

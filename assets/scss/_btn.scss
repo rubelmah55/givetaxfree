@@ -23,10 +23,10 @@
 .theme-btn {
     color: $white;
     @extend .btnd;    
-   padding: 15px 30px;
+    padding: 15px 30px;
     background-color: #231b82;
     transition: all .3s ease-in-out;
-
+    box-shadow: $box-shadow;
     @media (max-width: 991px) {
         padding: 16px 30px 14px;
     }

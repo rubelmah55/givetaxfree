@@ -138,3 +138,67 @@
 	}
 
 }
+
+.director_wrapper{
+	&.director_wrapper_2{
+		.director_bg{
+			height: 400px;
+			width: auto;
+		}
+		.director_content{
+			h5{
+				margin: 20px 0px;
+			}
+			.mission_info{
+				li{
+					list-style: circle;
+					margin: 10px;
+				}
+			}
+		}
+	}
+}
+.content-help_right{
+	h4{
+		position: relative;
+		font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        position: relative;
+        padding-bottom: 1px;
+		&::after{
+			position: absolute;
+			content: '';
+			clear: both;
+			width: 100px;
+			height: 3px;
+			margin-bottom: -10px;
+			background-color: $textcolor;
+			bottom: 0;
+			left: 0;
+		}
+	}
+	p{
+		margin-bottom: 1rem;
+	}
+	a{
+		color: $base;
+	}
+}
+.director_content{
+	h2{
+		margin-bottom: 5px;
+		font-size: 32px;
+		color: #333333;
+		font-weight: bold;
+	}
+	h5{
+		font-size: 18px;
+		color: $green;
+		font-weight: 700;
+	}
+	p{
+		margin-bottom: 10px;
+		line-height: 23px;
+	}
+}
