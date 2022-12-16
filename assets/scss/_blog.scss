@@ -92,3 +92,41 @@
 		}
 	} 	
 }
+
+.blog_widget{
+	.blog_img{
+		width: 100%;
+		height: 400px;
+		overflow: hidden;
+		max-height: 100%;
+	}
+	.blog_content{
+		margin-top: 20px;
+		p{
+			margin: 7px 0px;
+		}
+	}
+	.users{
+		margin-top: 20px;
+		.QR-code{
+			margin-right: 30px;
+		}
+		.icons{
+			a{
+				
+				i{
+					font-size: 30px;
+					color: $primary;
+					margin: 0px 3px;
+					@include transition(0.4s);
+				}
+				&:hover{
+					i{
+						color: $primary-2;
+					}
+					
+				}
+			}
+		}
+	}
+}

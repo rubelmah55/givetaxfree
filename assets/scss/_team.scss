@@ -4,7 +4,16 @@
 
 
 .campaign_wrapper{
-
+	.dropdown{
+		margin-bottom: 30px;
+		select{
+			padding: 7px 15px;
+			border-radius: 4px;
+			&:focus-visible{
+				outline: none !important;
+			}
+		}
+	}
 }
 .single_item_campaign{
 	border-radius: 4px;

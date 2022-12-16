@@ -157,6 +157,19 @@
 			}
 		}
 	}
+	table{
+		thead{
+			border-bottom: 2px solid rgb(188 188 188);
+		}
+		td{
+			a{
+				color: $primary-2;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
 }
 .content-help_right{
 	h4{
@@ -200,5 +213,34 @@
 	p{
 		margin-bottom: 10px;
 		line-height: 23px;
+	}
+}
+
+.user-grid_widget{
+	.content{
+		h4{
+			color: $primary;
+			font-weight: 800;
+			margin-bottom: 0;
+			margin: 15px 0px;
+			font-size: 30px;
+		}
+		p{
+			margin: 10px 0px;
+			span{
+				color: $primary-2;
+				font-weight: 900;
+				font-size: 18px;
+			}
+			strong{
+				font-weight: 900;
+				color: #232323;
+			}
+		}
+		ul{
+			>li{
+				list-style: circle;
+			}
+		}
 	}
 }

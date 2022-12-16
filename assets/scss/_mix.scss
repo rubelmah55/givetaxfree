@@ -142,5 +142,87 @@
 }
 
 /* ----------------------------------
-	mission_wrapper Styles
+	become_wrapper Styles
  ------------------------------------ */
+
+ .become_content{
+    h5{
+        color: $green;
+        font-size: 16px;
+    }
+    h4{
+        font-size: 22px;
+        font-weight: bold;
+    }
+    ul{
+        margin: 10px 0px 10px 20px;
+       
+        >li{
+            list-style: circle;
+            margin: 5px 0px;
+        }
+    }
+    p{
+        margin: 10px 0px;
+    }
+    a{
+        color: $primary-2;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+ }
+
+
+ .progress{
+    height: 20px;
+    background: #cdcdcd;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 10px;
+    overflow: visible;
+    .progress-bar{
+        position: relative;
+        animation: animate-positive 2s;
+        background: #44ad66;
+        border-right: 4px solid rgb(255, 255, 255);
+    }
+    .progress-value{
+        display: block;
+        font-size: 18px;
+        font-weight: 500;
+        color: #000;
+        position: absolute;
+        top: -30px;
+        right: -25px;
+    }
+}
+
+.campaign-status{
+    ul{
+        >li{
+            span{
+                font-size: 18px;
+                font-weight: bold;
+            }
+            border-bottom: 1px solid rgb(221 221 221);
+            padding: 10px 0px;
+        }
+    }
+}
+.comment{
+    input[type="submit"]{
+        border: none;
+        padding: 10px 20px;
+        color: $white;
+        background-color: $primary-2;
+        border-radius: 4px 4px 4px 4px !important;
+        &:hover{
+            background-color: $primary;
+        }
+    }
+    textarea{
+        border-radius: 4px 4px 4px 4px !important;
+    }
+}
+

@@ -1,10 +1,3 @@
-/*
-Template: BUSICO - Multipurpose Bootstrap 5 Template
-Author: RRDevs
-Author URI: https://themeforest.net/user/rrdevs
-Description: Multipurpose Bootstrap 5 Template
-Version: 1.2.0
-*/
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap");
 * {
   -webkit-box-sizing: border-box;
@@ -407,8 +400,82 @@ p {
 }
 
 /* ----------------------------------
-	mission_wrapper Styles
+	become_wrapper Styles
  ------------------------------------ */
+.become_content h5 {
+  color: #3FAD48;
+  font-size: 16px;
+}
+.become_content h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+.become_content ul {
+  margin: 10px 0px 10px 20px;
+}
+.become_content ul > li {
+  list-style: circle;
+  margin: 5px 0px;
+}
+.become_content p {
+  margin: 10px 0px;
+}
+.become_content a {
+  color: #37949C;
+}
+.become_content a:hover {
+  text-decoration: underline;
+}
+
+.progress {
+  height: 20px;
+  background: #cdcdcd;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-bottom: 10px;
+  overflow: visible;
+}
+.progress .progress-bar {
+  position: relative;
+  -webkit-animation: animate-positive 2s;
+          animation: animate-positive 2s;
+  background: #44ad66;
+  border-right: 4px solid rgb(255, 255, 255);
+}
+.progress .progress-value {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  position: absolute;
+  top: -30px;
+  right: -25px;
+}
+
+.campaign-status ul > li {
+  border-bottom: 1px solid rgb(221, 221, 221);
+  padding: 10px 0px;
+}
+.campaign-status ul > li span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.comment input[type=submit] {
+  border: none;
+  padding: 10px 20px;
+  color: #FFF;
+  background-color: #37949C;
+  border-radius: 4px 4px 4px 4px !important;
+}
+.comment input[type=submit]:hover {
+  background-color: #2E2A5C;
+}
+.comment textarea {
+  border-radius: 4px 4px 4px 4px !important;
+}
+
 /* ----------------------------------
     Template Helps Classes - Styles
  ------------------------------------ */
@@ -655,9 +722,6 @@ header ul, header li, footer ul, footer li {
   list-style: none;
 }
 
-/* ----------------------------------
-	Aimation 
- ------------------------------------ */
 /* ------------------------------------------------------------------
    Template Default Button, Input Styles - Value Change with Your's Need
  -------------------------------------------------------------------- */
@@ -1122,155 +1186,6 @@ header.sticky .main-header-wraper .logo img {
   cursor: pointer;
   color: #2E2A5C;
 }
-.header-search .search-box {
-  width: 0;
-  left: 50%;
-  border: 0;
-  opacity: 0;
-  z-index: 600;
-  padding: 10px 20px;
-  border-radius: 4px;
-  visibility: hidden;
-  position: absolute;
-  background: #edf5ff;
-  top: calc(100% + 20px);
-  -webkit-filter: drop-shadow(0px 24px 24px rgba(0, 0, 0, 0.16));
-          filter: drop-shadow(0px 24px 24px rgba(0, 0, 0, 0.16));
-  -webkit-transition: all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1);
-  transition: all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1);
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-@media (min-width: 1200px) {
-  .header-search .search-box {
-    top: calc(100% + 20px);
-  }
-}
-@media (max-width: 480px) {
-  .header-search .search-box {
-    left: -285%;
-    width: 280px;
-  }
-}
-.header-search .search-box:before {
-  left: 0;
-  right: 0;
-  top: -5px;
-  z-index: -1;
-  content: "";
-  width: 12px;
-  height: 12px;
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-  border-radius: 2px;
-  background: #edf5ff;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-@media (max-width: 480px) {
-  .header-search .search-box:before {
-    right: -132px;
-  }
-}
-.header-search .search-box .form-group {
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-.header-search .search-box .form-group:before {
-  left: 0;
-  width: 0;
-  right: 0;
-  bottom: 0;
-  content: "";
-  height: 1px;
-  margin-left: auto;
-  background: #25415d;
-  margin-right: auto;
-  position: absolute;
-  -webkit-transition: all 0.5s cubic-bezier(0.18, 0.89, 0.32, 1);
-  transition: all 0.5s cubic-bezier(0.18, 0.89, 0.32, 1);
-}
-.header-search .search-box .form-group .search-input {
-  width: 100%;
-  border: 0 !important;
-  font-size: 16px !important;
-  padding: 10px 0 !important;
-  line-height: 22px !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
-  padding-right: 22px !important;
-  color: #2E2A5C !important;
-  background: transparent !important;
-  border-radius: 0 !important;
-}
-.header-search .search-box .form-group .search-input::-webkit-input-placeholder {
-  color: #2E2A5C;
-  font-size: 16px;
-  font-weight: 400;
-}
-.header-search .search-box .form-group .search-input::-moz-placeholder {
-  color: #2E2A5C;
-  font-size: 16px;
-  font-weight: 400;
-}
-.header-search .search-box .form-group .search-input:-ms-input-placeholder {
-  color: #2E2A5C;
-  font-size: 16px;
-  font-weight: 400;
-}
-.header-search .search-box .form-group .search-input:-moz-placeholder {
-  color: #2E2A5C;
-  font-size: 16px;
-  font-weight: 400;
-}
-.header-search .search-box .form-group .search-submit {
-  right: 0;
-  top: auto;
-  border: 0;
-  bottom: auto;
-  font-size: 16px;
-  color: #2E2A5C;
-  position: absolute;
-  background: transparent;
-  -webkit-transition: all all 0.3s ease ease-in-out;
-  transition: all all 0.3s ease ease-in-out;
-}
-.header-search .search-box .form-group .search-submit:hover {
-  color: #2E2A5C;
-}
-.header-search.show .search-toggle {
-  color: #2E2A5C;
-}
-.header-search.show .search-box {
-  opacity: 1;
-  width: 530px;
-  visibility: visible;
-}
-@media (max-width: 767px) {
-  .header-search.show .search-box {
-    width: 450px;
-  }
-}
-@media (max-width: 575px) {
-  .header-search.show .search-box {
-    width: 400px;
-  }
-}
-@media (max-width: 575px) {
-  .header-search.show .search-box {
-    width: 380px;
-  }
-}
-@media (max-width: 480px) {
-  .header-search.show .search-box {
-    width: 280px;
-  }
-}
-.header-search.show .search-box .form-group:before {
-  width: 100%;
-}
 
 /* ----------------------------------
    Hero Section - Styles
@@ -1344,9 +1259,6 @@ header.sticky .main-header-wraper .logo img {
 }
 
 /* ----------------------------------
-	About Us Section Styles
- ------------------------------------ */
-/* ----------------------------------
 	Features Section Styles
  ------------------------------------ */
 .section-title {
@@ -1376,15 +1288,6 @@ header.sticky .main-header-wraper .logo img {
   background-color: #4FA2FF;
 }
 
-/* ----------------------------------
-  Service Section Styles
- ------------------------------------ */
-/* ----------------------------------
-	Project Section Styles
- ------------------------------------ */
-/* ----------------------------------
-	Price Section Styles
- ------------------------------------ */
 /* ----------------------------------
 	Call To Action Section Styles
  ------------------------------------ */
@@ -1572,6 +1475,15 @@ header.sticky .main-header-wraper .logo img {
   list-style: circle;
   margin: 10px;
 }
+.director_wrapper table thead {
+  border-bottom: 2px solid rgb(188, 188, 188);
+}
+.director_wrapper table td a {
+  color: #37949C;
+}
+.director_wrapper table td a:hover {
+  text-decoration: underline;
+}
 
 .content-help_right h4 {
   position: relative;
@@ -1615,9 +1527,43 @@ header.sticky .main-header-wraper .logo img {
   line-height: 23px;
 }
 
+.user-grid_widget .content h4 {
+  color: #2E2A5C;
+  font-weight: 800;
+  margin-bottom: 0;
+  margin: 15px 0px;
+  font-size: 30px;
+}
+.user-grid_widget .content p {
+  margin: 10px 0px;
+}
+.user-grid_widget .content p span {
+  color: #37949C;
+  font-weight: 900;
+  font-size: 18px;
+}
+.user-grid_widget .content p strong {
+  font-weight: 900;
+  color: #232323;
+}
+.user-grid_widget .content ul > li {
+  list-style: circle;
+}
+
 /* ----------------------------------
 	Team Section Styles
  ------------------------------------ */
+.campaign_wrapper .dropdown {
+  margin-bottom: 30px;
+}
+.campaign_wrapper .dropdown select {
+  padding: 7px 15px;
+  border-radius: 4px;
+}
+.campaign_wrapper .dropdown select:focus-visible {
+  outline: none !important;
+}
+
 .single_item_campaign {
   border-radius: 4px;
   background-color: #FFF;
@@ -1669,12 +1615,6 @@ header.sticky .main-header-wraper .logo img {
   padding-left: 10px;
 }
 
-/* ----------------------------------
-	Funfact Section Styles
- ------------------------------------ */
-/* ----------------------------------
-	Carousel Styles
- ------------------------------------ */
 /* ----------------------------------
 	FAQ Section Styles
  ------------------------------------ */
@@ -1824,6 +1764,35 @@ header.sticky .main-header-wraper .logo img {
           transform: scale(1.2);
 }
 
+.blog_widget .blog_img {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  max-height: 100%;
+}
+.blog_widget .blog_content {
+  margin-top: 20px;
+}
+.blog_widget .blog_content p {
+  margin: 7px 0px;
+}
+.blog_widget .users {
+  margin-top: 20px;
+}
+.blog_widget .users .QR-code {
+  margin-right: 30px;
+}
+.blog_widget .users .icons a i {
+  font-size: 30px;
+  color: #2E2A5C;
+  margin: 0px 3px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.blog_widget .users .icons a:hover i {
+  color: #37949C;
+}
+
 /* ----------------------------------
 	Contact Us Section Styles
  ------------------------------------ */
@@ -1868,6 +1837,35 @@ header.sticky .main-header-wraper .logo img {
 }
 .become_from_widget input[type=submit]:hover {
   background-color: #2E2A5C;
+}
+
+.content-help_right {
+  margin-bottom: 20px;
+}
+.content-help_right h4 {
+  margin-bottom: 30px;
+}
+.content-help_right .content_contact p, .content-help_right .content_contact a {
+  margin-bottom: 15px;
+}
+.content-help_right .content_contact a:hover {
+  text-decoration: underline;
+}
+.content-help_right .contact-info h3 {
+  margin-bottom: 15px;
+}
+.content-help_right .contact-info p {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 8px;
+}
+.content-help_right .contact-info p strong {
+  color: #333333;
+  font-weight: 900;
+}
+.content-help_right .contact-info a:hover {
+  text-decoration: underline;
 }
 
 /* ----------------------------------
