@@ -1,46 +1,6 @@
 header {
     width: 100%;
     z-index: 9999; 
-    // .header-top{
-    //     top: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     height: 50px;
-    //     z-index: 1030;
-    //     position: fixed !important;
-    //     padding: 10px 0px;
-    //     background-color: $primary;
-    //     @media (max-width:500px) {
-    //         display: none;
-    //     }
-    //     .header_top_widget{
-    //         display: flex;
-    //         justify-content: space-between;
-    //         .header_top_left{
-    //             a{
-    //                 color: $textcolor;
-    //                 i{
-    //                     margin-right: 5px;
-    //                 }
-    //             }
-    //         }
-    //         .header_top_right{
-    //             ul{
-    //                 >li{
-    //                     float: left;
-    //                     margin: 0px 5px;
-    //                     a{
-    //                         color: $textcolor;
-    //                         @include transition(0.4s);
-    //                         &:hover{
-    //                             text-decoration: underline;
-    //                         }
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }  
     .main-header-wraper{
         left: 0;
         top: 0;
