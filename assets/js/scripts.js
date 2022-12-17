@@ -54,6 +54,10 @@
         const serce_bar = document.querySelector('.overlay-hugeinc');
         const search_bar = document.querySelector('.search_bar');
         const overlay_close = document.querySelector('.overlay-close');
+
+        $(".login_btn").click(function(){
+            $(".drop").toggle();
+        });
         
         search_bar.addEventListener('click', () => {
             serce_bar.classList.add('open');

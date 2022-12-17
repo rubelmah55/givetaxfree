@@ -93,16 +93,15 @@ header {
                 cursor: pointer;
                 margin-right: 20px;
             }
-            ul {
+            .drop {
                 position: absolute;
                 top: 100%;
                 width: 120px;
                 background-color: $white;
                 left: 0;
+                display: none;
                 z-index: 999;
                 box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.15);
-                visibility: hidden;
-                opacity: 0;
                 transform: translateY(20px);
                 transition: all .5s ease-in-out;
                 padding: 10px;
@@ -114,12 +113,6 @@ header {
                         color: $primary;   
                         padding:5px 0px;
                     }
-                }
-            }
-            &:hover{
-                ul{
-                    visibility: visible;
-                    opacity: 1;
                 }
             }
         }

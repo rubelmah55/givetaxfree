@@ -885,34 +885,29 @@ header .header-right .user_widget .login_btn {
   cursor: pointer;
   margin-right: 20px;
 }
-header .header-right .user_widget ul {
+header .header-right .user_widget .drop {
   position: absolute;
   top: 100%;
   width: 120px;
   background-color: #FFF;
   left: 0;
+  display: none;
   z-index: 999;
   -webkit-box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.15);
           box-shadow: 0 13px 35px -12px rgba(35, 35, 35, 0.15);
-  visibility: hidden;
-  opacity: 0;
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   padding: 10px;
 }
-header .header-right .user_widget ul li {
+header .header-right .user_widget .drop li {
   display: block;
 }
-header .header-right .user_widget ul li a {
+header .header-right .user_widget .drop li a {
   display: block;
   color: #2E2A5C;
   padding: 5px 0px;
-}
-header .header-right .user_widget:hover ul {
-  visibility: visible;
-  opacity: 1;
 }
 header .header-right .header-search {
   margin-right: 30px;
