@@ -476,6 +476,17 @@ p {
   border-radius: 4px 4px 4px 4px !important;
 }
 
+.icons a i {
+  font-size: 30px;
+  color: #2E2A5C;
+  margin: 0px 3px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.icons a:hover i {
+  color: #37949C;
+}
+
 /* ----------------------------------
     Template Helps Classes - Styles
  ------------------------------------ */
