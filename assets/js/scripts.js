@@ -38,46 +38,33 @@
 
         $("#mobile-menu").metisMenu();
 
-
-        $('.single_slider').slick({
-            arrows: false,
-            infinite: true,
-            speed: 300,
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            responsive: [
-              {
-                breakpoint: 1024,
-                settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 2,
-                  infinite: true,
-                  dots: false
-                }
-              },
-              {
-                breakpoint: 600,
-                settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 2
-                }
-              },
-              {
-                breakpoint: 480,
-                settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1
-                }
-              }
-            ]
-          });
-
         AOS.init({
             disable: function () {
             var maxWidth = 768;
             return window.innerWidth < maxWidth;
-          }});
+        }});
 
+
+        $('.image-popup-vertical-fit').magnificPopup({
+            type: 'image',
+          mainClass: 'mfp-with-zoom', 
+          gallery:{
+                    enabled:true
+                },
+          zoom: {
+            enabled: true, 
+        
+            duration: 300, 
+            easing: 'ease-in-out',
+        
+            opener: function(openerElement) {
+        
+              return openerElement.is('img') ? openerElement : openerElement.find('img');
+          }
+        }
+        
+        });
+        
         /*** Search bar */
         // $('.header-search').on('click', '.search-toggle', function(e) {
         //     e.preventDefault();
@@ -101,17 +88,6 @@
             serce_bar.classList.remove('open');
         });
 
-
-        // popup image
-        $('.img-popup').magnificPopup({
-            delegate: 'a',
-            type: 'image',
-            closeOnContentClick: true, 
-            closeOnBgClick: true,
-            showCloseBtn: true,
-            closeBtnInside: true,
-        
-        });
         
     }); // end document ready function
 
