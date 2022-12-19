@@ -38,6 +38,76 @@
 
         $("#mobile-menu").metisMenu();
 
+
+        $('.single_slider').slick({
+            arrows: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
+                  infinite: true,
+                  dots: true
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+            ]
+          });
+
+
+        $('.single_slider').slick({
+            dots: true,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1,
+                  infinite: true,
+                  dots: false
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+            ]
+          });
+
         AOS.init({
             disable: function () {
             var maxWidth = 768;
@@ -65,6 +135,18 @@
 
         overlay_close.addEventListener('click', () => {
             serce_bar.classList.remove('open');
+        });
+
+
+        // popup image
+        $('.img-popup').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            closeOnContentClick: true, 
+            closeOnBgClick: true,
+            showCloseBtn: true,
+            closeBtnInside: true,
+        
         });
         
     }); // end document ready function

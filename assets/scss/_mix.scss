@@ -7,6 +7,27 @@
 .single_feaured_item{
     margin-top: 30px;
     position: relative;
+    &.single_feaured_item_3{
+        .popular-causes__content{
+            margin-top: 0 !important;
+            border-radius: 10px !important;
+        }
+        button{
+            width: 100%;
+            padding: 10px 0px;
+            margin: 5px 0px;
+            border-radius: 6px;
+            background-color: $primary-2;
+            font-weight: bold;
+            color: $white;
+            transition: all 0.4s ease-in-out;
+            box-shadow: $box-shadow;
+            &:hover{
+                background-color: #fff;
+                color: $primary-2;
+            }
+        }
+    }
     .popular-causes__img{
         position: relative;
         width: 100%;
@@ -242,4 +263,44 @@
             
         }
     }
+}
+
+#fixd {
+    position: sticky;
+    top: 20%;
+}
+
+
+.icons_link{
+    .icons{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(241 241 241);
+        color: $primary;
+    }
+    .name_authoe{
+        margin-left: 10px;
+        h6{
+            color: $white;
+            margin-bottom: 5px;
+        }
+        strong{
+            font-size: 15px;
+            font-weight: bold;
+            color: $white !important;
+            a{
+                margin-left: 5px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+
+.slick-dots{
+    display: none !important;
 }
