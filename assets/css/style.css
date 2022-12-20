@@ -550,6 +550,260 @@ p {
   display: none !important;
 }
 
+.overly_popup {
+  position: fixed;
+  z-index: 999;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.7);
+  padding-top: 130px;
+}
+.overly_popup .popup {
+  position: relative;
+  padding: 50px 30px 30px 30px;
+  border-radius: 0.25rem;
+  height: 80%;
+  width: 35rem;
+  background-color: #fff;
+  margin: 0% auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.overly_popup .popup .head_popup {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.overly_popup .popup .head_popup i {
+  font-size: 20px;
+  padding: 10px 13px;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #000;
+  cursor: pointer;
+}
+.overly_popup .popup .head_popup i:hover {
+  background-color: #DDDDDD;
+}
+.overly_popup .popup .content {
+  overflow: auto;
+}
+.overly_popup .popup .content h4 {
+  font-size: 25px;
+  color: #2E2A5C;
+  font-weight: bold;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+.overly_popup .popup .content p {
+  color: #2E2A5C;
+  margin-bottom: 10px;
+}
+.overly_popup .popup .icon {
+  margin: 20px 0px;
+}
+.overly_popup .popup .icon a:hover i {
+  color: #37949C;
+}
+.overly_popup .popup .icon i {
+  color: #2E2A5C;
+  font-size: 30px;
+}
+.overly_popup .popup .icon p {
+  color: #2E2A5C;
+}
+.overly_popup .popup .copy_input {
+  margin: 20px 0px;
+}
+.overly_popup .popup .copy_input form .input_element {
+  position: relative;
+  border: 1px solid #DDDDDD;
+  width: 80%;
+  border-radius: 6px;
+}
+.overly_popup .popup .copy_input form .input_element input {
+  border: none;
+  height: 50px;
+  width: 100%;
+  padding: 0px 20px 0px 20px;
+}
+.overly_popup .popup .copy_input form .input_element p {
+  background-color: #FFF;
+  position: absolute;
+  top: -13px;
+  left: 10px;
+}
+.overly_popup .popup .copy_input form input[type=submit] {
+  padding: 0px 20px 0px 20px;
+  margin-left: 20px;
+  border: none;
+  background-color: #37949C;
+  border-radius: 6px;
+  color: #FFF;
+  font-weight: bold;
+}
+.overly_popup .popup .icon_link {
+  padding: 20px 0px;
+  background-color: #FBF8F6;
+  border-radius: 6px;
+}
+.overly_popup .popup .icon_link span {
+  padding-bottom: 20px;
+}
+.overly_popup .popup .icon_link span strong {
+  font-size: 18px;
+  font-weight: bold;
+}
+.overly_popup .popup .icon_link a {
+  margin: 10px;
+}
+.overly_popup .popup .icon_link a i {
+  font-size: 30px;
+  color: #F47102;
+}
+.overly_popup.show-2 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.overly_popup_2 {
+  position: fixed;
+  z-index: 999;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.7);
+  padding-top: 130px;
+  overflow: auto;
+}
+.overly_popup_2 .popup {
+  position: relative;
+  padding: 50px 30px 30px 30px;
+  border-radius: 0.25rem;
+  height: 80%;
+  width: 35rem;
+  background-color: #fff;
+  margin: 0% auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.overly_popup_2 .popup .head_popup_2 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.overly_popup_2 .popup .head_popup_2 i {
+  font-size: 20px;
+  padding: 10px 13px;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #000;
+  cursor: pointer;
+}
+.overly_popup_2 .popup .head_popup_2 i:hover {
+  background-color: #DDDDDD;
+}
+.overly_popup_2 .popup .content {
+  overflow: auto;
+  margin-top: 20px;
+}
+.overly_popup_2 .popup .content .icons_link {
+  background-color: #FBF8F6;
+  padding: 0px 20px;
+  border-radius: 6px;
+  color: #2E2A5C;
+}
+.overly_popup_2 .popup .content .icons_link .name_authoe h6 {
+  margin-bottom: 5px;
+  color: #2E2A5C;
+  font-size: 22px;
+}
+.overly_popup_2 .popup .content .icons_link .name_authoe strong {
+  font-size: 18px;
+  color: #2E2A5C !important;
+}
+.overly_popup_2 .popup .content .icons_link .name_authoe strong a {
+  color: #2E2A5C;
+}
+.overly_popup_2.show-3 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.overly_popup_3 {
+  position: fixed;
+  z-index: 999;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.7);
+  padding-top: 130px;
+  overflow: auto;
+}
+.overly_popup_3 .popup {
+  position: relative;
+  padding: 50px 30px 30px 30px;
+  border-radius: 0.25rem;
+  height: 80%;
+  width: 35rem;
+  background-color: #fff;
+  margin: 0% auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.overly_popup_3 .popup .head_popup_3 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.overly_popup_3 .popup .head_popup_3 i {
+  font-size: 20px;
+  padding: 10px 13px;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #000;
+  cursor: pointer;
+}
+.overly_popup_3 .popup .head_popup_3 i:hover {
+  background-color: #DDDDDD;
+}
+.overly_popup_3 .popup .content {
+  overflow: auto;
+  margin-top: 20px;
+}
+.overly_popup_3 .popup .content .icons_link {
+  background-color: #FBF8F6;
+  padding: 0px 20px;
+  border-radius: 6px;
+  color: #2E2A5C;
+}
+.overly_popup_3 .popup .content .icons_link .name_authoe h6 {
+  margin-bottom: 5px;
+  color: #2E2A5C;
+  font-size: 22px;
+}
+.overly_popup_3 .popup .content .icons_link .name_authoe strong {
+  font-size: 18px;
+  color: #2E2A5C !important;
+}
+.overly_popup_3 .popup .content .icons_link .name_authoe strong a {
+  color: #2E2A5C;
+}
+.overly_popup_3.show-4 {
+  visibility: visible;
+  opacity: 1;
+}
+
 /* ----------------------------------
     Template Helps Classes - Styles
  ------------------------------------ */
@@ -857,6 +1111,42 @@ header ul, header li, footer ul, footer li {
   color: #FFF;
 }
 
+.login_btn, .search-toggle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #DDDDDD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.popup_btn a {
+  padding: 10px 25px;
+  border-radius: 6px;
+  background-color: #37949C;
+  font-size: 16px;
+  color: #FFF;
+}
+.popup_btn a:nth-child(2) {
+  margin-left: 10px;
+}
+.popup_btn a:nth-child(2) i {
+  margin-right: 10px;
+}
+.popup_btn a:hover {
+  background-color: #DDDDDD;
+  color: #37949C;
+}
+
 /* ----------------------------------
     Template Section Styles
  ------------------------------------*/
@@ -900,7 +1190,7 @@ header .main-menu ul > li > a {
   font-size: 16px;
   text-transform: capitalize;
   line-height: 1;
-  padding: 20px 15px;
+  padding: 15px 10px;
   overflow: hidden;
   color: #2E2A5C;
 }
@@ -946,7 +1236,7 @@ header .header-right .user_widget .login_btn {
   color: #2E2A5C;
   font-size: 16px;
   cursor: pointer;
-  margin-right: 20px;
+  margin-right: 15px;
 }
 header .header-right .user_widget .drop {
   position: absolute;
@@ -973,7 +1263,12 @@ header .header-right .user_widget .drop li a {
   padding: 5px 0px;
 }
 header .header-right .header-search {
-  margin-right: 30px;
+  margin-right: 15px;
+}
+@media (max-width: 500px) {
+  header .header-right .header-search {
+    display: none;
+  }
 }
 header .header-right .header-search span {
   color: #2E2A5C;
@@ -1184,8 +1479,6 @@ header.sticky .main-header-wraper .logo img {
   border-bottom: 1px solid rgb(69, 68, 68);
 }
 .overlay form .overlay-close i {
-  -webkit-transform: rotate(15deg);
-          transform: rotate(15deg);
   color: #DDDDDD;
 }
 .overlay form .overlay-close i:hover {
