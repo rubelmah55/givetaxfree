@@ -10,7 +10,7 @@ Template Name: Resource Blog
     <section class="blog_wrapper section-padding">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-12">
                     <div class="row">
                         <?php 
                             $query = new WP_Query( [
@@ -29,7 +29,7 @@ Template Name: Resource Blog
                                         $image_url = get_template_directory_uri() . '/assets/img/placeholder.png';
                                     }
                         ?>
-                        <div class=" col-md-6 col-12 mt-3">
+                        <div class="col-md-4 col-12 mt-3">
                             <div class="blog-item mb-4">
                                 <div class="blog-featured-thumb ">
                                     <div class="media overflow-hidden">
@@ -67,11 +67,11 @@ Template Name: Resource Blog
                         ?>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <?php 
-                        require_once('inc/sidebar.php');
-                    ?>
-                </div>
+            </div>
+            <div class="row pt-3">
+                <?php 
+                    require_once('inc/sidebar.php');
+                ?>
             </div>
         </div>
     </section>

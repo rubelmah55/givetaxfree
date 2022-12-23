@@ -1,6 +1,6 @@
     <!-- header search ber -->
     <div class="overlay overlay-hugeinc">
-        <form class="form-inline mt-2 mt-md-0" role="search" method="get" action="<?php home_url( '/' ); ?>">
+        <form class="form-inline mt-2 mt-md-0" role="search" method="get" action="<?php echo site_url( '/' ); ?>">
             <div class="form-inner">
                 <div class="d-flex justify-content-between align-items-center">
                     <input class="form-control" type="text" placeholder="Search" aria-label="Search" value="<?php echo get_search_query(); ?>" name="s" id="s">

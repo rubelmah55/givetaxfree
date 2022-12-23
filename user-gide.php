@@ -10,18 +10,18 @@ Template Name: User Guide
     <section class="director_wrapper section-padding">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-12">
                     <div class="user-grid_widget">
                         <?php 
                             echo get_the_content();
                          ?>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <?php 
-                        require_once('inc/sidebar.php');
-                    ?>
-                </div>
+            </div>
+            <div class="row pt-3">
+                <?php 
+                    require_once('inc/sidebar.php');
+                ?>
             </div>
         </div>
     </section>

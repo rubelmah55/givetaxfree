@@ -9,7 +9,7 @@ Template Name: Resources Links
     <section class="director_wrapper section-padding">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 content_top">
+                <div class="col-lg-12 content_top">
                     <table width="100%">
                         <thead>
                             <tr>
@@ -39,11 +39,11 @@ Template Name: Resources Links
                         </tbody>
                     </table>
                 </div>
-                <div class="col-lg-4">
-                    <?php 
-                        require_once('inc/sidebar.php');
-                    ?>
-                </div>
+            </div>
+            <div class="row pt-3">
+                <?php 
+                    require_once('inc/sidebar.php');
+                ?>
             </div>
         </div>
     </section>

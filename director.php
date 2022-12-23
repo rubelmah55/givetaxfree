@@ -10,14 +10,14 @@ Template Name: Board of Directors
     <section class="director_wrapper section-padding">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-12">
                     <div class="director_wrapper">
                         <?php 
                             $directors = get_field('directors');
                             if(!empty($directors)):
                                 foreach ($directors as $key => $director):
                          ?>
-                        <div class="row <?php if($key % 2 !== 0){echo "flex-row flex-lg-row-reverse";} ?>">
+                        <div class="row <?php if($key % 2 !== 0){echo "flex-row flex-lg-row-reverse";} ?> mb-4">
                             <div class="col-lg-6 mt-4">
                                 <div class="director_img">
                                     <?php 
@@ -65,11 +65,11 @@ Template Name: Board of Directors
                         ?>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <?php 
-                        require_once('inc/sidebar.php');
-                    ?>
-                </div>
+            </div>
+            <div class="row pt-3">
+                <?php 
+                    require_once('inc/sidebar.php');
+                ?>
             </div>
         </div>
     </section>

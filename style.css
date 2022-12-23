@@ -12,3 +12,7 @@ Text Domain: givetaxfree
 header .header-right .user_widget .drop.open{
 	display: block;
 }
+
+.input_content.me-5 {
+    flex: 0 0 70%;
+}

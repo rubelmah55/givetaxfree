@@ -1,37 +1,9 @@
-<!DOCTYPE html>
-<!-- lang -->
-<html lang="zxx">
-
-<head>
-    <!-- ========== Meta Tags ========== -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="RRDevs">
-    <!-- ======== Page title ============ -->
-    <title>givetaxfree</title>
-    <!-- ========== Favicon Icon ========== -->
-    <link rel="shortcut icon" href="assets/img/favicon.png">
-    <!-- ===========  All Stylesheet ================= -->
-    <!--  Icon css plugins -->
-    <link rel="stylesheet" href="./assets/css/icons.css">
-    <!-- metis menu css file -->
-    <link rel="stylesheet" href="./assets/css/metismenu.css">
-    <!--  Bootstrap css plugins -->
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <!--  slick css plugins -->
-    <link rel="stylesheet" href="./assets/css/slick.min.css">
-    <!--  magnific-popup css plugins -->
-    <link rel="stylesheet" href="./assets/css/magnific-popup.min.css">
-    <!-- aos css file -->
-    <link rel="stylesheet" href="./assets/css/aos.min.css">
-    <!--  main style css file -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    
-</head>
-
-<body>    
-
+<?php 
+/*
+Template Name: Donetion
+*/
+    get_header();
+?>
     <section class="donetion_wrapper">
         <div class="container">
             <div class="donetion_card">
@@ -41,7 +13,7 @@
                             <h4>Donation Info</h4>
                             <div class="author_donet d-flex">
                                 <div class="author_img">
-                                    <img src="./assets/img/pople_01.jpg" alt="">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/pople_01.jpg" alt="">
                                 </div>
                                 <div class="author_content">
                                     <h5>Your Donation for:</h5>
@@ -54,7 +26,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon1">$</span>
                                 </div>
-                                <input type="text" class="form-control" placeholder="enter donation amount" aria-label="Username" aria-describedby="basic-addon1">
+                                <input type="text" class="form-control" placeholder="Enter Donation Amount" aria-label="Username" aria-describedby="basic-addon1">
                             </div>
 
                             <div class="input_info d-flex justify-content-between align-items-center my-3">
@@ -68,7 +40,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon1">$</span>
                                 </div>
-                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
                             </div>
 
                             </div>
@@ -111,16 +83,6 @@
             </div>
         </div>
     </section>
-
-    <!--  ALl JS Plugins
-    ====================================== -->
-    <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./assets/js/slick.min.js"></script>
-    <script src="./assets/js/aos.min.js"></script>
-    <script src="./assets/js/magnific-popup.min.js"></script>
-    <script src="./assets/js/metismenu.js"></script>
-    <script src="./assets/js/scripts.js"></script>
-</body>
-
-</html>
+<?php 
+    get_footer();
+?>

@@ -9,7 +9,7 @@ Template Name: FAQ
     <section class="raq_wrapper section-padding">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-12">
                     <div class="faq_title">
                         <?php 
                             $faq_content = get_field('faq_content');
@@ -47,12 +47,11 @@ Template Name: FAQ
                       </div>
                    </div>
                 </div>
-                
-                <div class="col-lg-4">
-                    <?php 
-                        require_once('inc/sidebar.php');
-                    ?>
-                </div>
+            </div>
+            <div class="row pt-3">
+                <?php 
+                    require_once('inc/sidebar.php');
+                ?>
             </div>
         </div>
     </section>

@@ -10,7 +10,7 @@ Template Name: Our Mission
     <section class="mission_wrapper section-padding">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-12">
                     <div class="director_wrapper director_wrapper_2">
                         <div class="row">
                             <div class="col-12 mt-4">
@@ -31,11 +31,11 @@ Template Name: Our Mission
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <?php 
-                        require_once('inc/sidebar.php');
-                    ?>
-                </div>
+            </div>
+            <div class="row pt-3">
+                <?php 
+                    require_once('inc/sidebar.php');
+                ?>
             </div>
         </div>
     </section>
