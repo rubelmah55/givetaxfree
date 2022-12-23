@@ -16,3 +16,9 @@ header .header-right .user_widget .drop.open{
 .input_content.me-5 {
     flex: 0 0 70%;
 }
+
+.my-profile_wrapper .dash_bord ul .active a{
+    background-color: #3FAD48;
+    border: 0;
+    color: #fff;
+}
