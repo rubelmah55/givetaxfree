@@ -56,10 +56,22 @@
                     <div class="header-right d-flex align-items-center">
                        <div class="user_widget">
                         <div class="login_btn"><i class="fas fa-user"></i></div>
+                        <?php 
+                            if(is_user_logged_in()){
+                         ?>
                         <ul class="drop">
-                            <li><a href="#">Login</a></li>
-                            <li><a href="#">Sing UP</a></li>
+                            <li><a href="#">My Profile</a></li>
+                            <li><a href="#">All Campaigns</a></li>
+                            <li><a href="#">Payment Options</a></li>
                         </ul>
+                        <?php 
+                            }else{
+                         ?>
+                         <ul class="drop">
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Register</a></li>
+                        </ul>
+                        <?php } ?>
                        </div>
                         <div class="header-search">
                             <a class="search-toggle search_bar">

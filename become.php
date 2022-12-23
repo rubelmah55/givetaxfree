@@ -9,7 +9,7 @@ Template Name: Become A Volunteer
     <section class="become_wrapper section-padding">
         <div class="container">
             <div class="row ">
-                <div class="col-lg-8">
+                <div class="col-lg-12">
                     <div class="director_wrapper mb-4">
                         <div class="row">
                             <?php
@@ -112,11 +112,11 @@ Template Name: Become A Volunteer
                         </form>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <?php 
-                        require_once('inc/sidebar.php');
-                    ?>
-                </div>
+            </div>
+            <div class="row pt-3">
+                <?php 
+                    require_once('inc/sidebar.php');
+                ?>
             </div>
         </div>
     </section>
