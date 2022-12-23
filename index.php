@@ -260,20 +260,6 @@
         </div>
     </section>
     <!-- featured section end -->
-
-    <!-- header search ber -->
-    <div class="overlay overlay-hugeinc">
-        <form class="form-inline mt-2 mt-md-0">
-            <div class="form-inner">
-                <div class="d-flex justify-content-between align-items-center">
-                    <i class="fas fa-search"></i>
-                    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-                    <a href="#" class="overlay-close link-oragne"><i class="fas fa-plus"></i></a>
-                </div>
-            </div>
-        </form>
-    </div>
-    <!-- header search ber -->
 <?php 
     get_footer();
  ?>

@@ -1,4 +1,17 @@
-    
+    <!-- header search ber -->
+    <div class="overlay overlay-hugeinc">
+        <form class="form-inline mt-2 mt-md-0" role="search" method="get" action="<?php home_url( '/' ); ?>">
+            <div class="form-inner">
+                <div class="d-flex justify-content-between align-items-center">
+                    <i class="fas fa-search"></i>
+                    <input class="form-control" type="text" placeholder="Search" aria-label="Search" value="<?php echo get_search_query(); ?>" name="s" id="s">
+                    <input type="submit" class="btn-search" id="searchsubmit" value=""/>
+                    <a href="#" class="overlay-close link-oragne"><i class="fas fa-plus"></i></a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- header search ber -->    
     <!-- Footer start -->
     <footer class="footer_wrapper">
        <div class="footer_top">

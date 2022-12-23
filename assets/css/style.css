@@ -2128,7 +2128,6 @@ header.sticky .main-header-wraper .logo img {
 
 .blog_widget .blog_img {
   width: 100%;
-  height: 400px;
   overflow: hidden;
   max-height: 100%;
 }
