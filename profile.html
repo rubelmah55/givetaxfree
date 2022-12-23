@@ -15,16 +15,8 @@
     <!-- ===========  All Stylesheet ================= -->
     <!--  Icon css plugins -->
     <link rel="stylesheet" href="./assets/css/icons.css">
-    <!-- metis menu css file -->
-    <link rel="stylesheet" href="./assets/css/metismenu.css">
     <!--  Bootstrap css plugins -->
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <!--  slick css plugins -->
-    <link rel="stylesheet" href="./assets/css/slick.min.css">
-    <!--  magnific-popup css plugins -->
-    <link rel="stylesheet" href="./assets/css/magnific-popup.min.css">
-    <!-- aos css file -->
-    <link rel="stylesheet" href="./assets/css/aos.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <!--  main style css file -->
     <link rel="stylesheet" href="./assets/css/style.css">
     
@@ -43,16 +35,17 @@
                         <h5>Admin</h5>
                     </div>
                     <div class="dash_bord">
-                        <ul class="tab-nav">
-                            <li > <a href="#1a" data-toggle="tab">My Profile</a> </li>
-                            <li > <a href="#2a" data-toggle="tab">All Campaigns</a></li>
-                            <li ><a href="#3a" data-toggle="tab">Payment Options</a></li>
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a  href="#1" data-toggle="tab">My Profile</a></li>
+                            <li><a href="#2" data-toggle="tab">All Campaigns</a></li>
+                            <li><a href="#3" data-toggle="tab">Payment Options</a></li>
                         </ul>
+
                         <a href="#" class="theme-btn mt-5">Logout</a>
                     </div>
                 </div>
-                <div class="col-md-8">
-                    <div class="dash_bord_content content_one Profile" id="1a">
+                <div class="col-md-8 tab-content">
+                    <div class="dash_bord_content content_one tab-pane active" id="1">
                         <table width="100%">
                             <tr>
                                 <td>
@@ -97,7 +90,7 @@
                         </table>
                     </div>
 
-                    <div class="dash_bord_content content_one hide Campaigns" id="2a">
+                    <div class="dash_bord_content content_one tab-pane" id="2">
                         <table width="100%">
                             <tr>
                                 <td>
@@ -142,7 +135,7 @@
                         </table>
                     </div>
 
-                    <div class="dash_bord_content content_one hide Options" id="3a">
+                    <div class="dash_bord_content content_one tab-pane" id="3">
                         <table width="100%">
                             <tr>
                                 <td>
@@ -187,19 +180,15 @@
                         </table>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
     <!--  ALl JS Plugins
     ====================================== -->
-    <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./assets/js/slick.min.js"></script>
-    <script src="./assets/js/aos.min.js"></script>
-    <script src="./assets/js/magnific-popup.min.js"></script>
-    <script src="./assets/js/metismenu.js"></script>
-    <script src="./assets/js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -589,27 +589,31 @@
         }
     }
     .dash_bord{
-        ul>li{
-            a{
+        ul{
+            display: flex;
+            flex-direction: column;
+            li{
                 list-style: none;
-                padding: 10px;
-                border-bottom: 1px solid $textcolor;
-                font-size: 16px;
-                font-weight: 600;
+                display: block;
+                a{
+                    
+                    padding: 10px;
+                    border-bottom: 1px solid $textcolor;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $primary;
+                    padding-left: 10px;
+                    cursor: pointer;
+                    @include transition(0.4s);
+                }
+            }
+            .active{
                 color: $primary;
-                padding-left: 10px;
-                cursor: pointer;
-                @include transition(0.4s);
+                font-weight: 600;
             }
         }
-        .ac_color{
-            color: $black;
-        }
-        .active{
-            display: block;
-        }
-        .hide{
-            display: none;
+        .theme-btn{
+            margin-top: 30px;
         }
     }
     .dash_bord_content{
