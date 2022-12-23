@@ -64,69 +64,76 @@
         }
         
         });
-        
-        /*** Search bar */
-        // $('.header-search').on('click', '.search-toggle', function(e) {
-        //     e.preventDefault();
-        //     var selector = $(this).data('selector');
-        //     $(selector).toggleClass('show').find('.search-input').focus();
-        // });
 
-        // loggin btn
-        const serce_bar = document.querySelector('.overlay-hugeinc');
-        const search_bar = document.querySelector('.search_bar');
-        const overlay_close = document.querySelector('.overlay-close');
+
+        // tabb
+
+        $('.tab-nav li').click(function () {
+            // $('.clickme').removeClass('ac_color');
+            $(this).addClass('ac_color').siblings().removeClass('ac_color');
+            $('.dash_bord_conten').hide()
+            $(this).data('value')
+            // var tagid = $(this).data('tag');
+            // $('.dash_bord_conten').removeClass('active').addClass('hide');
+            // $('#'+tagid).addClass('active').removeClass('hide');
+        });
 
         $(".login_btn").click(function(){
             $(".drop").toggle();
         });
-        
-        search_bar.addEventListener('click', () => {
-            serce_bar.classList.add('open');
-        });
-
-        overlay_close.addEventListener('click', () => {
-            serce_bar.classList.remove('open');
-        });
-
-        // popup
-        const overly_popup = document.querySelector('.overly_popup'),
-            share = document.querySelector('.share'),
-            head_popup = document.querySelector('.head_popup');
-        
-        const overly_popup_2 = document.querySelector('.overly_popup_2'),
-            share_2 = document.querySelector('.share_2'),
-            head_popup_2 = document.querySelector('.head_popup_2');
-        
-        const overly_popup_3 = document.querySelector('.overly_popup_3'),
-            share_3 = document.querySelector('.share_3'),
-            head_popup_3 = document.querySelector('.head_popup_3');
-        
-            share.addEventListener('click', () => {
-                overly_popup.classList.add('show-2');
-            });
-    
-            head_popup.addEventListener('click', () => {
-                overly_popup.classList.remove('show-2');
-            });
-        
-            share_2.addEventListener('click', () => {
-                overly_popup_2.classList.add('show-3');
-            });
-    
-            head_popup_2.addEventListener('click', () => {
-                overly_popup_2.classList.remove('show-3');
-            });
-        
-            share_3.addEventListener('click', () => {
-                overly_popup_3.classList.add('show-4');
-            });
-    
-            head_popup_3.addEventListener('click', () => {
-                overly_popup_3.classList.remove('show-4');
-            });
-        
     }); // end document ready function
 
 
 })(jQuery); // End jQuery
+
+
+ // loggin btn
+
+ const overlay = document.querySelector('.overlay-hugeinc');
+ const search_bar = document.querySelector('.search_bar');
+ const overlay_close = document.querySelector('.overlay-close');
+ 
+ search_bar.addEventListener('click', () => {
+    overlay.classList.add('open');
+ });
+
+ overlay_close.addEventListener('click', () => {
+    overlay.classList.remove('open');
+ });
+
+ // popup
+ const overly_popup = document.querySelector('.overly_popup'),
+     share = document.querySelector('.share'),
+     head_popup = document.querySelector('.head_popup');
+ 
+ const overly_popup_2 = document.querySelector('.overly_popup_2'),
+     share_2 = document.querySelector('.share_2'),
+     head_popup_2 = document.querySelector('.head_popup_2');
+ 
+ const overly_popup_3 = document.querySelector('.overly_popup_3'),
+     share_3 = document.querySelector('.share_3'),
+     head_popup_3 = document.querySelector('.head_popup_3');
+ 
+     share.addEventListener('click', () => {
+         overly_popup.classList.add('show-2');
+     });
+
+     head_popup.addEventListener('click', () => {
+         overly_popup.classList.remove('show-2');
+     });
+ 
+     share_2.addEventListener('click', () => {
+         overly_popup_2.classList.add('show-3');
+     });
+
+     head_popup_2.addEventListener('click', () => {
+         overly_popup_2.classList.remove('show-3');
+     });
+ 
+     share_3.addEventListener('click', () => {
+         overly_popup_3.classList.add('show-4');
+     });
+
+     head_popup_3.addEventListener('click', () => {
+         overly_popup_3.classList.remove('show-4');
+     });
