@@ -3,10 +3,9 @@
         <form class="form-inline mt-2 mt-md-0" role="search" method="get" action="<?php home_url( '/' ); ?>">
             <div class="form-inner">
                 <div class="d-flex justify-content-between align-items-center">
-                    <i class="fas fa-search"></i>
                     <input class="form-control" type="text" placeholder="Search" aria-label="Search" value="<?php echo get_search_query(); ?>" name="s" id="s">
-                    <input type="submit" class="btn-search" id="searchsubmit" value=""/>
-                    <a href="#" class="overlay-close link-oragne"><i class="fas fa-plus"></i></a>
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                    <a href="#" class="overlay-close link-oragne"><i class="fas fa-times"></i></a>
                 </div>
             </div>
         </form>

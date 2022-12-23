@@ -89,7 +89,6 @@
             serce_bar.classList.remove('open');
         });
 
-
         // popup
         const overly_popup = document.querySelector('.overly_popup'),
             share = document.querySelector('.share'),

@@ -804,6 +804,45 @@ p {
   opacity: 1;
 }
 
+.profile_wrapper {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+}
+.profile_wrapper .profile_element {
+  padding-top: 40px;
+}
+.profile_wrapper .profile_element .singlr_profile {
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 30px 15px;
+  max-width: 600px;
+  height: auto;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 5px;
+}
+.profile_wrapper .profile_element h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #37949C;
+}
+.profile_wrapper .profile_element .input_group label {
+  margin: 20px 10px 0px 0px;
+}
+.profile_wrapper .profile_element .input_group select {
+  margin: 20px 10px 0px 0px;
+  padding: 0px 15px;
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgb(206, 212, 218);
+  color: #555;
+}
+.profile_wrapper .profile_element .input_group select:focus, .profile_wrapper .profile_element .input_group select:focus-visible {
+  outline: none;
+}
+
 /* ----------------------------------
     Template Helps Classes - Styles
  ------------------------------------ */
@@ -1461,6 +1500,7 @@ header.sticky .main-header-wraper .logo img {
   transition: all 0.4s ease-in-out;
 }
 .overlay form .form-inner {
+  position: relative;
   margin: 0 auto;
   background-color: #FFF;
   border-radius: 40px;
@@ -1477,6 +1517,22 @@ header.sticky .main-header-wraper .logo img {
   top: -2px;
   background-color: rgba(0, 0, 0, 0);
   border-bottom: 1px solid rgb(69, 68, 68);
+}
+.overlay form .form-inner button[type=submit] {
+  background-color: transparent;
+  color: #2E2A5C;
+}
+.overlay form .form-inner a {
+  position: absolute;
+  top: -30px;
+  right: -10px;
+}
+.overlay form .form-inner a i {
+  color: red;
+  font-size: 20px;
+}
+.overlay form .form-inner a:hover i {
+  color: #37949C;
 }
 .overlay form .overlay-close i {
   color: #DDDDDD;
@@ -2128,6 +2184,7 @@ header.sticky .main-header-wraper .logo img {
 
 .blog_widget .blog_img {
   width: 100%;
+  height: 400px;
   overflow: hidden;
   max-height: 100%;
 }
@@ -2227,6 +2284,151 @@ header.sticky .main-header-wraper .logo img {
 }
 .content-help_right .contact-info a:hover {
   text-decoration: underline;
+}
+
+.donetion_wrapper {
+  background-color: #FFF;
+  height: 100%;
+}
+.donetion_wrapper .donetion_card {
+  margin-top: 40px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 30px;
+  color: #FFF;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.donetion_wrapper .donetion_card .donetion_info {
+  background-color: transparent;
+  padding: 30px 30px 30px 20px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.donetion_wrapper .donetion_card .donetion_info h4 {
+  font-weight: 600;
+  color: #2E2A5C;
+}
+.donetion_wrapper .donetion_card .donetion_info .author_img {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+.donetion_wrapper .donetion_card .donetion_info .author_content {
+  margin-left: 20px;
+}
+.donetion_wrapper .donetion_card .donetion_info .author_content h5 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2E2A5C;
+}
+.donetion_wrapper .donetion_card .donetion_info .author_content strong {
+  color: #2E2A5C;
+  font-weight: 900;
+  font-size: 18px;
+}
+.donetion_wrapper .donetion_card .donetion_info .author_content p {
+  font-weight: 600;
+  font-size: 16px;
+  color: #2E2A5C;
+}
+.donetion_wrapper .donetion_card .donetion_info .input_content h5, .donetion_wrapper .donetion_card .donetion_info .input_content span, .donetion_wrapper .donetion_card .donetion_info .input_content p {
+  color: #2E2A5C;
+}
+.donetion_wrapper .donetion_card .donetion_info a {
+  color: #2E2A5C;
+}
+.donetion_wrapper .donetion_card .donetion_info a:hover {
+  text-decoration: underline;
+}
+.donetion_wrapper .donetion_card .donetion_info .input_info input {
+  max-width: 200px;
+}
+.donetion_wrapper .donetion_card .donetion_info .input-group .input-group-prepend .input-group-text {
+  background-color: #FFF;
+  color: #555;
+  padding: 10px 10px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border: none;
+}
+.donetion_wrapper .donetion_card .donetion_info .input-group input {
+  border: none;
+  width: 60px;
+}
+.donetion_wrapper .donetion_card .donetion_info .input-group .form-control {
+  border: none;
+}
+.donetion_wrapper .donetion_card .donetion_info .progress {
+  height: 20px;
+  background: #cdcdcd;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-bottom: 10px;
+  overflow: visible;
+}
+.donetion_wrapper .donetion_card .donetion_info .progress .progress-bar {
+  position: relative;
+  -webkit-animation: animate-positive 2s;
+          animation: animate-positive 2s;
+  background: #2E2A5C;
+}
+.donetion_wrapper .donetion_card .donetion_info .progress .progress-value {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  position: absolute;
+  top: -30px;
+  right: -25px;
+}
+.donetion_wrapper .donetion_card .donetion_info .progress .progress-bar::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  background: #fff;
+  position: absolute;
+  top: -10px;
+  bottom: -10px;
+  right: -5px;
+  z-index: 1;
+  border-radius: 50%;
+}
+.donetion_wrapper .donetion_card .your_donetion {
+  padding: 30px 30px 20px 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: #fff;
+  height: 100%;
+}
+.donetion_wrapper .donetion_card .your_donetion h4 {
+  font-weight: 800;
+  color: #2E2A5C;
+}
+.donetion_wrapper .donetion_card .your_donetion .amount_div p {
+  color: #2E2A5C;
+}
+.donetion_wrapper .donetion_card .your_donetion .amount_div p strong {
+  font-weight: 900;
+}
+.donetion_wrapper .donetion_card .your_donetion .amount_div hr {
+  height: 2px;
+  color: #2E2A5C;
+}
+.donetion_wrapper .donetion_card .your_donetion p {
+  margin: 10px 0px;
+  color: #2E2A5C;
+}
+.donetion_wrapper .donetion_card .your_donetion p a {
+  color: #37949C;
+}
+.donetion_wrapper .donetion_card .your_donetion p a:hover {
+  text-decoration: underline;
+}
+.donetion_wrapper .donetion_card .your_donetion label {
+  color: #2E2A5C;
+  cursor: pointer;
+  margin: 10px 0px;
 }
 
 /* ----------------------------------

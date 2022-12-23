@@ -299,6 +299,7 @@ header {
         transform: translateY(-50%);
         transition: all 0.4s ease-in-out;
         .form-inner {
+            position: relative;
             margin: 0 auto;
             background-color: $white;
             border-radius: 40px;
@@ -313,6 +314,25 @@ header {
                 top: -2px;
                 background-color: rgb(0 0 0 / 0%);
                 border-bottom: 1px solid rgb(69, 68, 68);
+            }
+            button[type=submit]{
+                background-color: transparent;
+                color: $primary;
+            }
+            a{
+                position: absolute;
+                top: -30px;
+                i{
+                    color: red;
+                    font-size: 20px;
+                }
+                right: -10px;
+                &:hover{
+                    i{
+                        color: $primary-2;
+                    }
+                   
+                }
             }
         }
         .overlay-close{
