@@ -191,6 +191,48 @@
           cursor: pointer;
           margin: 10px 0px;
         }
+        .input-group.d-flex.justify-content-end.align-items-center {
+            width: 16%;
+        }
+        .input_info{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        @media (max-width:996px) {
+            .input-group.d-flex.justify-content-end.align-items-center {
+                width: 50%;
+            }
+        }
+        @media (max-width:768px) {
+            .input-group.d-flex.justify-content-end.align-items-center {
+                width: 50%;
+            }
+            .donetion_wrapper .donetion_card .your_donetion {
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+                padding: 20px;
+                border-top-left-radius: 30px;
+                border-bottom-left-radius: 30px;
+                background-color: #fff;
+                height: 100%;
+            }
+            .donetion_wrapper .donetion_card .donetion_info {
+                background-color: transparent;
+                padding: 20px;
+                border-top-right-radius: 30px;
+                border-bottom-right-radius: 30px;
+            }
+
+        }
+        @media (max-width:500px) {
+            .input_info{
+                display: block !important;
+            }
+            .input-group.d-flex.justify-content-end.align-items-center {
+                margin: 20px 0px;
+                width: 100%;
+            }
+        }
     </style>
     
 </head>
@@ -303,7 +345,7 @@
     <section class="donetion_wrapper overflow-hidden">
         <div class="container">
             <div class="donetion_card mb-5">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-md-8 p-0 m-0">
                         <div class="donetion_info">
                             <h4>Donation Info</h4>
@@ -325,7 +367,7 @@
                                 <input type="text" class="form-control" placeholder="Enter Donation Amount" aria-label="Username" aria-describedby="basic-addon1">
                             </div>
 
-                            <div class="input_info d-flex justify-content-between align-items-center my-3">
+                            <div class="input_info my-3">
                                <div class="input_content me-5">
                                     <h5>Givetaxfree Donation</h5>
                                     <p>Adding a donation for us, keeps us operating and helping people in need. Please consider helping us.</p>
