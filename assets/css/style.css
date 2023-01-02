@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap");
 * {
   -webkit-box-sizing: border-box;
@@ -60,41 +59,34 @@ input:-webkit-autofill:focus {
 
 ::-webkit-input-placeholder {
   color: #555;
-  opacity: 1;
-  /* Firefox */
+  opacity: 1; /* Firefox */
 }
 
 ::-moz-placeholder {
   color: #555;
-  opacity: 1;
-  /* Firefox */
+  opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder {
   color: #555;
-  opacity: 1;
-  /* Firefox */
+  opacity: 1; /* Firefox */
 }
 
 ::-ms-input-placeholder {
   color: #555;
-  opacity: 1;
-  /* Firefox */
+  opacity: 1; /* Firefox */
 }
 
 ::placeholder {
   color: #555;
-  opacity: 1;
-  /* Firefox */
+  opacity: 1; /* Firefox */
 }
 
-:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
   color: #555;
 }
 
-::-ms-input-placeholder {
-  /* Microsoft Edge */
+::-ms-input-placeholder { /* Microsoft Edge */
   color: #555;
 }
 
@@ -470,7 +462,7 @@ p {
   -webkit-animation: animate-positive 2s;
           animation: animate-positive 2s;
   background: #44ad66;
-  border-right: 4px solid white;
+  border-right: 4px solid rgb(255, 255, 255);
 }
 .progress .progress-value {
   display: block;
@@ -483,7 +475,7 @@ p {
 }
 
 .campaign-status ul > li {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid rgb(221, 221, 221);
   padding: 10px 0px;
 }
 .campaign-status ul > li span {
@@ -534,7 +526,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f1f1f1;
+  background-color: rgb(241, 241, 241);
   color: #2E2A5C;
 }
 .icons_link .name_authoe {
@@ -813,7 +805,7 @@ p {
 }
 
 .my-profile_wrapper {
-  background-color: #2e2a5c41;
+  background-color: rgba(46, 42, 92, 0.2549019608);
 }
 .my-profile_wrapper h4 {
   color: #2E2A5C;
@@ -871,6 +863,77 @@ p {
 }
 .my-profile_wrapper .hide {
   display: none;
+}
+
+.single_card_item {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+}
+.single_card_item .popular__img {
+  height: auto;
+  width: 100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.single_card_item .popular__img img {
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .single_card_item h3 {
+    margin-top: 20px;
+  }
+}
+.single_card_item .popular-causes__progress .single_bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 768px) {
+  .single_card_item .popular-causes__progress .single_bar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.single_card_item .popular-causes__progress .single_bar p:last-child {
+  margin-left: 30px;
+}
+.single_card_item .popular-causes__progress .bar {
+  position: relative;
+  width: 100%;
+  height: 7px;
+  background: #eae5e3;
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+.single_card_item .popular-causes__progress .bar-inner {
+  position: relative;
+  display: block;
+  width: 0px;
+  height: 7px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  background: #FF681B;
+}
+
+.align-items-center_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+@media (max-width: 768px) {
+  .align-items-center_2 {
+    display: block !important;
+    text-align: center;
+  }
 }
 
 /* ----------------------------------
@@ -1450,7 +1513,7 @@ header.sticky .main-header-wraper .logo img {
 .mobile-nav .sidebar-nav .metismenu ul a::before {
   clear: both;
   display: block;
-  content: "";
+  content: "\f067";
   position: absolute;
   right: 0;
   top: 0;
@@ -1523,7 +1586,7 @@ header.sticky .main-header-wraper .logo img {
   position: relative;
   top: 50%;
   font-size: 22px;
-  color: #b2b2b2;
+  color: rgb(178, 178, 178);
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   -webkit-transition: all 0.4s ease-in-out;
@@ -1546,7 +1609,7 @@ header.sticky .main-header-wraper .logo img {
   height: 50px;
   top: -2px;
   background-color: rgba(0, 0, 0, 0);
-  border-bottom: 1px solid #454444;
+  border-bottom: 1px solid rgb(69, 68, 68);
 }
 .overlay form .form-inner button[type=submit] {
   background-color: transparent;
@@ -1660,7 +1723,7 @@ header.sticky .main-header-wraper .logo img {
 .banner_title h2 {
   font-size: 35px;
   font-weight: bold;
-  color: #c8d226;
+  color: rgb(200, 210, 38);
 }
 .banner_title ul > li {
   position: relative;
@@ -1811,7 +1874,7 @@ header.sticky .main-header-wraper .logo img {
   background-color: #DDDDDD;
 }
 .content_top table tr th, .content_top table tr td {
-  border: 1px solid #bcbcbc;
+  border: 1px solid rgb(188, 188, 188);
   padding: 10px;
   font-size: 16px;
   font-family: "Nunito", sans-serif;
@@ -1924,7 +1987,7 @@ header.sticky .main-header-wraper .logo img {
   margin: 10px;
 }
 .director_wrapper table thead {
-  border-bottom: 2px solid #bcbcbc;
+  border-bottom: 2px solid rgb(188, 188, 188);
 }
 .director_wrapper table td a {
   color: #37949C;
@@ -2077,7 +2140,7 @@ header.sticky .main-header-wraper .logo img {
   width: 100%;
   padding: 10px;
   font-size: 22px;
-  color: #212529;
+  color: rgb(33, 37, 41);
   text-align: left;
   background-color: #2E2A5C;
   color: #FFF;
@@ -2093,7 +2156,7 @@ header.sticky .main-header-wraper .logo img {
   position: absolute;
   top: 10px;
   right: 20px;
-  content: "";
+  content: "\f067";
   font-family: "Font Awesome 5 Pro";
   font-weight: 900;
   background-image: none;
@@ -2114,7 +2177,7 @@ header.sticky .main-header-wraper .logo img {
 }
 
 .accordion-button:not(.collapsed)::after {
-  content: "";
+  content: "\f068";
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
 }
@@ -2339,7 +2402,7 @@ header.sticky .main-header-wraper .logo img {
 }
 .footer_top .footer_widget h3::after {
   content: " ";
-  border-bottom: 4px solid #dddddd;
+  border-bottom: 4px solid rgb(221, 221, 221);
   width: 25%;
   position: absolute;
   bottom: 0;

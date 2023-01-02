@@ -31,7 +31,6 @@
     <style>
         .donetion_wrapper {
           background-color: #FFF;
-          height: 100%;
         }
         .donetion_wrapper .donetion_card {
           margin-top: 40px;
@@ -39,11 +38,11 @@
           border-radius: 30px;
           color: #FFF;
           -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-                  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         }
         .donetion_wrapper .donetion_card .donetion_info {
           background-color: transparent;
-          padding: 30px 30px 30px 20px;
+          padding: 30px 30px 30px 40px;
           border-top-left-radius: 30px;
           border-bottom-left-radius: 30px;
         }
@@ -84,7 +83,10 @@
           text-decoration: underline;
         }
         .donetion_wrapper .donetion_card .donetion_info .input_info input {
-          max-width: 200px;
+          max-width: 100px;
+        }
+        .input-group.d-flex.justify-content-end.align-items-center {
+            width: 30%;
         }
         .donetion_wrapper .donetion_card .donetion_info .input-group .input-group-prepend .input-group-text {
           background-color: #FFF;
@@ -94,9 +96,12 @@
           border-bottom-right-radius: 0px;
           border: none;
         }
+        .input-group span{
+            height: 60px;
+        }
         .donetion_wrapper .donetion_card .donetion_info .input-group input {
           border: none;
-          width: 60px;
+          height: 60px;
         }
         .donetion_wrapper .donetion_card .donetion_info .input-group .form-control {
           border: none;
@@ -138,7 +143,7 @@
           border-radius: 50%;
         }
         .donetion_wrapper .donetion_card .your_donetion {
-          padding: 30px 30px 20px 30px;
+          padding: 30px 30px 30px 30px;
           border-top-right-radius: 30px;
           border-bottom-right-radius: 30px;
           background-color: #fff;
@@ -150,6 +155,8 @@
         }
         .donetion_wrapper .donetion_card .your_donetion .amount_div p {
           color: #2E2A5C;
+          font-style: normal !important;
+          font-size: 16px;
         }
         .donetion_wrapper .donetion_card .your_donetion .amount_div p strong {
           font-weight: 900;
@@ -161,9 +168,18 @@
         .donetion_wrapper .donetion_card .your_donetion p {
           margin: 10px 0px;
           color: #2E2A5C;
+          font-size: 14px;
+          font-style: italic;
+        }
+        .donetion_card .your_donetion .last {
+          margin: 10px 0px;
+          color: #2E2A5C;
+          font-size: 15px;
+          font-style: normal !important;
         }
         .donetion_wrapper .donetion_card .your_donetion p a {
           color: #37949C;
+          font-style: normal;
         }
         .donetion_wrapper .donetion_card .your_donetion p a:hover {
           text-decoration: underline;
@@ -282,11 +298,11 @@
     </header>
     <div class="header-gutter"></div>
     <!-- Header end -->
-    <section class="donetion_wrapper">
+    <section class="donetion_wrapper overflow-hidden">
         <div class="container">
-            <div class="donetion_card">
+            <div class="donetion_card mb-5">
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-8 p-0 m-0">
                         <div class="donetion_info">
                             <h4>Donation Info</h4>
                             <div class="author_donet d-flex">
@@ -314,7 +330,7 @@
                                     <span> Thank you, <strong> John Berardino</strong></span>
                                </div>
                                
-                               <div class="input-group">
+                               <div class="input-group d-flex justify-content-end align-items-center">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon1">$</span>
                                 </div>
@@ -330,7 +346,7 @@
                             <a href="#">Custom Amount</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 m-0 ps-0">
                         <div class="your_donetion">
                             <h4>Your Donation</h4>
                             <div class="amount_div">
@@ -355,8 +371,10 @@
                             <button type="submit" class="theme-btn form-control">Donet Now</button>
                             <p>Your donation is secure and processed by Stripe, one of the largest payment processing companies in the world who serves such companies as Lyft, Shopify and Salesforce to name a few.</p>
                             <p>Your donation is tax deductible according to the IRS Rules and Regulations.</p>
-                            <p>By continuing, you agree with Givetaxfree <a href="#">terms</a> and
-                                <a href="#">privacy notice.</a></p>
+                            <p class="last">By continuing, you agree with Givetaxfree <a href="#">terms</a> and<a href="#">privacy notice.</a></p>
+                            <div class="mathod">
+                                <a href="#"><img src="" alt=""></a>
+                            </div>
                         </div>
                     </div>
                 </div>
