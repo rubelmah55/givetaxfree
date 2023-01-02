@@ -570,7 +570,6 @@
 }
 .my-profile_wrapper{
     background-color: #2e2a5c41;
-    height: 100%;
     h4{
         color: $primary;
         text-transform: capitalize;
@@ -622,10 +621,8 @@
                 td, th {
                     text-align: left;
                     padding: 5px 10px;
-                  }
-                tr:nth-child(even) {
-                    background-color: #dddddd;
-                  }
+                    border:1px solid #333;
+                }
             }
         }
     }

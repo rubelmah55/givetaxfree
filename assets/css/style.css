@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap");
 * {
   -webkit-box-sizing: border-box;
@@ -59,34 +60,41 @@ input:-webkit-autofill:focus {
 
 ::-webkit-input-placeholder {
   color: #555;
-  opacity: 1; /* Firefox */
+  opacity: 1;
+  /* Firefox */
 }
 
 ::-moz-placeholder {
   color: #555;
-  opacity: 1; /* Firefox */
+  opacity: 1;
+  /* Firefox */
 }
 
 :-ms-input-placeholder {
   color: #555;
-  opacity: 1; /* Firefox */
+  opacity: 1;
+  /* Firefox */
 }
 
 ::-ms-input-placeholder {
   color: #555;
-  opacity: 1; /* Firefox */
+  opacity: 1;
+  /* Firefox */
 }
 
 ::placeholder {
   color: #555;
-  opacity: 1; /* Firefox */
+  opacity: 1;
+  /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
   color: #555;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder {
+  /* Microsoft Edge */
   color: #555;
 }
 
@@ -462,7 +470,7 @@ p {
   -webkit-animation: animate-positive 2s;
           animation: animate-positive 2s;
   background: #44ad66;
-  border-right: 4px solid rgb(255, 255, 255);
+  border-right: 4px solid white;
 }
 .progress .progress-value {
   display: block;
@@ -475,7 +483,7 @@ p {
 }
 
 .campaign-status ul > li {
-  border-bottom: 1px solid rgb(221, 221, 221);
+  border-bottom: 1px solid #dddddd;
   padding: 10px 0px;
 }
 .campaign-status ul > li span {
@@ -526,7 +534,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgb(241, 241, 241);
+  background-color: #f1f1f1;
   color: #2E2A5C;
 }
 .icons_link .name_authoe {
@@ -805,8 +813,7 @@ p {
 }
 
 .my-profile_wrapper {
-  background-color: rgba(46, 42, 92, 0.2549019608);
-  height: 100%;
+  background-color: #2e2a5c41;
 }
 .my-profile_wrapper h4 {
   color: #2E2A5C;
@@ -857,9 +864,7 @@ p {
 .my-profile_wrapper .dash_bord_content.content_one table td, .my-profile_wrapper .dash_bord_content.content_one table th {
   text-align: left;
   padding: 5px 10px;
-}
-.my-profile_wrapper .dash_bord_content.content_one table tr:nth-child(even) {
-  background-color: #dddddd;
+  border: 1px solid #333;
 }
 .my-profile_wrapper .active {
   display: block;
@@ -1445,7 +1450,7 @@ header.sticky .main-header-wraper .logo img {
 .mobile-nav .sidebar-nav .metismenu ul a::before {
   clear: both;
   display: block;
-  content: "\f067";
+  content: "";
   position: absolute;
   right: 0;
   top: 0;
@@ -1518,7 +1523,7 @@ header.sticky .main-header-wraper .logo img {
   position: relative;
   top: 50%;
   font-size: 22px;
-  color: rgb(178, 178, 178);
+  color: #b2b2b2;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   -webkit-transition: all 0.4s ease-in-out;
@@ -1541,7 +1546,7 @@ header.sticky .main-header-wraper .logo img {
   height: 50px;
   top: -2px;
   background-color: rgba(0, 0, 0, 0);
-  border-bottom: 1px solid rgb(69, 68, 68);
+  border-bottom: 1px solid #454444;
 }
 .overlay form .form-inner button[type=submit] {
   background-color: transparent;
@@ -1553,7 +1558,7 @@ header.sticky .main-header-wraper .logo img {
   right: -10px;
 }
 .overlay form .form-inner a i {
-  color: red;
+  color: #3FAD48;
   font-size: 20px;
 }
 .overlay form .form-inner a:hover i {
@@ -1655,7 +1660,7 @@ header.sticky .main-header-wraper .logo img {
 .banner_title h2 {
   font-size: 35px;
   font-weight: bold;
-  color: rgb(200, 210, 38);
+  color: #c8d226;
 }
 .banner_title ul > li {
   position: relative;
@@ -1806,7 +1811,7 @@ header.sticky .main-header-wraper .logo img {
   background-color: #DDDDDD;
 }
 .content_top table tr th, .content_top table tr td {
-  border: 1px solid rgb(188, 188, 188);
+  border: 1px solid #bcbcbc;
   padding: 10px;
   font-size: 16px;
   font-family: "Nunito", sans-serif;
@@ -1919,7 +1924,7 @@ header.sticky .main-header-wraper .logo img {
   margin: 10px;
 }
 .director_wrapper table thead {
-  border-bottom: 2px solid rgb(188, 188, 188);
+  border-bottom: 2px solid #bcbcbc;
 }
 .director_wrapper table td a {
   color: #37949C;
@@ -2072,7 +2077,7 @@ header.sticky .main-header-wraper .logo img {
   width: 100%;
   padding: 10px;
   font-size: 22px;
-  color: rgb(33, 37, 41);
+  color: #212529;
   text-align: left;
   background-color: #2E2A5C;
   color: #FFF;
@@ -2088,7 +2093,7 @@ header.sticky .main-header-wraper .logo img {
   position: absolute;
   top: 10px;
   right: 20px;
-  content: "\f067";
+  content: "";
   font-family: "Font Awesome 5 Pro";
   font-weight: 900;
   background-image: none;
@@ -2109,7 +2114,7 @@ header.sticky .main-header-wraper .logo img {
 }
 
 .accordion-button:not(.collapsed)::after {
-  content: "\f068";
+  content: "";
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
 }
@@ -2310,151 +2315,6 @@ header.sticky .main-header-wraper .logo img {
   text-decoration: underline;
 }
 
-.donetion_wrapper {
-  background-color: #FFF;
-  height: 100%;
-}
-.donetion_wrapper .donetion_card {
-  margin-top: 40px;
-  background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 30px;
-  color: #FFF;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
-.donetion_wrapper .donetion_card .donetion_info {
-  background-color: transparent;
-  padding: 30px 30px 30px 20px;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-}
-.donetion_wrapper .donetion_card .donetion_info h4 {
-  font-weight: 600;
-  color: #2E2A5C;
-}
-.donetion_wrapper .donetion_card .donetion_info .author_img {
-  width: 150px;
-  height: 150px;
-  overflow: hidden;
-}
-.donetion_wrapper .donetion_card .donetion_info .author_content {
-  margin-left: 20px;
-}
-.donetion_wrapper .donetion_card .donetion_info .author_content h5 {
-  font-size: 18px;
-  font-weight: bold;
-  color: #2E2A5C;
-}
-.donetion_wrapper .donetion_card .donetion_info .author_content strong {
-  color: #2E2A5C;
-  font-weight: 900;
-  font-size: 18px;
-}
-.donetion_wrapper .donetion_card .donetion_info .author_content p {
-  font-weight: 600;
-  font-size: 16px;
-  color: #2E2A5C;
-}
-.donetion_wrapper .donetion_card .donetion_info .input_content h5, .donetion_wrapper .donetion_card .donetion_info .input_content span, .donetion_wrapper .donetion_card .donetion_info .input_content p {
-  color: #2E2A5C;
-}
-.donetion_wrapper .donetion_card .donetion_info a {
-  color: #2E2A5C;
-}
-.donetion_wrapper .donetion_card .donetion_info a:hover {
-  text-decoration: underline;
-}
-.donetion_wrapper .donetion_card .donetion_info .input_info input {
-  max-width: 200px;
-}
-.donetion_wrapper .donetion_card .donetion_info .input-group .input-group-prepend .input-group-text {
-  background-color: #FFF;
-  color: #555;
-  padding: 10px 10px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border: none;
-}
-.donetion_wrapper .donetion_card .donetion_info .input-group input {
-  border: none;
-  width: 60px;
-}
-.donetion_wrapper .donetion_card .donetion_info .input-group .form-control {
-  border: none;
-}
-.donetion_wrapper .donetion_card .donetion_info .progress {
-  height: 20px;
-  background: #cdcdcd;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  margin-bottom: 10px;
-  overflow: visible;
-}
-.donetion_wrapper .donetion_card .donetion_info .progress .progress-bar {
-  position: relative;
-  -webkit-animation: animate-positive 2s;
-          animation: animate-positive 2s;
-  background: #2E2A5C;
-}
-.donetion_wrapper .donetion_card .donetion_info .progress .progress-value {
-  display: block;
-  font-size: 18px;
-  font-weight: 500;
-  color: #000;
-  position: absolute;
-  top: -30px;
-  right: -25px;
-}
-.donetion_wrapper .donetion_card .donetion_info .progress .progress-bar::after {
-  content: "";
-  display: inline-block;
-  width: 10px;
-  background: #fff;
-  position: absolute;
-  top: -10px;
-  bottom: -10px;
-  right: -5px;
-  z-index: 1;
-  border-radius: 50%;
-}
-.donetion_wrapper .donetion_card .your_donetion {
-  padding: 30px 30px 20px 30px;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  background-color: #fff;
-  height: 100%;
-}
-.donetion_wrapper .donetion_card .your_donetion h4 {
-  font-weight: 800;
-  color: #2E2A5C;
-}
-.donetion_wrapper .donetion_card .your_donetion .amount_div p {
-  color: #2E2A5C;
-}
-.donetion_wrapper .donetion_card .your_donetion .amount_div p strong {
-  font-weight: 900;
-}
-.donetion_wrapper .donetion_card .your_donetion .amount_div hr {
-  height: 2px;
-  color: #2E2A5C;
-}
-.donetion_wrapper .donetion_card .your_donetion p {
-  margin: 10px 0px;
-  color: #2E2A5C;
-}
-.donetion_wrapper .donetion_card .your_donetion p a {
-  color: #37949C;
-}
-.donetion_wrapper .donetion_card .your_donetion p a:hover {
-  text-decoration: underline;
-}
-.donetion_wrapper .donetion_card .your_donetion label {
-  color: #2E2A5C;
-  cursor: pointer;
-  margin: 10px 0px;
-}
-
 /* ----------------------------------
 	Footer Section Styles
  ------------------------------------ */
@@ -2479,7 +2339,7 @@ header.sticky .main-header-wraper .logo img {
 }
 .footer_top .footer_widget h3::after {
   content: " ";
-  border-bottom: 4px solid rgb(221, 221, 221);
+  border-bottom: 4px solid #dddddd;
   width: 25%;
   position: absolute;
   bottom: 0;

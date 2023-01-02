@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<!-- lang -->
+<html lang="zxx">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="RRDevs">
+    <!-- ======== Page title ============ -->
+    <title>givetaxfree</title>
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <!-- ===========  All Stylesheet ================= -->
+    <!--  Icon css plugins -->
+    <link rel="stylesheet" href="./assets/css/icons.css">
+    <!-- metis menu css file -->
+    <link rel="stylesheet" href="./assets/css/metismenu.css">
+    <!--  Bootstrap css plugins -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!--  slick css plugins -->
+    <link rel="stylesheet" href="./assets/css/slick.min.css">
+    <!--  magnific-popup css plugins -->
+    <link rel="stylesheet" href="./assets/css/magnific-popup.min.css">
+    <!-- aos css file -->
+    <link rel="stylesheet" href="./assets/css/aos.min.css">
+    <!--  main style css file -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <style>
+        .donetion_wrapper {
+          background-color: #FFF;
+          height: 100%;
+        }
+        .donetion_wrapper .donetion_card {
+          margin-top: 40px;
+          background-color: rgba(0, 0, 0, 0.05);
+          border-radius: 30px;
+          color: #FFF;
+          -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+                  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+        .donetion_wrapper .donetion_card .donetion_info {
+          background-color: transparent;
+          padding: 30px 30px 30px 20px;
+          border-top-left-radius: 30px;
+          border-bottom-left-radius: 30px;
+        }
+        .donetion_wrapper .donetion_card .donetion_info h4 {
+          font-weight: 600;
+          color: #2E2A5C;
+        }
+        .donetion_wrapper .donetion_card .donetion_info .author_img {
+          width: 150px;
+          height: 150px;
+          overflow: hidden;
+        }
+        .donetion_wrapper .donetion_card .donetion_info .author_content {
+          margin-left: 20px;
+        }
+        .donetion_wrapper .donetion_card .donetion_info .author_content h5 {
+          font-size: 18px;
+          font-weight: bold;
+          color: #2E2A5C;
+        }
+        .donetion_wrapper .donetion_card .donetion_info .author_content strong {
+          color: #2E2A5C;
+          font-weight: 900;
+          font-size: 18px;
+        }
+        .donetion_wrapper .donetion_card .donetion_info .author_content p {
+          font-weight: 600;
+          font-size: 16px;
+          color: #2E2A5C;
+        }
+        .donetion_wrapper .donetion_card .donetion_info .input_content h5, .donetion_wrapper .donetion_card .donetion_info .input_content span, .donetion_wrapper .donetion_card .donetion_info .input_content p {
+          color: #2E2A5C;
+        }
+        .donetion_wrapper .donetion_card .donetion_info a {
+          color: #2E2A5C;
+        }
+        .donetion_wrapper .donetion_card .donetion_info a:hover {
+          text-decoration: underline;
+        }
+        .donetion_wrapper .donetion_card .donetion_info .input_info input {
+          max-width: 200px;
+        }
+        .donetion_wrapper .donetion_card .donetion_info .input-group .input-group-prepend .input-group-text {
+          background-color: #FFF;
+          color: #555;
+          padding: 10px 10px;
+          border-top-right-radius: 0px;
+          border-bottom-right-radius: 0px;
+          border: none;
+        }
+        .donetion_wrapper .donetion_card .donetion_info .input-group input {
+          border: none;
+          width: 60px;
+        }
+        .donetion_wrapper .donetion_card .donetion_info .input-group .form-control {
+          border: none;
+        }
+        .donetion_wrapper .donetion_card .donetion_info .progress {
+          height: 20px;
+          background: #cdcdcd;
+          border-radius: 0;
+          -webkit-box-shadow: none;
+                  box-shadow: none;
+          margin-bottom: 10px;
+          overflow: visible;
+        }
+        .donetion_wrapper .donetion_card .donetion_info .progress .progress-bar {
+          position: relative;
+          -webkit-animation: animate-positive 2s;
+                  animation: animate-positive 2s;
+          background: #2E2A5C;
+        }
+        .donetion_wrapper .donetion_card .donetion_info .progress .progress-value {
+          display: block;
+          font-size: 18px;
+          font-weight: 500;
+          color: #000;
+          position: absolute;
+          top: -30px;
+          right: -25px;
+        }
+        .donetion_wrapper .donetion_card .donetion_info .progress .progress-bar::after {
+          content: "";
+          display: inline-block;
+          width: 10px;
+          background: #fff;
+          position: absolute;
+          top: -10px;
+          bottom: -10px;
+          right: -5px;
+          z-index: 1;
+          border-radius: 50%;
+        }
+        .donetion_wrapper .donetion_card .your_donetion {
+          padding: 30px 30px 20px 30px;
+          border-top-right-radius: 30px;
+          border-bottom-right-radius: 30px;
+          background-color: #fff;
+          height: 100%;
+        }
+        .donetion_wrapper .donetion_card .your_donetion h4 {
+          font-weight: 800;
+          color: #2E2A5C;
+        }
+        .donetion_wrapper .donetion_card .your_donetion .amount_div p {
+          color: #2E2A5C;
+        }
+        .donetion_wrapper .donetion_card .your_donetion .amount_div p strong {
+          font-weight: 900;
+        }
+        .donetion_wrapper .donetion_card .your_donetion .amount_div hr {
+          height: 2px;
+          color: #2E2A5C;
+        }
+        .donetion_wrapper .donetion_card .your_donetion p {
+          margin: 10px 0px;
+          color: #2E2A5C;
+        }
+        .donetion_wrapper .donetion_card .your_donetion p a {
+          color: #37949C;
+        }
+        .donetion_wrapper .donetion_card .your_donetion p a:hover {
+          text-decoration: underline;
+        }
+        .donetion_wrapper .donetion_card .your_donetion label {
+          color: #2E2A5C;
+          cursor: pointer;
+          margin: 10px 0px;
+        }
+    </style>
+    
+</head>
+
+<body>    
+     <!-- Header start -->
+     <header>
+        <div class="main-header-wraper">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+
+                    <div class="header-logo">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="./assets/img/logo.png" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="header-menu d-none d-xl-block">
+                        <div class="main-menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="director.html">Director</a> </li>
+                                <li><a href="mission.html">Our Mission</a></li>
+                                <li><a href="contact.html">Contact US</a></li>
+                                <li><a href="#">How It Works <i class="fas fa-angle-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="faq.html">FAQ</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="blog-details.html">blog-details</a></li>
+                                        <li><a href="become.html">join our team</a></li>
+                                        <li><a href="user-gide.html">User Gide</a></li>
+                                        <li><a href="campaigns.html">User campaigns</a></li>
+                                        <li><a href="resource-details.html">Resource Details</a></li>
+                                        <li><a href="resource-link.html">resource-link</a></li>
+                                        <li><a href="research-resources-pdf.html">research-resources-pdf</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="header-right d-flex align-items-center">
+                       <div class="user_widget">
+                        <div class="login_btn"><i class="fas fa-user"></i></div>
+                        <ul class="drop">
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Sing UP</a></li>
+                        </ul>
+                       </div>
+                        <div class="header-search">
+                            <a class="search-toggle search_bar">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="header-btn-cta">
+                            <a class="theme-btn" href="https://givetaxfree.org/create-a-campaign"><i class="fas fa-edit"></i>Create New Campaign</a>
+                        </div>
+
+                        <div class="mobile-nav-bar d-block ml-3 ml-sm-5 d-xl-none">
+                            <div class="mobile-nav-wrap">                    
+                                <div id="hamburger">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                               
+                                <div class="mobile-nav">
+                                    <button type="button" class="close-nav">
+                                        <i class="far fa-times-circle"></i>
+                                    </button>
+                                    <nav class="sidebar-nav">
+                                        <ul class="metismenu" id="mobile-menu">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="director.html">Director</a> </li>
+                                            <li><a href="mission.html">Our Mission</a></li>
+                                            <li><a href="contact.html">Contact US</a></li>
+                                            <li><a href="#">How It Works <i class="fas fa-angle-down"></i></a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="faq.html">FAQ</a></li>
+                                                    <li><a href="blog.html">Blog</a></li>
+                                                    <li><a href="blog-details.html">blog-details</a></li>
+                                                    <li><a href="become.html">join our team</a></li>
+                                                    <li><a href="user-gide.html">User Gide</a></li>
+                                                    <li><a href="campaigns.html">User campaigns</a></li>
+                                                    <li><a href="resource-details.html">Resource Details</a></li>
+                                                    <li><a href="resource-link.html">resource-link</a></li>
+                                                    <li><a href="research-resources-pdf.html">research-resources-pdf</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </nav>
+
+                                    <div class="header-btn-cta ">
+                                        <a class="theme-btn" href="https://givetaxfree.org/create-a-campaign"><i class="fas fa-edit"></i>Create New Campaign</a>
+                                    </div>
+                                </div>                            
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="header-gutter"></div>
+    <!-- Header end -->
+    <section class="donetion_wrapper">
+        <div class="container">
+            <div class="donetion_card">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="donetion_info">
+                            <h4>Donation Info</h4>
+                            <div class="author_donet d-flex">
+                                <div class="author_img">
+                                    <img src="./assets/img/pople_01.jpg" alt="">
+                                </div>
+                                <div class="author_content">
+                                    <h5>Your Donation for:</h5>
+                                    <p><strong>Campaign Name: </strong> Help our Family Ease the Stress</p>
+                                    <p><strong>User: </strong> bryan pieper</p>
+                                </div>
+                            </div>
+
+                            <div class="input-group my-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">$</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Enter Donation Amount" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+
+                            <div class="input_info d-flex justify-content-between align-items-center my-3">
+                               <div class="input_content me-5">
+                                    <h5>Givetaxfree Donation</h5>
+                                    <p>Adding a donation for us, keeps us operating and helping people in need. Please consider helping us.</p>
+                                    <span> Thank you, <strong> John Berardino</strong></span>
+                               </div>
+                               
+                               <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">$</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+
+                            </div>
+
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 64%;">64%</div>
+                            </div>
+
+                            <a href="#">Custom Amount</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="your_donetion">
+                            <h4>Your Donation</h4>
+                            <div class="amount_div">
+                                <div class="d-flex align-items-center justify-content-between py-2">
+                                    <p>Your Donation:</p>
+                                    <p><strong>$0.00</strong></p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between py-2">
+                                    <p>Givetaxfree Donation:</p>
+                                    <p><strong>$0.00</strong></p>
+                                </div>
+                                <hr>
+                                <div class="d-flex align-items-center justify-content-between py-2">
+                                    <p>Total Donation:</p>
+                                    <p><strong>$0.00</strong></p>
+                                </div>
+                            </div>
+                            <label for="cjhack">
+                                <input type="checkbox" id="cjhack">
+                                Make this donation Anonymous
+                            </label>
+                            <button type="submit" class="theme-btn form-control">Donet Now</button>
+                            <p>Your donation is secure and processed by Stripe, one of the largest payment processing companies in the world who serves such companies as Lyft, Shopify and Salesforce to name a few.</p>
+                            <p>Your donation is tax deductible according to the IRS Rules and Regulations.</p>
+                            <p>By continuing, you agree with Givetaxfree <a href="#">terms</a> and
+                                <a href="#">privacy notice.</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer start -->
+    <footer class="footer_wrapper">
+       <div class="footer_top">
+         <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div  class="footer_widget">
+                        <h3 class="widget-title">Get Started</h3>
+                        <div class="footer_link_element">
+                            <ul>
+                                <li><a href="https://givetaxfree.org/how-does-crowd-fundraising-work/"><i class="fas fa-angle-right"></i>How it works</a></li>
+                                <li><a href="https://givetaxfree.org/become-a-volunteer/"><i class="fas fa-angle-right"></i>Become a Volunteer</a></li>
+                                <li><a href="https://givetaxfree.org/pricing-fees/"><i class="fas fa-angle-right"></i>Pricing &amp; Fees</a></li>
+                                <li><a href="https://givetaxfree.org/create-a-campaign/"><i class="fas fa-angle-right"></i>Create a campaign</a></li>
+                            </ul>
+                        </div>  
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div  class="footer_widget">
+                        <h3 class="widget-title">About Us</h3>
+                        <div class="footer_link_element">
+                            <ul>
+                                <li><a href="https://givetaxfree.org/how-does-crowd-fundraising-work/"><i class="fas fa-angle-right"></i>How it works</a></li>
+                                <li><a href="https://givetaxfree.org/become-a-volunteer/"><i class="fas fa-angle-right"></i>Become a Volunteer</a></li>
+                                <li><a href="https://givetaxfree.org/pricing-fees/"><i class="fas fa-angle-right"></i>Pricing &amp; Fees</a></li>
+                                <li><a href="https://givetaxfree.org/create-a-campaign/"><i class="fas fa-angle-right"></i>Create a campaign</a></li>
+                            </ul>
+                        </div>  
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div  class="footer_widget">
+                        <h3 class="widget-title">Help & Support</h3>
+                        <div class="footer_link_element">
+                            <ul>
+                                <li><a href="https://givetaxfree.org/how-does-crowd-fundraising-work/"><i class="fas fa-angle-right"></i>How it works</a></li>
+                                <li><a href="https://givetaxfree.org/become-a-volunteer/"><i class="fas fa-angle-right"></i>Become a Volunteer</a></li>
+                                <li><a href="https://givetaxfree.org/pricing-fees/"><i class="fas fa-angle-right"></i>Pricing &amp; Fees</a></li>
+                                <li><a href="https://givetaxfree.org/create-a-campaign/"><i class="fas fa-angle-right"></i>Create a campaign</a></li>
+                            </ul>
+                        </div>  
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div  class="footer_widget">
+                        <h3 class="widget-title">Contact Us</h3>
+                        <div class="footer_element">
+                            <ul>
+                                <li>  1135 Heatherstone Dr. <br> Suite 102 </li>
+                                <li>Fredericksburg, VA 22407</li>
+                                <li><i class="fas fa-envelope"></i>help@givetaxfree.org</li>
+                            </ul>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                   <span> © 2022 <a href="https://givetaxfree.org/"> Givetaxfree.org </a> , All Rights Reserved. </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!--  ALl JS Plugins
+    ====================================== -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/aos.min.js"></script>
+    <script src="./assets/js/magnific-popup.min.js"></script>
+    <script src="./assets/js/metismenu.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+
+</body>
+
+</html>
