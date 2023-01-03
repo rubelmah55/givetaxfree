@@ -65,18 +65,16 @@
         
         });
 
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value; 
 
+        slider.oninput = function() {
+            output.innerHTML = this.value;
+        }
+
+        
         // tabb
-
-        $('.tab-nav li').click(function () {
-            // $('.clickme').removeClass('ac_color');
-            $(this).addClass('ac_color').siblings().removeClass('ac_color');
-            $('.dash_bord_conten').hide()
-            $(this).data('value')
-            // var tagid = $(this).data('tag');
-            // $('.dash_bord_conten').removeClass('active').addClass('hide');
-            // $('#'+tagid).addClass('active').removeClass('hide');
-        });
 
         $(".login_btn").click(function(){
             $(".drop").toggle();
