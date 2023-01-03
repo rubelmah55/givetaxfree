@@ -83,23 +83,25 @@
         });
     }); // end document ready function
 
+    // search popup
+
+    $(".search_bar").on('click', function(){
+        $(".overlay-hugeinc").addClass("open");
+    });
+
+    $(".overlay-close").on('click', function(){
+        $(".overlay-hugeinc").removeClass("open");
+    });
+
+    $(document).on(
+      'keydown', function(event) {
+        if (event.key == "Escape") {
+            $(".overlay-hugeinc").removeClass("open");
+        }
+    });
 
 })(jQuery); // End jQuery
 
-
- // loggin btn
-
- const overlay = document.querySelector('.overlay-hugeinc');
- const search_bar = document.querySelector('.search_bar');
- const overlay_close = document.querySelector('.overlay-close');
- 
- search_bar.addEventListener('click', () => {
-    overlay.classList.add('open');
- });
-
- overlay_close.addEventListener('click', () => {
-    overlay.classList.remove('open');
- });
 
  // popup
  const overly_popup = document.querySelector('.overly_popup'),
