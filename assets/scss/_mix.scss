@@ -696,3 +696,42 @@
 .mt-40{
     margin-top: 40px;
 }
+
+.heading_pera{
+    p{
+        font-size: 14px;
+        line-height: 31px;
+        color: $blue;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+.popular-causes{
+    margin-top: 30px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 20px 10px;
+    background-color: $white;
+    background-color: $gray;
+}
+.popular-causes{
+    .like_icon{
+        i{
+            font-size: 40px;
+            color: $green;
+        }
+    }
+    h4{
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    span{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23px;
+    }
+}
+
+

@@ -940,6 +940,38 @@ p {
   margin-top: 40px;
 }
 
+.heading_pera p {
+  font-size: 14px;
+  line-height: 31px;
+  color: #4FA2FF;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.popular-causes {
+  margin-top: 30px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 20px 10px;
+  background-color: #FFF;
+  background-color: #f4f7fd;
+}
+
+.popular-causes .like_icon i {
+  font-size: 40px;
+  color: #3FAD48;
+}
+.popular-causes h4 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.popular-causes span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
 /* ----------------------------------
     Template Helps Classes - Styles
  ------------------------------------ */

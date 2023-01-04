@@ -66,13 +66,15 @@
         });
 
         var slider = document.getElementById("myRange");
-        var output = document.getElementById("demo");
-        output.innerHTML = slider.value; 
+        var output = document.getElementById("value_rang");
+        var value_tup = document.getElementById("value_tup");
+        // output.innerHTML = slider.value; 
 
         slider.oninput = function() {
-            output.innerHTML = this.value;
+            output.style.left = this.value +"%";
+            value_tup.innerHTML = this.value+"%";
         }
-
+    
         
         // tabb
 

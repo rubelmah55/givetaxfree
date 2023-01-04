@@ -233,22 +233,25 @@
                 width: 100%;
             }
         }
+        /* range */
         .range-form {
             width:100%;
             margin: auto;
-            padding: 20px;
+            position: relative;
         }
 
         .range-slider {
             appearance: none;
             width: 100%;
-            height: 10px;
+            height: 13px;
             border-radius: 5px;
             background: #2E2A5C;
-           
+            -webkit-appearance: none;
             outline: none;
             opacity: 0.7;
             transition: opacity .2s;
+            position: relative;
+            z-index: 1;
         }
         .range-slider:hover {
             opacity: 1;
@@ -261,19 +264,37 @@
             background: #d3d3d3;
             cursor: pointer;
             border-radius: 50%;
+            position: relative;
         }
         .range-slider::-moz-range-thumb {
             width: 18px;
             height: 18px;
             background:#2E2A5C;
             cursor: pointer;
+            position: relative;
         }
-        .demo_element{
-            background-color: #fff;
-            padding: 20px 25px;
-            color:#2E2A5C !important;
-            font-size: 16px;
+        #value_rang{
+            width: 60px;
+            height: 40px;
+            position: absolute;
+            top: -40px;
+            bottom: 40px;
+            left: 6%;
             border-radius: 5px;
+            transform: translate(-50%);
+            z-index: 2;
+            text-align: center;
+        }
+        #value_tup{
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            background: #2E2A5C;
         }
     </style>
     
@@ -416,26 +437,24 @@
                                     <span> Thank you, <strong> John Berardino</strong></span>
                                </div>
                                
-                               <div class="input-group d-flex justify-content-end align-items-center">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon1">$</span>
+                                <div class="input-group d-flex justify-content-end align-items-center">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">$</span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
                                 </div>
-                                <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                            </div>
 
                             </div>
 
-                            <form class="range-form">
-                                <div class="form-group row">
-                                  <div class="col-md-9">
-                                    <input type="range" min="5" max="25" value="10" step="5" class="form-control-range range-slider" id="myRange">
-                                  </div>
-                                  <div class="col-md-3">
-                                    <span class="demo_element">$ <strong id="demo" > 0</strong></span>
-                                  </div>
-                                  </div>
-                              </form>
+                            <div class="range-form mt-5">
+                                <input type="range" min="5" max="100" value="10" step="5" class="form-control-range range-slider" id="myRange">
+                                <div id="value_rang">
+                                    <div id="value_tup">5%</div>
+                                </div>
+                            </div>
+                            <style>
 
+                            </style>
                             <a href="#">Custom Amount</a>
                         </div>
                     </div>
