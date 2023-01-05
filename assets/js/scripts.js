@@ -71,7 +71,18 @@
         // output.innerHTML = slider.value; 
 
         slider.oninput = function() {
-            output.style.left = this.value +"%";
+            if (this.value == 5){
+                output.style.left = "5%";
+            }else if(this.value == 10){
+                output.style.left = "26%";
+            }else if(this.value == 15){
+                output.style.left = "50%";
+            }else if(this.value == 20){
+                output.style.left = "75%";
+            }else if(this.value == 25){
+                output.style.left = "99%";
+            }
+            
             value_tup.innerHTML = this.value+"%";
         }
     
