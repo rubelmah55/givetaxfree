@@ -4,6 +4,7 @@ Template Name: Research & Resources Pdf
 */
     get_header();
     require_once('inc/breadcrumb.php');
+    global $acf_active;
 ?>
     <!-- director_wrapper start -->
     <section class="director_wrapper section-padding">
@@ -19,7 +20,8 @@ Template Name: Research & Resources Pdf
                             </tr>
                         </thead>
                         <tbody>
-                            <?php 
+                            <?php
+                                if($acf_active): 
                                 $files = get_field('files');
 
                                 if(!empty($files)):
@@ -39,7 +41,7 @@ Template Name: Research & Resources Pdf
                                  ?>
                             </tr>
                             <?php 
-                                endforeach; endif;
+                                endforeach; endif; endif;
                              ?>
                         </tbody>
                     </table>

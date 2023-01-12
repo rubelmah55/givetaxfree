@@ -15,227 +15,244 @@
     <!-- ===========  All Stylesheet ================= -->
     <!--  Icon css plugins -->
     <link rel="stylesheet" href="./assets/css/icons.css">
+    <!-- metis menu css file -->
+    <link rel="stylesheet" href="./assets/css/metismenu.css">
     <!--  Bootstrap css plugins -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!--  slick css plugins -->
+    <link rel="stylesheet" href="./assets/css/slick.min.css">
+    <!--  magnific-popup css plugins -->
+    <link rel="stylesheet" href="./assets/css/magnific-popup.min.css">
+    <!-- aos css file -->
+    <link rel="stylesheet" href="./assets/css/aos.min.css">
     <!--  main style css file -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="style.css">
     
 </head>
 
 <body>    
-    <section class="my-profile_wrapper section-padding">
+     <!-- Header start -->
+     <header>
+        <div class="main-header-wraper">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+
+                    <div class="header-logo">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="./assets/img/logo.png" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="header-menu d-none d-xl-block">
+                        <div class="main-menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="director.html">Director</a> </li>
+                                <li><a href="mission.html">Our Mission</a></li>
+                                <li><a href="contact.html">Contact US</a></li>
+                                <li><a href="#">How It Works <i class="fas fa-angle-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="faq.html">FAQ</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="blog-details.html">blog-details</a></li>
+                                        <li><a href="become.html">join our team</a></li>
+                                        <li><a href="user-gide.html">User Gide</a></li>
+                                        <li><a href="campaigns.html">User campaigns</a></li>
+                                        <li><a href="resource-details.html">Resource Details</a></li>
+                                        <li><a href="resource-link.html">resource-link</a></li>
+                                        <li><a href="research-resources-pdf.html">research-resources-pdf</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="header-right d-flex align-items-center">
+                       <div class="user_widget">
+                        <div class="login_btn"><i class="fas fa-user"></i></div>
+                        <ul class="drop">
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Sing UP</a></li>
+                        </ul>
+                       </div>
+                        <div class="header-search">
+                            <a class="search-toggle search_bar">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="header-btn-cta">
+                            <a class="theme-btn" href="https://givetaxfree.org/create-a-campaign"><i class="fas fa-edit"></i>Create New Campaign</a>
+                        </div>
+
+                        <div class="mobile-nav-bar d-block ml-3 ml-sm-5 d-xl-none">
+                            <div class="mobile-nav-wrap">                    
+                                <div id="hamburger">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                               
+                                <div class="mobile-nav">
+                                    <button type="button" class="close-nav">
+                                        <i class="far fa-times-circle"></i>
+                                    </button>
+                                    <nav class="sidebar-nav">
+                                        <ul class="metismenu" id="mobile-menu">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="director.html">Director</a> </li>
+                                            <li><a href="mission.html">Our Mission</a></li>
+                                            <li><a href="contact.html">Contact US</a></li>
+                                            <li><a href="#">How It Works <i class="fas fa-angle-down"></i></a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="faq.html">FAQ</a></li>
+                                                    <li><a href="blog.html">Blog</a></li>
+                                                    <li><a href="blog-details.html">blog-details</a></li>
+                                                    <li><a href="become.html">join our team</a></li>
+                                                    <li><a href="user-gide.html">User Gide</a></li>
+                                                    <li><a href="campaigns.html">User campaigns</a></li>
+                                                    <li><a href="resource-details.html">Resource Details</a></li>
+                                                    <li><a href="resource-link.html">resource-link</a></li>
+                                                    <li><a href="research-resources-pdf.html">research-resources-pdf</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </nav>
+
+                                    <div class="header-btn-cta ">
+                                        <a class="theme-btn" href="https://givetaxfree.org/create-a-campaign"><i class="fas fa-edit"></i>Create New Campaign</a>
+                                    </div>
+                                </div>                            
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="header-gutter"></div>
+    <!-- Header end -->   
+    <!-- browse-campaign start -->
+    <div class="browse-campaign section-padding">
+        <div class="container">
+            <div class="browse_widget">
+                <div class="page_info">
+                    <h4>All Campaigns</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- browse-campaign end -->
+    <section class="my-profile_wrapper">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <h4>My Profile</h4>
-                </div>
-                <div class="col-md-4">
-                    <div class="my-account">
-                        <div class="author_img">
-                            <img src="./assets/img/man.png" alt="">
-                        </div>
-                        <h5>John Berardino</h5>
-                    </div>
-                    <div class="dash_bord">
-                        <ul class="nav nav-tabs">
-                            <li class="active"><a  href="#1" data-toggle="tab">My Profile</a></li>
-                            <li><a href="#2" data-toggle="tab">All Campaigns</a></li>
-                            <li><a href="#3" data-toggle="tab">Payment Options</a></li>
-                        </ul>
-
-                        <a href="#" class="theme-btn mt-5">Logout</a>
-                    </div>
-                </div>
-                <div class="col-md-8 tab-content">
-                    <div class="dash_bord_content content_one tab-pane active" id="1">
-                        <table width="100%">
-                            <tr>
-                                <td>
-                                    <p>First Name*</p>
-                                    <strong>John</strong>
-                                </td>
-                                <td>
-                                    <p>Last Name*</p>
-                                    <strong> Berardino</strong>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Email Address</p>
-                                    <strong>useremail@gmail.com</strong>
-                                </td>
-                                <td>
-                                    <p>Phone Number</p>
-                                    <strong> +00123456-1039</strong>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Address</p>
-                                    <strong>nill Khate PAbna</strong>
-                                </td>
-                                <td>
-                                    <p>City</p>
-                                    <strong> Dhaka </strong>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>State</p>
-                                    <strong>Dhaka</strong>
-                                </td>
-                                <td>
-                                    <p>Zip</p>
-                                    <strong>6600</strong>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>County</p>
-                                    <strong>US</strong>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-
-                    <div class="dash_bord_content content_one tab-pane" id="2">
+                <div class="col-md-12 tab-content">
+                    <div class="dash_bord_content content_one">
                         <div class="row">
-                            <div class="col-md-12">
-                                <div class="content-help_right mt-20 mb-0">
-                                    <h4>Your Donated Campaign</h4>
+                            <div class="col-lg-12">
+                                <div class="single_card_item" data-aos="fade-up">
+                                    <div class="popular__img">
+                                        <img src="./assets/img/pople_03.png" alt="">
+                                    </div>
+                                    <div class="product_heading">
+                                        <h3><a href="campaign-details.html">Donner Poor Children</a></h3>
+                                        <div class="btn_group banner_title">
+                                            <a href="#" class="theme-btn" target=""><i class="fas fa-edit"></i> Edit Campaign</a>
+                                            <a href="#" class="theme-btn" target=""><i class="far fa-file-alt"></i> View Campaign</a>
+                                        </div>
+                                    </div>
+                                    <div class="popular">
+                                        <div class="popular-causes__progress">
+                                            <div class="single_bar">
+                                                <p><strong>Raised:</strong> <span>$25,270</span></p>
+                                                <p><strong>Goal:</strong> <span>$30,000</span></p>
+                                            </div>
+                                            <div class="bar">
+                                                <div class="bar-inner count-bar counted" data-percent="36%" style="width: 36%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>         
                                 </div>
                             </div>
                             <div class="col-lg-12 mt-40">
                                 <div class="single_card_item" data-aos="fade-up">
-                                    <div class="row align-items-center_2">
-                                        <div class="col-md-2">
-                                            <div class="popular__img">
-                                                <img src="./assets/img/pople_03.png" alt="">
+                                    <div class="popular__img">
+                                        <img src="./assets/img/pople_03.png" alt="">
+                                    </div>
+                                    <div class="product_heading">
+                                        <h3><a href="campaign-details.html">Donner Poor Children</a></h3>
+                                        <div class="btn_group banner_title">
+                                            <a href="#" class="theme-btn" target=""><i class="fas fa-edit"></i> Edit Campaign</a>
+                                            <a href="#" class="theme-btn" target=""><i class="far fa-file-alt"></i> View Campaign</a>
+                                        </div>
+                                    </div>
+                                    <div class="popular">
+                                        <div class="popular-causes__progress">
+                                            <div class="single_bar">
+                                                <p><strong>Raised:</strong> <span>$25,270</span></p>
+                                                <p><strong>Goal:</strong> <span>$30,000</span></p>
+                                            </div>
+                                            <div class="bar">
+                                                <div class="bar-inner count-bar counted" data-percent="36%" style="width: 36%;"></div>
                                             </div>
                                         </div>
-
-                                        <div class="col-md-6">
-                                            <h3><a href="campaign-details.html">Donner Poor Children</a></h3>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="popular">
-                                                <div class="popular-causes__progress">
-                                                    <div class="single_bar">
-                                                        <p><strong>Raised:</strong> <span>$25,270</span></p>
-                                                        <p><strong>Goal:</strong> <span>$30,000</span></p>
-                                                    </div>
-                                                    <div class="bar">
-                                                        <div class="bar-inner count-bar counted" data-percent="36%" style="width: 36%;"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>          
+                                    </div>         
                                 </div>
                             </div>
                             <div class="col-lg-12 mt-40">
                                 <div class="single_card_item" data-aos="fade-up">
-                                    <div class="row align-items-center_2">
-                                        <div class="col-md-2">
-                                            <div class="popular__img">
-                                                <img src="./assets/img/pople_03.png" alt="">
+                                    <div class="popular__img">
+                                        <img src="./assets/img/pople_03.png" alt="">
+                                    </div>
+                                    <div class="product_heading">
+                                        <h3><a href="campaign-details.html">Donner Poor Children</a></h3>
+                                        <div class="btn_group banner_title">
+                                            <a href="#" class="theme-btn" target=""><i class="fas fa-edit"></i> Edit Campaign</a>
+                                            <a href="#" class="theme-btn" target=""><i class="far fa-file-alt"></i> View Campaign</a>
+                                        </div>
+                                    </div>
+                                    <div class="popular">
+                                        <div class="popular-causes__progress">
+                                            <div class="single_bar">
+                                                <p><strong>Raised:</strong> <span>$25,270</span></p>
+                                                <p><strong>Goal:</strong> <span>$30,000</span></p>
+                                            </div>
+                                            <div class="bar">
+                                                <div class="bar-inner count-bar counted" data-percent="36%" style="width: 36%;"></div>
                                             </div>
                                         </div>
-
-                                        <div class="col-md-6">
-                                            <h3><a href="campaign-details.html">Donner Poor Children</a></h3>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="popular">
-                                                <div class="popular-causes__progress">
-                                                    <div class="single_bar">
-                                                        <p><strong>Raised:</strong> <span>$25,270</span></p>
-                                                        <p><strong>Goal:</strong> <span>$30,000</span></p>
-                                                    </div>
-                                                    <div class="bar">
-                                                        <div class="bar-inner count-bar counted" data-percent="36%" style="width: 36%;"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>          
+                                    </div>         
                                 </div>
                             </div>
                             <div class="col-lg-12 mt-40">
                                 <div class="single_card_item" data-aos="fade-up">
-                                    <div class="row align-items-center_2">
-                                        <div class="col-md-2">
-                                            <div class="popular__img">
-                                                <img src="./assets/img/pople_03.png" alt="">
+                                    <div class="popular__img">
+                                        <img src="./assets/img/pople_03.png" alt="">
+                                    </div>
+                                    <div class="product_heading">
+                                        <h3><a href="campaign-details.html">Donner Poor Children</a></h3>
+                                        <div class="btn_group banner_title">
+                                            <a href="#" class="theme-btn" target=""><i class="fas fa-edit"></i> Edit Campaign</a>
+                                            <a href="#" class="theme-btn" target=""><i class="far fa-file-alt"></i> View Campaign</a>
+                                        </div>
+                                    </div>
+                                    <div class="popular">
+                                        <div class="popular-causes__progress">
+                                            <div class="single_bar">
+                                                <p><strong>Raised:</strong> <span>$25,270</span></p>
+                                                <p><strong>Goal:</strong> <span>$30,000</span></p>
+                                            </div>
+                                            <div class="bar">
+                                                <div class="bar-inner count-bar counted" data-percent="36%" style="width: 36%;"></div>
                                             </div>
                                         </div>
-
-                                        <div class="col-md-6">
-                                            <h3><a href="campaign-details.html">Donner Poor Children</a></h3>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="popular">
-                                                <div class="popular-causes__progress">
-                                                    <div class="single_bar">
-                                                        <p><strong>Raised:</strong> <span>$25,270</span></p>
-                                                        <p><strong>Goal:</strong> <span>$30,000</span></p>
-                                                    </div>
-                                                    <div class="bar">
-                                                        <div class="bar-inner count-bar counted" data-percent="36%" style="width: 36%;"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>          
+                                    </div>         
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="dash_bord_content content_one tab-pane" id="3">
-                        <table width="100%">
-                            <tr>
-                                <td>
-                                    <p>First Name*</p>
-                                    <strong>John</strong>
-                                </td>
-                                <td>
-                                    <p>Last Name*</p>
-                                    <strong> Berardino</strong>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Email Address</p>
-                                    <strong>useremail@gmail.com</strong>
-                                </td>
-                                <td>
-                                    <p>Phone Number</p>
-                                    <strong> +00123456-1039</strong>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Address</p>
-                                    <strong>nill Khate PAbna</strong>
-                                </td>
-                                <td>
-                                    <p>City</p>
-                                    <strong>Dhaka</strong>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>State</p>
-                                    <strong>Dhaka</strong>
-                                </td>
-                                <td>
-                                    <p>Zip</p>
-                                    <strong>6600</strong>
-                                </td>
-                            </tr>
-                        </table>
                     </div>
                 </div>
 
@@ -243,9 +260,84 @@
         </div>
     </section>
 
+    <!-- Footer start -->
+    <footer class="footer_wrapper">
+       <div class="footer_top">
+         <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div  class="footer_widget">
+                        <h3 class="widget-title">Get Started</h3>
+                        <div class="footer_link_element">
+                            <ul>
+                                <li><a href="https://givetaxfree.org/how-does-crowd-fundraising-work/"><i class="fas fa-angle-right"></i>How it works</a></li>
+                                <li><a href="https://givetaxfree.org/become-a-volunteer/"><i class="fas fa-angle-right"></i>Become a Volunteer</a></li>
+                                <li><a href="https://givetaxfree.org/pricing-fees/"><i class="fas fa-angle-right"></i>Pricing &amp; Fees</a></li>
+                                <li><a href="https://givetaxfree.org/create-a-campaign/"><i class="fas fa-angle-right"></i>Create a campaign</a></li>
+                            </ul>
+                        </div>  
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div  class="footer_widget">
+                        <h3 class="widget-title">About Us</h3>
+                        <div class="footer_link_element">
+                            <ul>
+                                <li><a href="https://givetaxfree.org/how-does-crowd-fundraising-work/"><i class="fas fa-angle-right"></i>How it works</a></li>
+                                <li><a href="https://givetaxfree.org/become-a-volunteer/"><i class="fas fa-angle-right"></i>Become a Volunteer</a></li>
+                                <li><a href="https://givetaxfree.org/pricing-fees/"><i class="fas fa-angle-right"></i>Pricing &amp; Fees</a></li>
+                                <li><a href="https://givetaxfree.org/create-a-campaign/"><i class="fas fa-angle-right"></i>Create a campaign</a></li>
+                            </ul>
+                        </div>  
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div  class="footer_widget">
+                        <h3 class="widget-title">Help & Support</h3>
+                        <div class="footer_link_element">
+                            <ul>
+                                <li><a href="https://givetaxfree.org/how-does-crowd-fundraising-work/"><i class="fas fa-angle-right"></i>How it works</a></li>
+                                <li><a href="https://givetaxfree.org/become-a-volunteer/"><i class="fas fa-angle-right"></i>Become a Volunteer</a></li>
+                                <li><a href="https://givetaxfree.org/pricing-fees/"><i class="fas fa-angle-right"></i>Pricing &amp; Fees</a></li>
+                                <li><a href="https://givetaxfree.org/create-a-campaign/"><i class="fas fa-angle-right"></i>Create a campaign</a></li>
+                            </ul>
+                        </div>  
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div  class="footer_widget">
+                        <h3 class="widget-title">Contact Us</h3>
+                        <div class="footer_element">
+                            <ul>
+                                <li>  1135 Heatherstone Dr. <br> Suite 102 </li>
+                                <li>Fredericksburg, VA 22407</li>
+                                <li><i class="fas fa-envelope"></i>help@givetaxfree.org</li>
+                            </ul>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                   <span> © 2022 <a href="https://givetaxfree.org/"> Givetaxfree.org </a> , All Rights Reserved. </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
     <!--  ALl JS Plugins
     ====================================== -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/aos.min.js"></script>
+    <script src="./assets/js/magnific-popup.min.js"></script>
+    <script src="./assets/js/metismenu.js"></script>
+    <script src="./assets/js/scripts.js"></script>
 </body>
+
 </html>

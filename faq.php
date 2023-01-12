@@ -4,16 +4,19 @@ Template Name: FAQ
 */
     get_header();
     require_once('inc/breadcrumb.php');
+    global $acf_active;
 ?>
     <!-- director_wrapper start -->
     <section class="raq_wrapper section-padding">
         <div class="container">
+            <?php 
+                if($acf_active):
+                    $faq_content = get_field('faq_content');
+             ?>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="faq_title">
                         <?php 
-                            $faq_content = get_field('faq_content');
-
                             if(!empty($faq_content['title'])){
                                 printf('<h4>%s</h4>', $faq_content['title']);
                             }
@@ -48,6 +51,9 @@ Template Name: FAQ
                    </div>
                 </div>
             </div>
+            <?php 
+                endif;
+             ?>
             <div class="row pt-3">
                 <?php 
                     require_once('inc/sidebar.php');

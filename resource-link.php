@@ -4,6 +4,7 @@ Template Name: Resources Links
 */
     get_header();
     require_once('inc/breadcrumb.php');
+    global $acf_active;
 ?>
     <!-- director_wrapper start -->
     <section class="director_wrapper section-padding">
@@ -18,10 +19,11 @@ Template Name: Resources Links
                             </tr>
                         </thead>
                         <tbody>
-                            <?php 
-                                $links = get_field('resources_links');
-                                if(!empty($links)):
-                                    foreach ($links as $link):
+                            <?php
+                                if($acf_active): 
+                                    $links = get_field('resources_links');
+                                    if(!empty($links)):
+                                        foreach ($links as $link):
                              ?>
                             <tr>
                                 <?php 
@@ -34,7 +36,7 @@ Template Name: Resources Links
                                  ?>
                             </tr>
                             <?php 
-                                endforeach; endif;
+                                endforeach; endif; endif;
                              ?>
                         </tbody>
                     </table>

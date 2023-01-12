@@ -4,6 +4,7 @@ Template Name: Board of Directors
 */
     get_header();
     require_once('inc/breadcrumb.php');
+    global $acf_active;
 ?>
 
     <!-- director_wrapper start -->
@@ -13,6 +14,7 @@ Template Name: Board of Directors
                 <div class="col-lg-12">
                     <div class="director_wrapper">
                         <?php 
+                            if($acf_active):
                             $directors = get_field('directors');
                             if(!empty($directors)):
                                 foreach ($directors as $key => $director):
@@ -61,7 +63,7 @@ Template Name: Board of Directors
                             if($key % 2 == 0){
                                 echo "<hr>";
                             }
-                            endforeach; endif;
+                            endforeach; endif; endif;
                         ?>
                     </div>
                 </div>

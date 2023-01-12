@@ -4,6 +4,7 @@ Template Name: Our Mission
 */
     get_header();
     require_once('inc/breadcrumb.php');
+    global $acf_active;
 ?>
 
     <!-- mission_wrapper start -->
@@ -13,11 +14,11 @@ Template Name: Our Mission
                 <div class="col-lg-12">
                     <div class="director_wrapper director_wrapper_2">
                         <div class="row">
+                            <?php 
+                                if($acf_active):
+                                $mission = get_field('our_mission');
+                            ?>
                             <div class="col-12 mt-4">
-                                <?php 
-                                    $mission = get_field('our_mission');
-
-                                 ?>
                                 <div class="director_bg bg-cover bg-center" style="background-image: url(<?php echo $mission['image']['url']; ?>);"></div>    
                             </div>
                             <div class="col-12 mt-4">
@@ -27,7 +28,9 @@ Template Name: Our Mission
                                      ?>
                                 </div>    
                             </div>
-                            
+                            <?php 
+                                endif;
+                            ?>
                         </div>
                     </div>
                 </div>

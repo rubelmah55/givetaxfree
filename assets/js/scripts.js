@@ -1,10 +1,7 @@
-
 (function($) {
     "use strict";
 
     $(document).ready( function() {
-
-
         // Sticky Menu
         $(window).scroll(function() {
             var Width = $(document).width();
@@ -70,7 +67,9 @@
         var value_tup = document.getElementById("value_tup");
         // output.innerHTML = slider.value; 
 
-        slider.oninput = function() {
+       
+
+        $("#myRange").on("input", function(){
             if (this.value == 5){
                 output.style.left = "5%";
             }else if(this.value == 10){
@@ -82,9 +81,8 @@
             }else if(this.value == 25){
                 output.style.left = "99%";
             }
-            
             value_tup.innerHTML = this.value+"%";
-        }
+        })
     
         
         // tabb
@@ -95,13 +93,30 @@
     }); // end document ready function
 
     // search popup
-
     $(".search_bar").on('click', function(){
         $(".overlay-hugeinc").addClass("open");
     });
 
     $(".overlay-close").on('click', function(){
         $(".overlay-hugeinc").removeClass("open");
+    });
+
+    // see all
+    $(".share_2").on('click', function(){
+        $(".overly_popup_2").addClass("show");
+    });
+
+    $(".head_popup_2").on('click', function(){
+        $(".overly_popup_2").removeClass("show");
+    });
+
+    // see top donation
+    $(".share_3").on('click', function(){
+        $(".overly_popup_3").addClass("show");
+    });
+
+    $(".head_popup_3").on('click', function(){
+        $(".overly_popup_3").removeClass("show");
     });
 
     $(document).on(
@@ -112,41 +127,3 @@
     });
 
 })(jQuery); // End jQuery
-
-
- // popup
- const overly_popup = document.querySelector('.overly_popup'),
-     share = document.querySelector('.share'),
-     head_popup = document.querySelector('.head_popup');
- 
- const overly_popup_2 = document.querySelector('.overly_popup_2'),
-     share_2 = document.querySelector('.share_2'),
-     head_popup_2 = document.querySelector('.head_popup_2');
- 
- const overly_popup_3 = document.querySelector('.overly_popup_3'),
-     share_3 = document.querySelector('.share_3'),
-     head_popup_3 = document.querySelector('.head_popup_3');
- 
-     share.addEventListener('click', () => {
-         overly_popup.classList.add('show-2');
-     });
-
-     head_popup.addEventListener('click', () => {
-         overly_popup.classList.remove('show-2');
-     });
- 
-     share_2.addEventListener('click', () => {
-         overly_popup_2.classList.add('show-3');
-     });
-
-     head_popup_2.addEventListener('click', () => {
-         overly_popup_2.classList.remove('show-3');
-     });
- 
-     share_3.addEventListener('click', () => {
-         overly_popup_3.classList.add('show-4');
-     });
-
-     head_popup_3.addEventListener('click', () => {
-         overly_popup_3.classList.remove('show-4');
-     });

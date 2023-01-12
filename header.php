@@ -7,12 +7,10 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="RRDevs">
-    <!-- ======== Page title ============ -->
-    <title><?php if(is_front_page()){ echo' Home '; echo' | '; echo bloginfo('name'); } else { wp_title(''); echo' | '; bloginfo('name');  } ?></title>
     <!-- ========== Favicon Icon ========== -->
     <?php
-        if(class_exists('ACF')):
+        global $acf_active;
+        if($acf_active):
             $favicon = get_field( 'favicon', 'options' );
                 if (isset($favicon)): 
     ?>
@@ -33,10 +31,12 @@
                         <div class="logo">
                             <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
                                 <?php
-                                    if(class_exists('ACF')){
+                                    if($acf_active){
                                         $logo = get_field( 'logo', 'options' );
                                         if(!empty($logo)){
                                             printf('<img src="%1$s" class="img-fluid" alt="%2$s">', esc_url($logo['url']), get_bloginfo('name'));
+                                        }else{
+                                            printf('<img src="%1$s" class="img-fluid" alt="%2$s">', get_template_directory_uri() . "/assets/img/logo.png", get_bloginfo('name'));
                                         }
                                     }
                                         
@@ -90,7 +90,7 @@
 
                         <div class="header-btn-cta">
                             <?php 
-                                if(class_exists('ACF')){
+                                if($acf_active){
                                     $cta_button = get_field('cta_button', 'options');
                                     if(!empty($cta_button)){
                                         printf('<a class="theme-btn" href="%s" target="%s"><i class="fas fa-edit"></i>%s</a>', $cta_button['url'], $cta_button['target'], $cta_button['title']);
@@ -128,7 +128,7 @@
 
                                     <div class="header-btn-cta ">
                                         <?php 
-                                            if(class_exists('ACF')){
+                                            if($acf_active){
                                                 $cta_button = get_field('cta_button', 'options');
                                                 if(!empty($cta_button)){
                                                     printf('<a class="theme-btn" href="%s" target="%s"><i class="fas fa-edit"></i>%s</a>', $cta_button['url'], $cta_button['target'], $cta_button['title']);

@@ -11,13 +11,19 @@
         </form>
     </div>
     <!-- header search ber -->    
+    <?php 
+        global $acf_active;
+        if($acf_active):
+        $footer = get_field('footer', 'options');
+        if(!empty($footer)):
+     ?>
     <!-- Footer start -->
     <footer class="footer_wrapper">
        <div class="footer_top">
          <div class="container">
             <div class="row">
                 <?php
-                    $footer = get_field('footer', 'options');
+                    
 
                     $footer_items = $footer['footer_items'];
 
@@ -71,7 +77,7 @@
         </div>
     </footer>
     <!-- Footer end -->
-
+    <?php endif; endif; ?>
     <!--  ALl JS Plugins
     ====================================== -->
     <?php wp_footer(); ?>

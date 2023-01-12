@@ -4,6 +4,7 @@ Template Name: Become A Volunteer
 */
     get_header();
     require_once('inc/breadcrumb.php');
+    global $acf_active;
 ?>
     <!-- become_wrapper start -->
     <section class="become_wrapper section-padding">
@@ -13,9 +14,11 @@ Template Name: Become A Volunteer
                     <div class="director_wrapper mb-4">
                         <div class="row">
                             <?php
-                                $become = get_field('become_a_volunteer');
-                                if(!empty($become['kind_heart'])){
-                                    printf('<p>%s</p>', $become['kind_heart']);
+                                if($acf_active){
+                                    $become = get_field('become_a_volunteer');
+                                    if(!empty($become['kind_heart'])){
+                                        printf('<p>%s</p>', $become['kind_heart']);
+                                    }
                                 }
                             ?>
                         </div>

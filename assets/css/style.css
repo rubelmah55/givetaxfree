@@ -732,7 +732,7 @@ p {
 .overly_popup_2 .popup .content .icons_link .name_authoe strong a {
   color: #2E2A5C;
 }
-.overly_popup_2.show-3 {
+.overly_popup_2.show {
   visibility: visible;
   opacity: 1;
 }
@@ -799,70 +799,82 @@ p {
 .overly_popup_3 .popup .content .icons_link .name_authoe strong a {
   color: #2E2A5C;
 }
-.overly_popup_3.show-4 {
+.overly_popup_3.show {
   visibility: visible;
   opacity: 1;
 }
 
 .my-profile_wrapper {
   background-color: rgba(46, 42, 92, 0.2549019608);
+  padding: 80px 0;
 }
-.my-profile_wrapper h4 {
+.my-profile_wrapper .content-help_right {
   color: #2E2A5C;
   text-transform: capitalize;
   font-weight: bold;
   font-size: 25px;
+  margin-bottom: 0;
 }
-.my-profile_wrapper .my-account .author_img {
-  width: 100px;
-  height: 100px;
-  overflow: hidden;
-}
-.my-profile_wrapper .my-account .author_img img {
-  width: 100%;
-  height: 100%;
-}
-.my-profile_wrapper .dash_bord ul {
+.my-profile_wrapper .dash_bord_content .single_card_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.my-profile_wrapper .dash_bord ul li {
-  list-style: none;
-  display: block;
+.my-profile_wrapper .dash_bord_content .single_card_item .popular__img {
+  margin: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100px;
+          flex: 0 0 100px;
 }
-.my-profile_wrapper .dash_bord ul li a {
-  padding: 10px;
-  border-bottom: 1px solid #DDDDDD;
-  font-size: 16px;
-  font-weight: 600;
-  color: #2E2A5C;
-  padding-left: 10px;
-  cursor: pointer;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+.my-profile_wrapper .dash_bord_content .single_card_item .product_heading {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(70% - 100px);
+          flex: 0 0 calc(70% - 100px);
+  padding-left: 30px;
 }
-.my-profile_wrapper .dash_bord ul .active {
-  color: #2E2A5C;
-  font-weight: 600;
+.my-profile_wrapper .dash_bord_content .single_card_item .popular {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
 }
-.my-profile_wrapper .dash_bord .theme-btn {
-  margin-top: 30px;
+@media (max-width: 767px) {
+  .my-profile_wrapper .dash_bord_content .single_card_item {
+    display: block;
+  }
+  .my-profile_wrapper .dash_bord_content .single_card_item .popular__img {
+    margin: 0 auto;
+  }
+  .my-profile_wrapper .dash_bord_content .single_card_item .product_heading {
+    padding-left: 0px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .my-profile_wrapper .dash_bord_content .single_card_item .single_bar {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
-.my-profile_wrapper .dash_bord_content.content_one table td, .my-profile_wrapper .dash_bord_content.content_one table th {
-  text-align: left;
-  padding: 5px 10px;
-  border: 1px solid #333;
+.my-profile_wrapper .dash_bord_content .banner_title a {
+  margin: 0 0;
 }
-.my-profile_wrapper .active {
-  display: block;
+.my-profile_wrapper .dash_bord_content .banner_title a:last-child {
+  margin-left: 20px;
+  background: #3FAD48;
 }
-.my-profile_wrapper .hide {
-  display: none;
+@media (max-width: 991px) {
+  .my-profile_wrapper .dash_bord_content .banner_title a:last-child {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+}
+.my-profile_wrapper .dash_bord_content .single_bar {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .single_card_item {
@@ -946,30 +958,6 @@ p {
   color: #4FA2FF;
   max-width: 800px;
   margin: 0 auto;
-}
-
-.popular-causes {
-  margin-top: 30px;
-  border: 1px solid #000;
-  border-radius: 5px;
-  padding: 20px 10px;
-  background-color: #FFF;
-  background-color: #f4f7fd;
-}
-
-.popular-causes .like_icon i {
-  font-size: 40px;
-  color: #3FAD48;
-}
-.popular-causes h4 {
-  font-size: 30px;
-  font-weight: 700;
-  margin-bottom: 0;
-}
-.popular-causes span {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 23px;
 }
 
 /* ----------------------------------

@@ -1,7 +1,4 @@
 <?php 
-/*
-Template Name: Resource Blog
-*/
     get_header();
     require_once('inc/breadcrumb.php');
 ?>
@@ -18,8 +15,8 @@ Template Name: Resource Blog
                                 'posts_per_page' => '12',
                             ] );
 
-                            if ( $query->have_posts() ) : 
-                                while ( $query->have_posts() ) : $query->the_post();
+                            if (have_posts() ) : 
+                                while (have_posts() ) : the_post();
                                     
                                     $image = get_the_post_thumbnail_url();
                                     $image_url = "";

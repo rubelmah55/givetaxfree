@@ -4,6 +4,7 @@ Template Name: Contact Us
 */
     get_header();
     require_once('inc/breadcrumb.php');
+    global $acf_active;
 ?>
     <!-- become_wrapper start -->
     <section class="become_wrapper section-padding">
@@ -12,9 +13,11 @@ Template Name: Contact Us
                 <div class="col-lg-6">
                     <div class="content-help_right">
                         <?php
-                            $contact_body = get_field('contact_body');
-                            if(!empty($contact_body['left_title'])){
-                                printf('<h4>%s</h4>', $contact_body['left_title']);
+                            if($acf_active){
+                                $contact_body = get_field('contact_body');
+                                if(!empty($contact_body['left_title'])){
+                                    printf('<h4>%s</h4>', $contact_body['left_title']);
+                                }
                             }
                         ?>
                         <div class="content_contact">
@@ -38,9 +41,11 @@ Template Name: Contact Us
                 <div class="col-lg-6">
                     <div class="content-help_right">
                         <?php
-                            $contact_body = get_field('contact_body');
-                            if(!empty($contact_body['right_title'])){
-                                printf('<h4>%s</h4>', $contact_body['right_title']);
+                            if($acf_active){
+                                $contact_body = get_field('contact_body');
+                                if(!empty($contact_body['right_title'])){
+                                    printf('<h4>%s</h4>', $contact_body['right_title']);
+                                }
                             }
                         ?>
                     </div>

@@ -1,6 +1,7 @@
 <?php 
 
 require_once('wp_bootstrap_navwalker.php');
+require_once('inc/tgm-plugins.php');
 
 if ( ! function_exists( 'givetaxfree_setup' ) ) {
 
@@ -62,3 +63,4 @@ if(function_exists('acf_add_options_page')) {
 	acf_add_options_page();
 }
 
+$acf_active = class_exists('ACF');
