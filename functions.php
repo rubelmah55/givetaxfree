@@ -11,7 +11,8 @@ if ( ! function_exists( 'givetaxfree_setup' ) ) {
 
 		/** Enable support for Post Thumbnails on posts and pages. */
 		add_theme_support( 'post-thumbnails' );
-
+		add_theme_support( 'title-tag' );
+		
 		/** This theme uses wp_nav_menu() in one location. */
 		register_nav_menus( array(
 		  'menu-1' => esc_html__( 'Primary Menu', 'givetaxfree' ),
