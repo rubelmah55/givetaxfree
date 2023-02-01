@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<!-- lang -->
+<html lang="zxx">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="RRDevs">
+    <!-- ======== Page title ============ -->
+    <title>givetaxfree</title>
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <!-- ===========  All Stylesheet ================= -->
+    <!--  Icon css plugins -->
+    <link rel="stylesheet" href="./assets/css/icons.css">
+    <!-- metis menu css file -->
+    <link rel="stylesheet" href="./assets/css/metismenu.css">
+    <!--  Bootstrap css plugins -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!--  slick css plugins -->
+    <link rel="stylesheet" href="./assets/css/slick.min.css">
+    <!--  magnific-popup css plugins -->
+    <link rel="stylesheet" href="./assets/css/magnific-popup.min.css">
+    <!-- aos css file -->
+    <link rel="stylesheet" href="./assets/css/aos.min.css">
+    <!--  main style css file -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <style>
+        .donetion_wrapper {
+          background-color: #FFF;
+        }
+        .donetion_wrapper .donetion_card {
+          margin-top: 40px;
+          background-color: rgba(0, 0, 0, 0.05);
+          border-radius: 30px;
+          color: #FFF;
+          -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+        .donetion_wrapper .donetion_card .donetion_info {
+          background-color: transparent;
+          padding: 30px 30px 30px 40px;
+          border-top-left-radius: 30px;
+          border-bottom-left-radius: 30px;
+        }
+        .donetion_wrapper .donetion_card .donetion_info h4 {
+          font-weight: 600;
+          color: #2E2A5C;
+        }
+        .donetion_wrapper .donetion_card .donetion_info .author_img {
+          width: 150px;
+          height: 150px;
+          overflow: hidden;
+        }
+        .donetion_wrapper .donetion_card .donetion_info .author_content {
+          margin-left: 20px;
+        }
+        .donetion_wrapper .donetion_card .donetion_info .author_content h5 {
+          font-size: 18px;
+          font-weight: bold;
+          color: #2E2A5C;
+        }
+        .donetion_wrapper .donetion_card .donetion_info .author_content strong {
+          color: #2E2A5C;
+          font-weight: 900;
+          font-size: 18px;
+        }
+        .donetion_wrapper .donetion_card .donetion_info .author_content p {
+          font-weight: 600;
+          font-size: 16px;
+          color: #2E2A5C;
+        }
+        .donetion_wrapper .donetion_card .donetion_info .input_content h5, .donetion_wrapper .donetion_card .donetion_info .input_content span, .donetion_wrapper .donetion_card .donetion_info .input_content p {
+          color: #2E2A5C;
+        }
+        .donetion_wrapper .donetion_card .donetion_info a {
+          color: #2E2A5C;
+        }
+        .donetion_wrapper .donetion_card .donetion_info a:hover {
+          text-decoration: underline;
+        }
+        .donetion_wrapper .donetion_card .donetion_info .input_info input {
+          max-width: 100px;
+        }
+        .input-group.d-flex.justify-content-end.align-items-center {
+            width: 30%;
+        }
+        .donetion_wrapper .donetion_card .donetion_info .input-group .input-group-prepend .input-group-text {
+          background-color: #FFF;
+          color: #555;
+          padding: 10px 10px;
+          border-top-right-radius: 0px;
+          border-bottom-right-radius: 0px;
+          border: none;
+        }
+        .input-group span{
+            height: 60px;
+        }
+        .donetion_wrapper .donetion_card .donetion_info .input-group input {
+          border: none;
+          height: 60px;
+        }
+        .donetion_wrapper .donetion_card .donetion_info .input-group .form-control {
+          border: none;
+        }
+        .donetion_wrapper .donetion_card .donetion_info .progress {
+          height: 20px;
+          background: #cdcdcd;
+          border-radius: 10px;
+          -webkit-box-shadow: none;
+                  box-shadow: none;
+          margin-bottom: 10px;
+          overflow: visible;
+        }
+        .donetion_wrapper .donetion_card .donetion_info .progress .progress-bar {
+          position: relative;
+          border-bottom-left-radius:10px;
+          border-top-left-radius:10px;
+          -webkit-animation: animate-positive 2s;
+                  animation: animate-positive 2s;
+          background: #2E2A5C;
+        }
+        .donetion_wrapper .donetion_card .donetion_info .progress .progress-value {
+          display: block;
+          font-size: 18px;
+          font-weight: 500;
+          color: #000;
+          position: absolute;
+          top: -30px;
+          right: -25px;
+        }
+        .donetion_wrapper .donetion_card .donetion_info .progress .progress-bar::after {
+          content: "";
+          display: inline-block;
+          width: 10px;
+          background: #fff;
+          position: absolute;
+          top: -10px;
+          bottom: -10px;
+          right: -5px;
+          z-index: 1;
+          border-radius: 50%;
+        }
+        .donetion_wrapper .donetion_card .your_donetion {
+          padding: 30px 30px 30px 30px;
+          border-top-right-radius: 30px;
+          border-bottom-right-radius: 30px;
+          background-color: #fff;
+          height: 100%;
+        }
+        .donetion_wrapper .donetion_card .your_donetion h4 {
+          font-weight: 800;
+          color: #2E2A5C;
+        }
+        .donetion_wrapper .donetion_card .your_donetion .amount_div p {
+          color: #2E2A5C;
+          font-style: normal !important;
+          font-size: 16px;
+        }
+        .donetion_wrapper .donetion_card .your_donetion .amount_div p strong {
+          font-weight: 900;
+        }
+        .donetion_wrapper .donetion_card .your_donetion .amount_div hr {
+          height: 2px;
+          color: #2E2A5C;
+        }
+        .donetion_wrapper .donetion_card .your_donetion p {
+          margin: 10px 0px;
+          color: #2E2A5C;
+          font-size: 14px;
+          font-style: italic;
+        }
+        .donetion_card .your_donetion .last {
+          margin: 10px 0px;
+          color: #2E2A5C;
+          font-size: 15px;
+          font-style: normal !important;
+        }
+        .donetion_wrapper .donetion_card .your_donetion p a {
+          color: #37949C;
+          font-style: normal;
+        }
+        .donetion_wrapper .donetion_card .your_donetion p a:hover {
+          text-decoration: underline;
+        }
+        .donetion_wrapper .donetion_card .your_donetion label {
+          color: #2E2A5C;
+          cursor: pointer;
+          margin: 10px 0px;
+        }
+        .input-group.d-flex.justify-content-end.align-items-center {
+            width: 16%;
+        }
+        .input_info{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        @media (max-width:996px) {
+            .input-group.d-flex.justify-content-end.align-items-center {
+                width: 50%;
+            }
+        }
+        @media (max-width:768px) {
+            .input-group.d-flex.justify-content-end.align-items-center {
+                width: 50%;
+            }
+            .donetion_wrapper .donetion_card .your_donetion {
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+                padding: 20px;
+                border-top-left-radius: 30px;
+                border-bottom-left-radius: 30px;
+                background-color: #fff;
+                height: 100%;
+            }
+            .donetion_wrapper .donetion_card .donetion_info {
+                background-color: transparent;
+                padding: 30px;
+                border-top-right-radius: 30px;
+                border-bottom-right-radius: 30px;
+            }
+            .donetion_wrapper .donetion_card .donetion_info .author_donet{
+                display: block !important;
+            }
+            .donetion_wrapper .donetion_card .your_donetion .amount_div p{
+                margin: 0;
+            }
+            .donetion_wrapper .donetion_card .donetion_info .author_img{
+                width: 100%;
+                height: auto;
+            }
+            .donetion_wrapper .donetion_card .donetion_info .author_content{
+                margin-left: 0;
+                margin-top: 15px;
+            } 
+
+            .donetion_wrapper .donetion_card .donetion_info .author_content h5{
+                margin-bottom: 0;
+            }
+
+        }
+        @media (max-width:500px) {
+            .input_info{
+                display: block !important;
+            }
+            .input-group.d-flex.justify-content-end.align-items-center {
+                margin: 20px 0px;
+                width: 100%;
+                justify-content: flex-start !important;
+                padding-bottom: 10px;
+            }
+            .donetion_wrapper .donetion_card .donetion_info .input_content{
+                margin-right: 0 !important;
+            }
+        }
+        /* range */
+        .range-form {
+            width:100%;
+            margin: auto;
+            position: relative;
+        }
+
+        .range-slider {
+            appearance: none;
+            width: 100%;
+            height: 13px;
+            border-radius: 5px;
+            background: #2E2A5C;
+            -webkit-appearance: none;
+            outline: none;
+            transition: opacity .2s;
+            position: relative;
+            z-index: 1;
+        }
+        .range-slider:hover {
+            opacity: 1;
+        }
+        .range-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            background: #3FAD48;
+            cursor: pointer;
+            border-radius: 50%;
+            position: relative;
+        }
+        .range-slider::-moz-range-thumb {
+            width: 18px;
+            height: 18px;
+            background:#2E2A5C;
+            cursor: pointer;
+            position: relative;
+        }
+        #value_rang{
+            width: 60px;
+            height: 40px;
+            position: absolute;
+            top: -40px;
+            bottom: 40px;
+            left: 26%;
+            border-radius: 5px;
+            transform: translate(-50%);
+            z-index: 2;
+            text-align: center;
+        }
+        #value_tup{
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            background: #2E2A5C;
+        }
+    </style>
+    
+</head>
+
+<body>    
+    <!-- Header start -->
+    <header>
+        <div class="main-header-wraper header-2">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+
+                    <div class="header-logo">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="./assets/img/logo.png" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="header-menu d-none d-xl-block">
+                        <div class="main-menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="director.html">Director</a> </li>
+                                <li><a href="mission.html">Our Mission</a></li>
+                                <li><a href="contact.html">Contact US</a></li>
+                                <li><a href="#">How It Works <i class="fas fa-angle-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="faq.html">FAQ</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="blog-details.html">blog-details</a></li>
+                                        <li><a href="become.html">join our team</a></li>
+                                        <li><a href="user-gide.html">User Gide</a></li>
+                                        <li><a href="campaigns.html">User campaigns</a></li>
+                                        <li><a href="resource-details.html">Resource Details</a></li>
+                                        <li><a href="resource-link.html">resource-link</a></li>
+                                        <li><a href="research-resources-pdf.html">research-resources-pdf</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="header-right d-flex align-items-center">
+                       <div class="user_widget">
+                        <div class="login_btn"><i class="fas fa-user"></i></div>
+                        <ul class="drop">
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Sing UP</a></li>
+                        </ul>
+                       </div>
+                        <div class="header-search">
+                            <a class="search-toggle search_bar">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </div>
+
+                        <div class="header-btn-cta">
+                            <a class="theme-btn" href="https://givetaxfree.org/create-a-campaign"><i class="fas fa-edit"></i>Create New Campaign</a>
+                        </div>
+
+                        <div class="mobile-nav-bar d-block ml-3 ml-sm-5 d-xl-none">
+                            <div class="mobile-nav-wrap">                    
+                                <div id="hamburger">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                               
+                                <div class="mobile-nav">
+                                    <button type="button" class="close-nav">
+                                        <i class="far fa-times-circle"></i>
+                                    </button>
+                                    <nav class="sidebar-nav">
+                                        <ul class="metismenu" id="mobile-menu">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="director.html">Director</a> </li>
+                                            <li><a href="mission.html">Our Mission</a></li>
+                                            <li><a href="contact.html">Contact US</a></li>
+                                            <li><a href="#">How It Works <i class="fas fa-angle-down"></i></a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="faq.html">FAQ</a></li>
+                                                    <li><a href="blog.html">Blog</a></li>
+                                                    <li><a href="blog-details.html">blog-details</a></li>
+                                                    <li><a href="become.html">join our team</a></li>
+                                                    <li><a href="user-gide.html">User Gide</a></li>
+                                                    <li><a href="campaigns.html">User campaigns</a></li>
+                                                    <li><a href="resource-details.html">Resource Details</a></li>
+                                                    <li><a href="resource-link.html">resource-link</a></li>
+                                                    <li><a href="research-resources-pdf.html">research-resources-pdf</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </nav>
+
+                                    <div class="header-btn-cta ">
+                                        <a class="theme-btn" href="https://givetaxfree.org/create-a-campaign"><i class="fas fa-edit"></i>Create New Campaign</a>
+                                    </div>
+                                </div>                            
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- banner section start -->
+    <section class="banner_wrapper bg-center bg-cover" style="background-image: url(./assets/img/poor_01.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">
+                    <div class="banner-title">
+                        <h2>About</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner section end -->
+
+    <!-- update section start -->
+    <section class="update_wrapper section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">
+                    <div class="section-title mb-5">
+                        <h2>Powerful features made refreshingly easy to use</h2>
+                        <p>Because our favorite sound is a sigh of relief.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs">
+                <div class="row pe-0 ps-0">
+                    <div class="col-lg-3 col-md-12 pe-sm-0 ps-sm-0">
+                        <div class="tab">
+                            <button class="tab-btn active" data-tab="tab1"> <i class="fas fa-user-friends"></i>Donation if</button>
+                            <button class="tab-btn" data-tab="tab2"> <i class="fas fa-user-friends"></i>Donate</button>
+                            <button class="tab-btn" data-tab="tab3"> <i class="fas fa-user-friends"></i>Crowdfunding</button>
+                            <button class="tab-btn"  data-tab="tab4"> <i class="fas fa-user-friends"></i>Crowdfunding</button>
+                            <button class="tab-btn"  data-tab="tab5"> <i class="fas fa-user-friends"></i>Crowdfunding<sup>new</sup> </button>
+                            <button class="tab-btn"  data-tab="tab6"> <i class="fas fa-user-friends"></i>Crowdfunding</button>
+                            <button class="tab-btn"  data-tab="tab7"> <i class="fas fa-user-friends"></i>Memberships</button>
+                            <button class="tab-btn"  data-tab="tab8"> <i class="fas fa-user-friends"></i>Events</button>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-9 col-md-12 pe-sm-0 ps-sm-0 bg-white">
+                        <div class="tab-content active ps-sm-5" id="tab1"> 
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="filter_left">
+                                        <h4>Raise more with a 4x faster checkout</h4>
+                                        <p>Here’s the truth. Over 50% of donors drop off traditional donation forms, leaving needed funds on the table.</p>
+                                        <p>Our UltraSwift™ checkout was built to reduce donor drop-off by eliminating the need to type any personal info—speeding everyone through checkout in nothing but a few clicks.</p>
+                                        <p>On average, your donors will check out 4x FASTER using Donorbox.</p>
+                                        <a href="#">View less details <i class="fas fa-long-arrow-alt-right"></i></a>
+                                        <div class="button-area">
+                                            <a href="https://givetaxfree.org/create-a-campaign" class=" btn btn-primary"> Get the donation form</a>
+                                            <a href="https://givetaxfree.org/all-campaigns"class=" btn btn-danger">Live example</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="filter_right">
+                                        <img src="https://images.pexels.com/photos/220365/pexels-photo-220365.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="givetaxfree" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content ps-sm-5" id="tab2"> 
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="filter_left">
+                                        <h4>Raise more with a 4x faster checkout</h4>
+                                        <p>On average, your donors will check out 4x FASTER using Donorbox.</p>
+                                        <a href="#">View less details <i class="fas fa-long-arrow-alt-right"></i></a>
+                                        <div class="button-area">
+                                            <a href="https://givetaxfree.org/create-a-campaign" class=" btn btn-primary"> Get the donation form</a>
+                                            <a href="https://givetaxfree.org/all-campaigns"class=" btn btn-danger">Live example</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="filter_right">
+                                        <img src="https://images.pexels.com/photos/220365/pexels-photo-220365.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="givetaxfree" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content ps-sm-5" id="tab3"> 
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="filter_left">
+                                        <h4>Raise more with a 4x faster checkout</h4>
+                                        <p>Here’s the truth. Over 50% of donors drop off traditional donation forms, leaving needed funds on the table.</p>
+                                        <p>Our UltraSwift™ checkout was built to reduce donor drop-off by eliminating the need to type any personal info—speeding everyone through checkout in nothing but a few clicks.</p>
+                                        <p>On average, your donors will check out 4x FASTER using Donorbox.</p>
+                                        <a href="#">View less details <i class="fas fa-long-arrow-alt-right"></i></a>
+                                        <div class="button-area">
+                                            <a href="https://givetaxfree.org/create-a-campaign" class=" btn btn-primary"> Get the donation form</a>
+                                            <a href="https://givetaxfree.org/all-campaigns"class=" btn btn-danger">Live example</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="filter_right">
+                                        <img src="https://images.pexels.com/photos/220365/pexels-photo-220365.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="givetaxfree" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content ps-sm-5" id="tab4"> 
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="filter_left">
+                                        <h4>Raise more with a 4x faster checkout</h4>
+                                        <p>Here’s the truth. Over 50% of donors drop off traditional donation forms, leaving needed funds on the table.</p>
+                                        <p>Our UltraSwift™ checkout was built to reduce donor drop-off by eliminating the need to type any personal info—speeding everyone through checkout in nothing but a few clicks.</p>
+                                        <p>On average, your donors will check out 4x FASTER using Donorbox.</p>
+                                        <a href="#">View less details <i class="fas fa-long-arrow-alt-right"></i></a>
+                                        <div class="button-area">
+                                            <a href="https://givetaxfree.org/create-a-campaign" class=" btn btn-primary"> Get the donation form</a>
+                                            <a href="https://givetaxfree.org/all-campaigns"class=" btn btn-danger">Live example</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="filter_right">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content ps-sm-5" id="tab5"> 
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="filter_left">
+                                        <h4>Raise more with a 4x faster checkout</h4>
+                                        <p>Our UltraSwift™ checkout was built to reduce donor drop-off by eliminating the need to type any personal info—speeding everyone through checkout in nothing but a few clicks.</p>
+                                        <p>On average, your donors will check out 4x FASTER using Donorbox.</p>
+                                        <a href="#">View less details <i class="fas fa-long-arrow-alt-right"></i></a>
+                                        <div class="button-area">
+                                            <a href="https://givetaxfree.org/create-a-campaign" class=" btn btn-primary"> Get the donation form</a>
+                                            <a href="https://givetaxfree.org/all-campaigns"class=" btn btn-danger">Live example</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="filter_right">
+                                        <img src="https://images.pexels.com/photos/220365/pexels-photo-220365.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="givetaxfree" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content ps-sm-5" id="tab6"> 
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="filter_left">
+                                        <h4>Raise more with a 4x faster checkout</h4>
+                                        <p>Here’s the truth. Over 50% of donors drop off traditional donation forms, leaving needed funds on the table.</p>
+                                        <p>Our UltraSwift™ checkout was built to reduce donor drop-off by eliminating the need to type any personal info—speeding everyone through checkout in nothing but a few clicks.</p>
+                                        <p>On average, your donors will check out 4x FASTER using Donorbox.</p>
+                                        <a href="#">View less details <i class="fas fa-long-arrow-alt-right"></i></a>
+                                        <div class="button-area">
+                                            <a href="https://givetaxfree.org/create-a-campaign" class=" btn btn-primary"> Get the donation form</a>
+                                            <a href="https://givetaxfree.org/all-campaigns"class=" btn btn-danger">Live example</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="filter_right">
+                                        <img src="https://images.pexels.com/photos/220365/pexels-photo-220365.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="givetaxfree" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- donetion section end -->
+
+    <!-- Footer start -->
+    <footer class="footer_wrapper">
+       <div class="footer_top">
+         <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div  class="footer_widget">
+                        <h3 class="widget-title">Get Started</h3>
+                        <div class="footer_link_element">
+                            <ul>
+                                <li><a href="https://givetaxfree.org/how-does-crowd-fundraising-work/"><i class="fas fa-angle-right"></i>How it works</a></li>
+                                <li><a href="https://givetaxfree.org/become-a-volunteer/"><i class="fas fa-angle-right"></i>Become a Volunteer</a></li>
+                                <li><a href="https://givetaxfree.org/pricing-fees/"><i class="fas fa-angle-right"></i>Pricing &amp; Fees</a></li>
+                                <li><a href="https://givetaxfree.org/create-a-campaign/"><i class="fas fa-angle-right"></i>Create a campaign</a></li>
+                            </ul>
+                        </div>  
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div  class="footer_widget">
+                        <h3 class="widget-title">About Us</h3>
+                        <div class="footer_link_element">
+                            <ul>
+                                <li><a href="https://givetaxfree.org/how-does-crowd-fundraising-work/"><i class="fas fa-angle-right"></i>How it works</a></li>
+                                <li><a href="https://givetaxfree.org/become-a-volunteer/"><i class="fas fa-angle-right"></i>Become a Volunteer</a></li>
+                                <li><a href="https://givetaxfree.org/pricing-fees/"><i class="fas fa-angle-right"></i>Pricing &amp; Fees</a></li>
+                                <li><a href="https://givetaxfree.org/create-a-campaign/"><i class="fas fa-angle-right"></i>Create a campaign</a></li>
+                            </ul>
+                        </div>  
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div  class="footer_widget">
+                        <h3 class="widget-title">Help & Support</h3>
+                        <div class="footer_link_element">
+                            <ul>
+                                <li><a href="https://givetaxfree.org/how-does-crowd-fundraising-work/"><i class="fas fa-angle-right"></i>How it works</a></li>
+                                <li><a href="https://givetaxfree.org/become-a-volunteer/"><i class="fas fa-angle-right"></i>Become a Volunteer</a></li>
+                                <li><a href="https://givetaxfree.org/pricing-fees/"><i class="fas fa-angle-right"></i>Pricing &amp; Fees</a></li>
+                                <li><a href="https://givetaxfree.org/create-a-campaign/"><i class="fas fa-angle-right"></i>Create a campaign</a></li>
+                            </ul>
+                        </div>  
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div  class="footer_widget">
+                        <h3 class="widget-title">Contact Us</h3>
+                        <div class="footer_element">
+                            <ul>
+                                <li>  1135 Heatherstone Dr. <br> Suite 102 </li>
+                                <li>Fredericksburg, VA 22407</li>
+                                <li><i class="fas fa-envelope"></i>help@givetaxfree.org</li>
+                            </ul>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                   <span> © 2022 <a href="https://givetaxfree.org/"> Givetaxfree.org </a> , All Rights Reserved. </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!--  ALl JS Plugins
+    ====================================== -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/aos.min.js"></script>
+    <script src="./assets/js/magnific-popup.min.js"></script>
+    <script src="./assets/js/metismenu.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+
+</body>
+
+</html>

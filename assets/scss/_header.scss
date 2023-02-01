@@ -2,6 +2,20 @@ header {
     width: 100%;
     z-index: 9999; 
     .main-header-wraper{
+        &.header-2{
+            background-color:transparent ;
+            box-shadow: none ;
+            @include transition(0.4s);
+            .main-menu {                         
+                ul {                  
+                    > li {
+                        > a {  
+                            color: $white;                     
+                        }
+                    }
+                }
+            }
+        }
         left: 0;
         top: 0;
         width: 100%;
@@ -143,6 +157,17 @@ header {
     }
     &.sticky{
         .main-header-wraper{
+            background-color: $white;
+            box-shadow: $box-shadow;
+            .main-menu {                         
+                ul {                  
+                    > li {
+                        > a {  
+                            color: $primary !important;                     
+                        }
+                    }
+                }
+            }
             .logo{
                img{
                 max-width: 200px;
