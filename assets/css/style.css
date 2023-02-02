@@ -2456,48 +2456,37 @@ header.sticky .main-header-wraper .logo img {
 }
 @media (max-width: 992px) {
   .update_wrapper .tab {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    padding: 15px 10px;
+    white-space: nowrap;
     overflow: auto;
   }
 }
-.update_wrapper .tab button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  padding: 20px 20px 30px 30px;
-  width: 100%;
+.update_wrapper .tab a {
+  display: block;
   text-align: left;
+  position: relative;
+  background: rgb(237, 243, 248);
+  font-weight: 600;
+  padding: 20px 20px 30px 30px;
   line-height: 1;
   color: #2E2A5C;
-  font-size: 18px;
   background-color: transparent;
   border-left: 5px solid transparent;
-  font-weight: 600;
 }
 @media (max-width: 992px) {
-  .update_wrapper .tab button {
+  .update_wrapper .tab a {
     padding: 15px 10px;
+    display: inline-block;
   }
 }
-.update_wrapper .tab button sup {
+.update_wrapper .tab a sup {
   color: #F47102;
 }
-.update_wrapper .tab button i {
+.update_wrapper .tab a i {
   margin-right: 15px;
   font-size: 25px;
 }
-.update_wrapper .tab button:focus, .update_wrapper .tab button:hover, .update_wrapper .tab button.active {
+.update_wrapper .tab a:focus, .update_wrapper .tab a:hover, .update_wrapper .tab a.active {
   color: #F47102;
   background-color: #FFF;
   border-left: 5px solid #F47102;
@@ -2509,7 +2498,7 @@ header.sticky .main-header-wraper .logo img {
 }
 @media (max-width: 768px) {
   .update_wrapper .tab-content {
-    padding: 30px 0px;
+    padding: 20px;
   }
 }
 .update_wrapper .tab-content.active {
@@ -2553,13 +2542,6 @@ header.sticky .main-header-wraper .logo img {
   background-color: transparent;
   border: 1px solid #F47102;
   margin-left: 20px;
-}
-@media (max-width: 500px) {
-  .update_wrapper .filter_left .button-area a:last-child {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    margin-left: 0px;
-  }
 }
 .update_wrapper .filter_left .button-area a:hover {
   color: #2E2A5C;
